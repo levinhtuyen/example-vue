@@ -23,10 +23,7 @@
 <script>
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import Vue from 'vue';
-import VueCarousel from 'vue-carousel';
 import axios from 'axios';
-Vue.use(VueCarousel);
 export default {
     name: 'Slider',
     data() {
