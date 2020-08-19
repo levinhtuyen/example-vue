@@ -28,9 +28,21 @@
 </template>
 
 <script>
+import { eventBus } from './../../main.js'
 export default {
     name: 'InforHotel',
+    data() {
+        return {
 
+        }
+    },
+
+    created(){
+        eventBus.$on('dataHotDeal', (data1) => {
+            this.data = this.data1
+            console.log('data hot deal', this.data)
+        })
+    }
 }
 </script>
 

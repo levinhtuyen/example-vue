@@ -2,7 +2,7 @@
 <div class="container">
     <Header />
     <SliderDetail />
-    <InforHotel />
+    <InforHotel  />
     <FlashSaleRoom />
 </div>
 </template>

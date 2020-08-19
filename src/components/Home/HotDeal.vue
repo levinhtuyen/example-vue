@@ -50,7 +50,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Vue from 'vue';
 import VueCarousel from 'vue-carousel';
-
+import { eventBus } from './../../main.js'
 Vue.use(VueCarousel);
 import axios from 'axios';
 export default {
@@ -64,7 +64,7 @@ export default {
            
         }
     },
-
+    // props: ['this.data'],
     async created() {
         axios.defaults.headers = {
             'deviceid': 'device_for_web',
@@ -74,21 +74,13 @@ export default {
         } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
 
         let data1 = data.detailCollectionList;
-        //console.log('data1', data1);
-        //console.log('data2 ', data2);
-        // Lấy Obj Hotel giá sốc
         let HotHotel = (data1[0]);
-       // console.log('dsHotHotel', HotHotel);
-        // Lấy list Hotel gia sốc
         let dsHotHotel = HotHotel.hotelFormList
         this.data = dsHotHotel
-        
-       // console.log('ds Hot Hotel this.data : ', this.data);
     },
 
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped>
 

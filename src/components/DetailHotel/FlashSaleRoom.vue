@@ -94,6 +94,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped>
+ .style-btn-dat-ngay {
+        background: #eeeeee;
+        width: 100px;
+        font-size: 10px;
+        border-radius: 5px;
+        border:none;
+        text-decoration: underline ;
+        color: #ff6401;
+    }
 @media only screen and (max-width: 480px) and (min-width: 320px) {
 
     .style-btn-dat-ngay {
