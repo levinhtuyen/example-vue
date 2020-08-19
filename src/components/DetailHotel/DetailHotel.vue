@@ -2,17 +2,20 @@
 <div class="container">
     <Header />
     <SliderDetail />
+    <InforHotel />
 </div>
 </template>
 
 <script>
 import Header from "./../Home/Header.vue"
 import SliderDetail from "./SliderDetail.vue"
+import InforHotel from "./InforHotel.vue"
 export default {
     name: 'DetailHotel',
     components: {
         Header,
         SliderDetail,
+        InforHotel,
     }
 };
 </script>
