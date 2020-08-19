@@ -1,0 +1,190 @@
+<template>
+<div>
+
+    <b-row>
+        <div class="col-5 style-can-giua padd-top-botton-10">
+            <p class="style-address  style-can-giua">CHỌN ĐỊA ĐIỂM</p>
+        </div>
+        <div class="col-7 style-right padd-top-botton-10">
+            <button type="button" class="btn style-mar-pad-0 " data-toggle="modal" data-target="#myModal"><i style="color:#ff6400" class="fas fa-map-marker-alt"></i>
+                Thành phố Hồ Chí Minh <i style="color:#000" class="fas fa-angle-down"></i>
+            </button>
+        </div>
+        <!-- <div class="col-3">
+            <div class="hotel-item ">
+                <div class="style-giua-img">
+                    <img src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg">
+                </div>
+                <p class="style-p padd-top-botton-10">Gần bạn</p>
+            </div>
+        </div> -->
+        <div class="col-4">
+            <div class="hotel-item1">
+                <div class="style-giua-img">
+                    <img class="img-lazy style-res" src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg">
+                </div>
+                <p class="style-p padd-top-botton-10">Nơi đã tìm</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="hotel-item1">
+                <div class="style-giua-img">
+                    <img class="img-lazy style-res" src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg">
+                </div>
+                <p class="style-p padd-top-botton-10">Du lịch</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="hotel-item1">
+                <div class="style-giua-img">
+                    <img class="img-lazy style-res" src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg">
+                </div>
+                <p class="style-p padd-top-botton-10">Tình yêu</p>
+            </div>
+        </div>
+
+    </b-row>
+
+</div>
+</template>
+
+<script>
+export default {
+    name: 'Address',
+
+}
+</script>
+
+<style scoped>
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.style-giua-img {
+    display: flex;
+    justify-content: center;
+}
+
+.style-res {
+    height: auto;
+    width: 100%;
+}
+
+.padd-top-botton-10 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.style-img {
+    width: 200px;
+    height: auto;
+}
+
+.style-right {
+    float: right;
+    text-align: right;
+}
+
+.style-address {
+    font-weight: 600;
+    text-align: left;
+}
+
+.style-mar-pad-0 {
+    margin: 0;
+    padding: 0;
+}
+
+.style-can-giua {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.float-left {
+    float: left;
+}
+
+.btn:focus,
+.btn.focus {
+    box-shadow: none;
+}
+
+.hotel-item .img img {
+    height: 205px;
+}
+
+.hotel-item img {
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 205px;
+    width: 205px;
+}
+.hotel-item1 img {
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 205px;
+    width: 205px;
+}
+
+.style-mar-padd-0 {
+    margin: 0;
+    padding: 0;
+}
+
+.hotel-item p {
+    text-align: center;
+}
+.hotel-item1 p {
+    text-align: center;
+}
+
+.style-p {
+    font-size: 14px;
+    width: 100%;
+}
+
+@media (max-width:480px) {
+    .hotel-item img {
+        width: 50px;
+        height: 50px;
+    }
+    .hotel-item1 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .style-p {
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hotel-item1 {
+        width: 100%;
+        height: 90px;
+    }
+
+    .style-address {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:768px)and (min-width:767px) {
+    .hotel-item img {
+        width: 150px;
+        height: 150px;
+    }
+    .hotel-item1 img {
+        width: 150px;
+        height: 150px;
+    }
+}
+</style>
