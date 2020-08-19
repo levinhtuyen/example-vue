@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <div>
+    <div class="border-bottom">
         <p class="style-bold font-size-title">LYN MINI HOTEL</p>
         <div class="col-7">
             <p class="padding-p">
@@ -35,15 +35,61 @@ export default {
 </script>
 
 <style scoped>
+.margin-left-right-10 {
+    margin: 0 50px 0 50px;
+}
+
+.font-size-title {
+    font-size: 16px;
+}
+
+.style-btn-comment {
+    background: #f0b67c;
+    width: 200px;
+    font-size: 16px;
+}
+
+.border-bottom {
+    padding-bottom: 70px;
+}
+
 @media only screen and (max-width: 480px) and (min-width: 320px) {
     .margin-left-right-10 {
         margin: 0 10px 0 10px;
+    }
+
+    .font-size-title {
+        font-size: 10px;
     }
 
     .style-btn-comment {
         background: #f0b67c;
         width: 100px;
         font-size: 10px;
+    }
+
+    .border-bottom {
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .margin-left-right-10 {
+        margin: 0 30px 0 30px;
+    }
+
+    .style-btn-comment {
+        background: #f0b67c;
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .font-size-title {
+        font-size: 14px;
+    }
+
+    .border-bottom {
+        padding-bottom: 50px;
     }
 }
 </style>
