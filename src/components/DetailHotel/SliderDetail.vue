@@ -6,9 +6,9 @@
                 <div class="item style-slider">
                     <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
                     <img src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg" alt="">
-                     <div class="whatever">
-                         <p class="style-count-image">1/23</p>
-                     </div>
+                    <div class="whatever">
+                        <p class="style-count-image">1/23</p>
+                    </div>
                 </div>
             </div>
 
@@ -57,24 +57,23 @@ export default {
 
 <style scoped>
 .whatever {
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(1, #ffffff),
-        color-stop(0, rgba(0,0,0,0))
-    );
-    background-image: -o-linear-gradient(bottom, #ffffff 0%, rgba(0,0,0,0) 100%);
-    background-image: -moz-linear-gradient(bottom, #ffffff 0%, rgba(0,0,0,0) 100%);
-    background-image: -webkit-linear-gradient(bottom, #ffffff 0%, rgba(0,0,0,0) 100%);
-    background-image: -ms-linear-gradient(bottom, #ffffff 0%, rgba(0,0,0,0) 100%);
-    background-image: linear-gradient(to top, #ffffff 0%, rgba(0,0,0,0) 100%);
-    height:150px;
-    position:relative;
-    width:100%;
-    top:-150px;
+    background-image: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            color-stop(1, #ffffff),
+            color-stop(0, rgba(0, 0, 0, 0)));
+    background-image: -o-linear-gradient(bottom, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(bottom, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-linear-gradient(bottom, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -ms-linear-gradient(bottom, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to top, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
+    height: 150px;
+    position: relative;
+    width: 100%;
+    top: -150px;
 }
-.style-count-image{
+
+.style-count-image {
     width: 5%;
     background: #333333;
     float: right;
@@ -83,5 +82,61 @@ export default {
     margin: 20px;
     border-radius: 10px;
     text-align: center;
+}
+
+.style-slider {
+    max-height: 770px;
+}
+
+@media only screen and (max-width: 350px) and (min-width: 300px) {
+    .style-slider {
+        max-height: 230px;
+    }
+
+    .style-count-image {
+        width: 50px;
+        margin: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .whatever {
+        height: 50px;
+        top: -50px;
+    }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 351px) {
+    .style-slider {
+        max-height: 270px;
+    }
+    .style-count-image {
+        width: 50px;
+        margin: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .whatever {
+        height: 50px;
+        top: -50px;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 401px) {
+    .style-slider {
+        max-height: 310px;
+    }
+    .style-count-image {
+        width: 50px;
+        margin: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .whatever {
+        height: 50px;
+        top: -50px;
+    }
 }
 </style>
