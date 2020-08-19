@@ -74,12 +74,7 @@ a {
     display: none !important;
 }
 
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    width: 100%;
-}
+
 
 .float-left {
     float: left;
@@ -542,17 +537,4 @@ body {
     padding: 3rem
 }
 
-.owl-carousel .item {
-    margin: 3px
-}
-
-.owl-carousel .item img {
-    display: block;
-    width: 100%;
-    height: auto
-}
-
-.owl-carousel .item {
-    margin: 3px
-}
 </style>

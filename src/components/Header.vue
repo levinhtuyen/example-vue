@@ -29,11 +29,7 @@
 
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">TRANG CHỦ
-                        <!-- <span class="sr-only">(current)</span> -->
-                    </a>
-                </li>
+            
                 <!-- <li class="nav-item">
                     <router-link :to="{ name: 'userList'}">User List</router-link>
                 </li>
@@ -42,14 +38,14 @@
                 </li> -->
 
                 <!-- Dropdown -->
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LIÊN HỆ</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">THÔNG TIN LIÊN HỆ</a>
                         <a class="dropdown-item" href="#">TUYỂN DỤNG</a>
                         <a class="dropdown-item" href="#">BLOG</a>
                     </div>
-                </li>
+                </li> -->
 
             </ul>
             <!-- Links -->

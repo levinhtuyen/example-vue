@@ -1,32 +1,17 @@
 <template>
-  <div id="app" class="container">
-    <!-- <img src="./assets/logo.png"> -->
-    <!-- <Home /> -->
-    <router-view/>
-  </div>
+<div>
+    <h1>Detail Home 123</h1>
+</div>
 </template>
 
 <script>
-import Home from "./components/Home.vue"
 
 export default {
-  name: 'App',
-   components: {
-        Home,
-        
-    },
-}
+
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
-  color: #2c3e50;
-
-}
 h1,
 h2,
 h3,
@@ -57,6 +42,12 @@ a {
     display: none !important;
 }
 
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+}
 
 .float-left {
     float: left;
@@ -69,5 +60,9 @@ a {
 .row {
     margin-bottom: 15px;
     margin-top: 15px;
+}
+
+.owl-carousel {
+    touch-action: none;
 }
 </style>
