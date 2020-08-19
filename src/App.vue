@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container">
+  <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <!-- <Home /> -->
     <router-view/>
@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Home from "./components/Home.vue"
+import Home from "./components/Home/Home.vue"
 
 export default {
   name: 'App',

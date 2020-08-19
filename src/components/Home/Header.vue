@@ -21,7 +21,7 @@
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="./../assets/search.png" class="search" alt="">
+            <img src="./../../assets/search.png" class="search" alt="">
         </button>
 
         <!-- Collapsible content -->
@@ -52,7 +52,7 @@
 
             <form class="form-inline">
                 <div class="md-form my-0">
-                    <img src="./../assets/search.png" style="width:50px;" alt="">
+                    <img src="./../../assets/search.png" style="width:50px;" alt="">
                 </div>
             </form>
         </div>

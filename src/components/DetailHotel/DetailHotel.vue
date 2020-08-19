@@ -1,45 +1,19 @@
 <template>
-<div>
+<div class="container">
     <Header />
-    <Slider /> 
-    <Address />
-    <HotDeal />
-    <specital />
-    <Go2Joy />
-    <HotelNew />
-    <Promotion />
-    <TopHotel />
+    <SliderDetail />
 </div>
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
-import Header from "./Header.vue"
-import Slider from "./Slider.vue"
-import Address from "./Address.vue"
-import HotDeal from "./HotDeal.vue"
-import Specital from "./Specital.vue"
-import Go2Joy from "./Go2Joy.vue"
-import HotelNew from "./HotelNew.vue"
-import Promotion from "./Promotion.vue"
-import TopHotel from "./TopHotel.vue"
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import Header from "./../Home/Header.vue"
+import SliderDetail from "./SliderDetail.vue"
 export default {
-    path: '/home',
-    name: "Home",
+    name: 'DetailHotel',
     components: {
         Header,
-        Slider,
-        Address,
-        HotDeal,
-        Specital,
-        Go2Joy,
-        HotelNew,
-        Promotion,
-        TopHotel
-    },
-
+        SliderDetail,
+    }
 };
 </script>
 
@@ -536,5 +510,4 @@ body {
 .padding {
     padding: 3rem
 }
-
 </style>

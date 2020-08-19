@@ -19,7 +19,7 @@
                 <div class="col-11 style-box-shadow">
                     <div class="col-4" style="float:left">
                         <div class="hotel-item">
-                            <router-link tag="a" target="_blank"  :to="{ name: 'DetailHotel', params: { Sn: data1.sn }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
+                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: data1.sn }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
                         </div>
                     </div>
                     <div class="col-8 style-padd">
@@ -78,12 +78,12 @@ export default {
         //console.log('data2 ', data2);
         // Lấy Obj Hotel giá sốc
         let HotHotel = (data1[0]);
-        console.log('dsHotHotel', HotHotel);
+       // console.log('dsHotHotel', HotHotel);
         // Lấy list Hotel gia sốc
         let dsHotHotel = HotHotel.hotelFormList
         this.data = dsHotHotel
         
-        console.log('ds Hot Hotel this.data : ', this.data);
+       // console.log('ds Hot Hotel this.data : ', this.data);
     },
 
 }
