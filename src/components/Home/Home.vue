@@ -1,7 +1,7 @@
 <template>
 <div>
     <Header />
-    <Slider /> 
+    <Slider />
     <Address />
     <HotDeal />
     <specital />
@@ -39,6 +39,18 @@ export default {
         Promotion,
         TopHotel
     },
+    data() {
+        return {
+            userSelectedFromChild: {}
+        }
+    },
+    methods: {
+           
+            childrenSelectUser(dataHotel) {
+                console.log(dataHotel)
+                this.userSelectedFromChild = dataHotel
+            }
+        }
 
 };
 </script>
@@ -74,8 +86,6 @@ a {
     display: none !important;
 }
 
-
-
 .float-left {
     float: left;
 }
@@ -104,9 +114,11 @@ a:hover {
 p {
     margin-bottom: 0.3rem;
 }
-.VueCarousel-dot-container{
+
+.VueCarousel-dot-container {
     display: none !important;
 }
+
 .style-qua-dem {
     font-size: 14px;
 }
@@ -236,10 +248,12 @@ p {
 .style-back-doback-do a {
     background-color: red;
 }
-.style-border-red{
-     border: 1px solid red;
-     border-radius: 5px;
+
+.style-border-red {
+    border: 1px solid red;
+    border-radius: 5px;
 }
+
 .style-bold {
     font-weight: 600;
 }
@@ -276,14 +290,16 @@ p {
 .padding-0-5-10 {
     padding: 20px 0 20px;
 }
-    .style-back-do {
 
-        background: red;
-        color: #fff;
-        padding: 2px 3px 2px 3px;
-        border-radius: 5px;
+.style-back-do {
 
-    }
+    background: red;
+    color: #fff;
+    padding: 2px 3px 2px 3px;
+    border-radius: 5px;
+
+}
+
 @media only screen and (max-width: 480px) {
     .hotel-item img {
         width: 205px;
@@ -477,6 +493,7 @@ p {
 
     height: auto;
 }
+
 .style-img {
     width: 200px;
     height: auto;
@@ -492,6 +509,7 @@ p {
 .style-slider img {
     width: 100%;
 }
+
 .stretch-card>.card {
     width: 100%;
     min-width: 100%
@@ -536,5 +554,4 @@ body {
 .padding {
     padding: 3rem
 }
-
 </style>
