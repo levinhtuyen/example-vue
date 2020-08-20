@@ -2,10 +2,10 @@
 <div>
    
     <div class="col-12 float-left">
-            <div class="item col-12 float-left" style="padding: 20px 0 20px 0;">
+            <div class="item col-6 float-left" style="padding: 20px 0 20px 0;">
                <a href=""><img class="img-lazy" src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg"></a>
             </div>
-            <div class="item col-12 float-left" style="padding: 20px 0 20px 0;">
+            <div class="item col-6 float-left" style="padding: 20px 0 20px 0;">
                 <a href=""><img class="img-lazy" src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg"></a>
             </div>
             <div class="info">

@@ -5,7 +5,7 @@
             <div class="col-12 style-box-shadow">
                 <div class="col-4" style="float:left">
                     <div class="hotel-item">
-                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: sn }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
+                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 12 }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
                     </div>
                 </div>
                 <div class="col-8 style-padd">
@@ -33,12 +33,12 @@
 
             </div>
             <div class="col-12 style-block-end mar-10">
-                <p class="font-size-title ">Miễn phí thêm 1 giờ nếu bạn đặt phòng tối thiểu 2 giờ</p>
+                <p class="font-size-title padd-10">Miễn phí thêm 1 giờ nếu bạn đặt phòng tối thiểu 2 giờ</p>
             </div>
             <div class="col-12 style-box-shadow">
                 <div class="col-4" style="float:left">
                     <div class="hotel-item">
-                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: sn }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
+                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 12 }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
                     </div>
                 </div>
                 <div class="col-8 style-padd">
@@ -66,12 +66,12 @@
 
             </div>
             <div class="col-12 style-block-end mar-10">
-                <p class="font-size-title ">Miễn phí thêm 1 giờ nếu bạn đặt phòng tối thiểu 2 giờ</p>
+                <p class="font-size-title padd-10">Miễn phí thêm 1 giờ nếu bạn đặt phòng tối thiểu 2 giờ</p>
             </div>
             <div class="col-12 style-box-shadow">
                 <div class="col-4" style="float:left">
                     <div class="hotel-item">
-                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: sn }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
+                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 12 }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
                     </div>
                 </div>
                 <div class="col-8 style-padd">
@@ -99,7 +99,7 @@
 
             </div>
             <div class="col-12 style-block-end mar-10">
-                <p class="font-size-title ">Miễn phí thêm 1 giờ nếu bạn đặt phòng tối thiểu 2 giờ</p>
+                <p class="font-size-title padd-10">Miễn phí thêm 1 giờ nếu bạn đặt phòng tối thiểu 2 giờ</p>
             </div>
         </div>
     </div>
@@ -191,6 +191,9 @@ export default {
 
 .mar-10 {
     margin: 10px 0 10px 0 
+}
+.padd-10{
+    padding: 10px;
 }
 
 @media only screen and (max-width: 350px) and (min-width: 300px) {

@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container">
 
     <!-- <p class="style-bold font-size-12">HÔM NAY BẠN CẦN GÌ ?</p> -->
 
