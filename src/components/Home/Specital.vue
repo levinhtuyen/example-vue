@@ -18,11 +18,12 @@
                         <div class="hotel-item">
                             <!-- <img class="img-lazy" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath"> -->
                              <img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt="">
+                             <!-- <router-link  tag="a"  :to="{ name: 'DetailHotel', params: { Sn: data1.sn }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link> -->
                         </div>
                     </div>
                     <div class="col-8 style-padd">
                         <p class="style-bold font-size-title">{{ data1.name }}</p>
-                        <p class="padding-p"> <a class="style-back-cam font-size-title"><i class="fas fa-star"></i> <span> {{ data1.averageMark }} ({{ data1.totalFavorite }}) </span></a></p>
+                        <p class="padding-p"> <a @click="chooseSpecitalHotel(data1)" class="style-back-cam font-size-title"><i class="fas fa-star"></i> <span> {{ data1.averageMark }} ({{ data1.totalFavorite }}) </span></a></p>
                         <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
                         <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> {{ data1.districtName }} </span></a></p>
                         <div class="float-right style-border-cam">
@@ -78,6 +79,11 @@ data() {
         this.data = dsHotHotel
        // console.log('ds Hot Hotel this.data : ', this.data);
     },
+    methods: {
+        chooseSpecitalHotel(data1){
+            this.$emit('dsHotel',data1)
+        }
+    }
 }
 
 </script>
