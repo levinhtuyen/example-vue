@@ -4,6 +4,7 @@
     <SliderDetail />
     <InforHotel  />
     <FlashSaleRoom />
+    <ListRoom /> 
 </div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from "./../Home/Header.vue"
 import SliderDetail from "./SliderDetail.vue"
 import InforHotel from "./InforHotel.vue"
 import FlashSaleRoom from "./FlashSaleRoom.vue"
+import ListRoom from "./ListRoom.vue"
 export default {
     name: 'DetailHotel',
     components: {
@@ -19,6 +21,7 @@ export default {
         SliderDetail,
         InforHotel,
         FlashSaleRoom,
+        ListRoom,
     }
 };
 </script>

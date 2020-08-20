@@ -81,11 +81,11 @@ export default {
         //console.log('data2 ', data2);
         // Lấy Obj Hotel giá sốc
         let HotHotel = (data1[1]);
-       console.log('HotHotel', HotHotel);
+     //  console.log('HotHotel', HotHotel);
         // Lấy list Hotel gia sốc
         this.data = HotHotel.hotelFormList
           
-       console.log('ds Hot Hotel this.data : ', this.data);
+       //console.log('ds Hot Hotel this.data : ', this.data);
     },
 
 }
