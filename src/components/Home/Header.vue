@@ -85,7 +85,9 @@ export default {
 .search {
     width: 90px;
 }
-
+.md-form img{
+    margin: 0 20px
+}
 @media only screen and (max-width: 480px) {
     .logo {
         width: 40px;
