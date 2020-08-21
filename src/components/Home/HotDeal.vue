@@ -9,11 +9,7 @@
     </div>
     <div class="col-12" style="margin-bottom:6px">
         <carousel 
-        :centerMode="false" 
-        :perPage="1" 
         :navigationEnabled="false" 
-        paginationColor="#7e7e7e" 
-        paginationPosition="bottom"
         :autoplay="true" :interval="4000"
         :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
             <slide >
@@ -185,7 +181,7 @@
                         </div>
                     </div>
                     <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">REDDOORZ NEAR TAN SON NHAT AIRPORT 3</p>
+                        <p class="style-bold font-size-title">REDDOORZ NEAR TSN AIRPORT 3</p>
                         <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
                         <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
                         <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>

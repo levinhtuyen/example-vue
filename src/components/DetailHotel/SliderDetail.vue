@@ -1,6 +1,8 @@
 <template>
 <div >
-    <carousel :centerMode="false" :perPage="1" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
+    <carousel 
+    :navigationEnabled="false"
+     :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
         <slide v-for="(data0, index) in data" :key="index">
             <div class="col-12">
                 <div class="item style-slider">
@@ -85,7 +87,7 @@ export default {
 }
 
 .style-slider {
-    max-height: 750px;
+    max-height: 748px;
     border-radius: 0px;
 }
 
