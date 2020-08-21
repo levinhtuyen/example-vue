@@ -219,6 +219,10 @@
                 </div>
             </div>
         </div>
+        <div class="col-12 canh-giua">
+            <el-pagination :page-size="20" :pager-count="11" layout="prev, pager, next" :total="1000">
+            </el-pagination>
+        </div>
     </b-row>
 </div>
 </template>
@@ -259,6 +263,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped>
+.canh-giua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hotel-item img {
     width: 100%
 }

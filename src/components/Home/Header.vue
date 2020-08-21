@@ -52,6 +52,7 @@
 
             <form class="form-inline">
                 <div class="md-form my-0">
+                    <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" placeholder="Nhập từ khóa" @select="handleSelect"></el-autocomplete>
                     <img src="./../../assets/search.png" style="width:50px;" alt="">
                 </div>
             </form>
@@ -67,7 +68,66 @@
 
 export default {
     name: 'Header',
-  
+  data() {
+        return {
+            links: [],
+            state: '',
+            timeout: null
+        };
+    },
+    methods: {
+        loadAll() {
+            return [{
+                    "value": "Khoảng cách",
+                    "link": "#"
+                },
+                {
+                    "value": "Giá tăng dần",
+                    "link": "#"
+                },
+                {
+                    "value": "Giá giảm dần",
+                    "link": "#"
+                },
+                {
+                    "value": "Xếp hạng và Bình chọn",
+                    "link": "#"
+                },
+                {
+                    "value": "Hot nhất",
+                    "link": "#"
+                },
+                {
+                    "value": "Khuyến mãi",
+                    "link": "#"
+                },
+                {
+                    "value": "Khách sạn mới",
+                    "link": "#"
+                }
+            ];
+        },
+        querySearchAsync(queryString, cb) {
+            var links = this.links;
+            var results = queryString ? links.filter(this.createFilter(queryString)) : links;
+
+            clearTimeout(this.timeout);
+            this.timeout = setTimeout(() => {
+                cb(results);
+            }, 3000 * Math.random());
+        },
+        createFilter(queryString) {
+            return (link) => {
+                return (link.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
+            };
+        },
+        handleSelect(item) {
+            console.log(item);
+        }
+    },
+    mounted() {
+        this.links = this.loadAll();
+    }
 
 }
 </script>

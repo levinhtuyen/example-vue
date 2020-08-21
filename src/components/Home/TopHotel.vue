@@ -1,40 +1,44 @@
 <template>
 <div>
-    <div class="col-12 " style="margin:0;padding:10px 0">
-        <div class="col-8 float-left" style="margin:0;padding:0">
-            <p class="style-color-xanh font-size-12">TOP KHÁCH SẠN ĐƯỢC BÌNH CHỌN</p>
+    <b-row>
+        <div class="col-12 " style="margin:0;padding:10px 0">
+            <div class="col-8 float-left" style="margin:0;padding:0">
+                <p class="style-color-xanh font-size-12">TOP KHÁCH SẠN ĐƯỢC BÌNH CHỌN</p>
+            </div>
+            <div class="col-4 float-left font-size-12" style="text-align:right">
+                <router-link tag="a" :to="{ name: 'Category', params: { Sn: 1 }}">Xem tất cả</router-link>
+            </div>
         </div>
-        <div class="col-4 float-left font-size-12" style="text-align:right"><router-link tag="a"  :to="{ name: 'Category', params: { Sn: 1 }}">Xem tất cả</router-link></div>
-    </div>
-    <div class="col-12" style="margin:0;padding:0">
-        <carousel :navigationEnabled="false" paginationColor="#7e7e7e" :perPageCustom="[[320, 1],[480, 1], [768, 1], [1024, 2]]">
-            <slide>
-                <div class="col-11">
-                    <div class="item">
-                        <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                        <img src="https://go2joy.vn/images/hotel/viendong.jpg" alt="">
+        <div class="col-12" style="margin:0;padding:0">
+            <carousel :navigationEnabled="false" paginationColor="#7e7e7e" :perPageCustom="[[320, 1],[480, 1], [768, 1], [1024, 2]]">
+                <slide>
+                    <div class="col-11">
+                        <div class="item">
+                            <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
+                            <img src="https://go2joy.vn/images/hotel/viendong.jpg" alt="">
+                        </div>
                     </div>
-                </div>
-            </slide>
-            <slide>
-                <div class="col-11">
-                    <div class="item">
-                        <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                        <img src="https://go2joy.vn/images/hotel/bonitagrand.jpg" alt="">
+                </slide>
+                <slide>
+                    <div class="col-11">
+                        <div class="item">
+                            <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
+                            <img src="https://go2joy.vn/images/hotel/bonitagrand.jpg" alt="">
+                        </div>
                     </div>
-                </div>
-            </slide>
-            <slide>
-                <div class="col-11">
-                    <div class="item">
-                        <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                        <img src="https://go2joy.vn/images/hotel/bonitatht.jpg" alt="">
+                </slide>
+                <slide>
+                    <div class="col-11">
+                        <div class="item">
+                            <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
+                            <img src="https://go2joy.vn/images/hotel/bonitatht.jpg" alt="">
+                        </div>
                     </div>
-                </div>
-            </slide>
+                </slide>
 
-        </carousel>
-    </div>
+            </carousel>
+        </div>
+    </b-row>
 </div>
 </template>
 
