@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container">
 
     <div class="col-12 float-left padding-0-5-10">
         <div class="col-6 style-color-xanh font-size-12">GO2JOY ĐỀ XUẤT</div>

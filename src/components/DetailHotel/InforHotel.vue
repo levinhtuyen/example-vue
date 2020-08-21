@@ -1,5 +1,5 @@
 <template>
-<div class="padding-top1">
+<div class="container padding-top1">
     <div class="border-bottom ">
         <p class="style-bold font-size-title ">LYN MINI HOTEL</p>
         <div class="col-7">
