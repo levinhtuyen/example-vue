@@ -1,12 +1,12 @@
 <template>
 <div class="container">
-    <MenuSearch />
+    <Header />
     <ListRoom />
 </div>
 </template>
 
 <script>
-import MenuSearch from "./MenuSearch.vue";
+import Header from "./../Home/Header.vue";
 import ListRoom from "./ListRoom.vue";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -14,7 +14,7 @@ export default {
     path: '/category',
     name: "Category",
     components: {
-       MenuSearch,
+       Header,
        ListRoom
     },
     data() {
