@@ -45,12 +45,12 @@ export default {
         }
     },
     methods: {
-           
-            childrenSelectUser(dataHotel) {
-                console.log(dataHotel)
-                this.userSelectedFromChild = dataHotel
-            }
+
+        childrenSelectUser(dataHotel) {
+            console.log(dataHotel)
+            this.userSelectedFromChild = dataHotel
         }
+    }
 
 };
 </script>

@@ -51,7 +51,9 @@ export default {
 .dialog-leave-to {
   opacity: 0;
 }
-
+.el-input__inner{
+    height: 30px;
+}
 .dialog-enter-active .dialog-container,
 .dialog-leave-active .dialog-container {
   transition: transform 0.4s;

@@ -57,7 +57,9 @@ a {
     display: none !important;
 }
 
-
+.el-input__inner{
+    height: 30px !important;
+}
 .float-left {
     float: left;
 }

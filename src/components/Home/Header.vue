@@ -20,16 +20,18 @@
         </a>
 
         <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" @click="show = !show" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        </button> -->
+        <button type="button" @click="show = !show" class="btn style-mar-pad-0 navbar-toggler" data-toggle="modal" data-target="#myModal">
             <img src="./../../assets/search.png" class="search" alt="">
         </button>
-
         <!-- Collapsible content -->
         <div class="collapse navbar-collapse" id="basicExampleNav">
 
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
-            
+
                 <!-- <li class="nav-item">
                     <router-link :to="{ name: 'userList'}">User List</router-link>
                 </li>
@@ -53,26 +55,33 @@
             <form class="form-inline">
                 <div class="md-form my-0">
                     <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" placeholder="Nhập từ khóa" @select="handleSelect"></el-autocomplete>
-                    <img src="./../../assets/search.png" style="width:50px;" alt="">
+                    <button type="button" @click="show = !show" class="btn" data-toggle="modal" data-target="#myModal">
+                        <img src="./../../assets/search.png" class="search" alt="">
+                    </button>
+                     <AlertDialog :active.sync="show" title="Hello world" content="Hello world"/>
                 </div>
             </form>
         </div>
         <!-- Collapsible content -->
-  
+
     </nav>
     <!--/.Navbar-->
 </div>
 </template>
 
 <script>
-
+import AlertDialog from "./AlertDialog.vue";
 export default {
     name: 'Header',
-  data() {
+     components: {
+    AlertDialog
+  },
+    data() {
         return {
             links: [],
             state: '',
-            timeout: null
+            timeout: null,
+             show: false,
         };
     },
     methods: {
@@ -139,28 +148,30 @@ export default {
 }
 
 .logo {
-    width: 100px;
+    width: 60px;
 }
 
 .search {
-    width: 90px;
+    width: 50px;
 }
-.md-form img{
+
+.md-form img {
     margin: 0 20px
 }
+
 @media only screen and (max-width: 480px) {
     .logo {
-        width: 40px;
+        width: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 600px) {
     .logo {
-        width: 50px;
+        width: 40px;
     }
 
     .search {
-        width: 50px;
+        width: 40px;
     }
 }
 
