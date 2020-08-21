@@ -1,40 +1,42 @@
 <template>
 <div>
-    <div class="col-12 " style="margin:0;padding:10px 0">
-        <div class="col-8 float-left" style="margin:0;padding:0">
-            <p class="style-color-xanh font-size-12">CHƯƠNG TRÌNH KHUYẾN MÃI</p>
+    <b-row>
+        <div class="col-12 " style="margin:0;padding:10px 0">
+            <div class="col-8 float-left" style="margin:0;padding:0">
+                <p class="style-color-xanh font-size-12">CHƯƠNG TRÌNH KHUYẾN MÃI</p>
+            </div>
+            <div class="col-4 float-left font-size-12" style="text-align:right"><router-link tag="a"  :to="{ name: 'Category', params: { Sn: 1 }}">Xem tất cả</router-link></div>
         </div>
-        <div class="col-4 float-left font-size-12" style="text-align:right"><a href="#">Xem tất cả</a></div>
-    </div>
-    <div class="col-12" style="margin:0;padding:0">
-        <carousel :navigationEnabled="false" paginationColor="#7e7e7e" :perPageCustom="[[320, 1],[480, 1], [768, 1], [1024, 2]]">
-            <slide>
-                <div class="col-11">
-                    <div class="item">
-                        <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                        <img src="https://go2joy.vn/images/banner-stamp.jpg" alt="">
+        <div class="col-12" style="margin:0;padding:0">
+            <carousel :navigationEnabled="false" paginationColor="#7e7e7e" :perPageCustom="[[320, 1],[480, 1], [768, 1], [1024, 2]]">
+                <slide>
+                    <div class="col-11">
+                        <div class="item">
+                            <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
+                            <img src="https://go2joy.vn/images/banner-stamp.jpg" alt="">
+                        </div>
                     </div>
-                </div>
-            </slide>
-            <slide>
-                <div class="col-11">
-                    <div class="item">
-                        <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                        <img src="https://go2joy.vn/images/DangKyTaiKhoanNgang.png" alt="">
+                </slide>
+                <slide>
+                    <div class="col-11">
+                        <div class="item">
+                            <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
+                            <img src="https://go2joy.vn/images/DangKyTaiKhoanNgang.png" alt="">
+                        </div>
                     </div>
-                </div>
-            </slide>
-            <slide>
-                <div class="col-11">
-                    <div class="item">
-                        <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                        <img src="https://go2joy.vn/images/InviteFriend.png" alt="">
+                </slide>
+                <slide>
+                    <div class="col-11">
+                        <div class="item">
+                            <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
+                            <img src="https://go2joy.vn/images/InviteFriend.png" alt="">
+                        </div>
                     </div>
-                </div>
-            </slide>
+                </slide>
 
-        </carousel>
-    </div>
+            </carousel>
+        </div>
+    </b-row>
 </div>
 </template>
 

@@ -8,7 +8,7 @@
 
 <script>
 import Home from "./components/Home/Home.vue"
-
+import Category from '@/components/Category/Category.vue'
 export default {
   name: 'App',
    components: {

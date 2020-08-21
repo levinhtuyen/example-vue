@@ -1,11 +1,13 @@
 <template>
 <div class="container">
-
+    <b-row>
     <p class="style-bold font-size-12">HÔM NAY BẠN CẦN GÌ ?</p>
 
     <div class="col-12 float-left padding-0-5-10">
         <div class="col-6 style-color-xanh font-size-12">GIẢM SỐC</div>
-        <div class="col-6 style-text-align-right font-size-12"><a href="#">Xem tất cả</a></div>
+        <div class="col-6 style-text-align-right font-size-12">
+             <router-link tag="a"  :to="{ name: 'Category', params: { Sn: 1 }}">Xem tất cả</router-link>
+            </div>
     </div>
     <div class="col-12" style="margin-bottom:6px">
         <carousel 
@@ -245,7 +247,7 @@
 
         </carousel>
     </div>
-
+</b-row>
 </div>
 </template>
 
