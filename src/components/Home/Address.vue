@@ -3,12 +3,18 @@
 
     <b-row>
         <div class="col-5 style-can-giua padd-top-botton-10">
+
             <p class="style-address  style-can-giua">CHỌN ĐỊA ĐIỂM</p>
         </div>
         <div class="col-7 style-right padd-top-botton-10">
-            <button type="button" class="btn style-mar-pad-0 " data-toggle="modal" data-target="#myModal"><i style="color:#ff6400" class="fas fa-map-marker-alt"></i>
+            <button type="button" @click="show = !show" class="btn style-mar-pad-0 " data-toggle="modal" data-target="#myModal"><i style="color:#ff6400" class="fas fa-map-marker-alt"></i>
                 Thành phố Hồ Chí Minh <i style="color:#000" class="fas fa-angle-down"></i>
             </button>
+        
+             <AlertDialog :active.sync="show" title="Hello world" content="Hello world"/>
+    
+
+          
         </div>
         <!-- <div class="col-3">
             <div class="hotel-item ">
@@ -49,9 +55,18 @@
 </template>
 
 <script>
+import AlertDialog from "./AlertDialog.vue";
 export default {
     name: 'Address',
+    components: {
+        AlertDialog
+    },
+    data() {
+    return {
+      show: false,
 
+    };
+  }
 }
 </script>
 
@@ -122,6 +137,7 @@ p {
     height: 205px;
     width: 205px;
 }
+
 .hotel-item1 img {
     display: block;
     overflow: hidden;
@@ -138,6 +154,7 @@ p {
 .hotel-item p {
     text-align: center;
 }
+
 .hotel-item1 p {
     text-align: center;
 }
@@ -152,6 +169,7 @@ p {
         width: 50px;
         height: 50px;
     }
+
     .hotel-item1 img {
         width: 50px;
         height: 50px;
@@ -182,6 +200,7 @@ p {
         width: 150px;
         height: 150px;
     }
+
     .hotel-item1 img {
         width: 150px;
         height: 150px;
