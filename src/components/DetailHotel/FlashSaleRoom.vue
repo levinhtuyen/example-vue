@@ -67,7 +67,6 @@ export default {
            
         }
     },
-
     async created() {
         axios.defaults.headers = {
             'deviceid': 'device_for_web',
@@ -75,17 +74,9 @@ export default {
         let {
             data
         } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
-
         let data1 = data.detailCollectionList;
-        //console.log('data1', data1);
-        //console.log('data2 ', data2);
-        // Lấy Obj Hotel giá sốc
         let HotHotel = (data1[1]);
-     //  console.log('HotHotel', HotHotel);
-        // Lấy list Hotel gia sốc
         this.data = HotHotel.hotelFormList
-          
-       //console.log('ds Hot Hotel this.data : ', this.data);
     },
 
 }
@@ -106,7 +97,7 @@ export default {
 
     .style-btn-dat-ngay {
         background: #eeeeee;
-        width: 100px;
+        width: 80px;
         font-size: 10px;
         border-radius: 5px;
         border:none;
