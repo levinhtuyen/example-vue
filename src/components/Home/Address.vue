@@ -21,7 +21,7 @@
         <div class="col-4">
             <div class="hotel-item1">
                 <div class="style-giua-img">
-                    <img class="img-lazy style-res" src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg">
+                    <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/NOVIA-HOTEL.jpg">
                 </div>
                 <p class="style-p padd-top-botton-10">Nơi đã tìm</p>
             </div>
@@ -29,7 +29,7 @@
         <div class="col-4">
             <div class="hotel-item1">
                 <div class="style-giua-img">
-                    <img class="img-lazy style-res" src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg">
+                    <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/A-IN-HOTEL-GLAMOUR-HOTEL.jpg">
                 </div>
                 <p class="style-p padd-top-botton-10">Du lịch</p>
             </div>
@@ -37,7 +37,7 @@
         <div class="col-4">
             <div class="hotel-item1">
                 <div class="style-giua-img">
-                    <img class="img-lazy style-res" src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg">
+                    <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/EVA-ADAM-HOTEL.jpg">
                 </div>
                 <p class="style-p padd-top-botton-10">Tình yêu</p>
             </div>

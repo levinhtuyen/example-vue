@@ -11,26 +11,103 @@
 								:navigationEnabled="false"
 								paginationColor="#7e7e7e"
 								paginationPosition="bottom" 
+                                :autoplay="true" :interval="5000"
                                 :perPageCustom="[[480, 1], [768, 2], [1024, 2]]"> 
-            <slide v-for="(data2, index) in data" :key="index" class="padd-right-15">
+            <slide>
                 <div class="col-11 style-box-shadow">
                     <div class="col-4" style="float:left">
                         <div class="hotel-item">
-                            <!-- <img class="img-lazy" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data2.imagePath"> -->
-                             <img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt="">
+                            <!-- <img class="img-lazy" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath"> -->
+                            <!-- <img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""> -->
+                            <router-link @click="chooseSpecitalHotel(dataHotel)" tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/maivila-svh-hotel.jpg" alt=""></router-link>
                         </div>
                     </div>
                     <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">{{ data2.name }}</p>
-                        <p class="padding-p"> <a class="style-back-cam font-size-title"><i class="fas fa-star"></i> <span> {{ data2.averageMark }} ({{ data2.totalFavorite }}) </span></a></p>
+                        <p class="style-bold font-size-title">ADAMAS LUXURY</p>
+                        <p class="padding-p"> <a @click="chooseSpecitalHotel(dataHotel)" class="style-back-cam font-size-title"><i class="fas fa-star"></i> <span> 4.6 (65) </span></a></p>
                         <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> {{ data2.districtName }} </span></a></p>
+                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 6 </span></a></p>
                         <div class="float-right style-border-cam">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-cam"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                            <p class="style-margin-1 font-size-title"><a class="style-back-cam"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 4 phòng</span></p>
                         </div>
                         <br>
                         <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">{{ data2.lowestPriceOvernight }}</span><span class="style-gia-giam font-size-title">{{ data2.lowestOneDay }}</span></p>
+                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">320.000</span><span class="style-gia-giam font-size-title">250.000</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </slide>
+            <slide>
+                <div class="col-11 style-box-shadow">
+                    <div class="col-4" style="float:left">
+                        <div class="hotel-item">
+                            <!-- <img class="img-lazy" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath"> -->
+                            <!-- <img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""> -->
+                            <router-link @click="chooseSpecitalHotel(dataHotel)" tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/busan-hotel.jpg" alt=""></router-link>
+                        </div>
+                    </div>
+                    <div class="col-8 style-padd">
+                        <p class="style-bold font-size-title">BUSAN HOTEL</p>
+                        <p class="padding-p"> <a @click="chooseSpecitalHotel(dataHotel)" class="style-back-cam font-size-title"><i class="fas fa-star"></i> <span> 4.6 (65) </span></a></p>
+                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 6 </span></a></p>
+                        <div class="float-right style-border-cam">
+                            <p class="style-margin-1 font-size-title"><a class="style-back-cam"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 4 phòng</span></p>
+                        </div>
+                        <br>
+                        <div class="float-right style-padd-10">
+                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">320.000</span><span class="style-gia-giam font-size-title">250.000</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </slide>
+            <slide>
+                <div class="col-11 style-box-shadow">
+                    <div class="col-4" style="float:left">
+                        <div class="hotel-item">
+                            <!-- <img class="img-lazy" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath"> -->
+                            <!-- <img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""> -->
+                            <router-link @click="chooseSpecitalHotel(dataHotel)" tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/busan-hotel.jpg" alt=""></router-link>
+                        </div>
+                    </div>
+                    <div class="col-8 style-padd">
+                        <p class="style-bold font-size-title">MỸ KHÁNH HOTEL</p>
+                        <p class="padding-p"> <a @click="chooseSpecitalHotel(dataHotel)" class="style-back-cam font-size-title"><i class="fas fa-star"></i> <span> 4.6 (65) </span></a></p>
+                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 6 </span></a></p>
+                        <div class="float-right style-border-cam">
+                            <p class="style-margin-1 font-size-title"><a class="style-back-cam"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 4 phòng</span></p>
+                        </div>
+                        <br>
+                        <div class="float-right style-padd-10">
+                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">320.000</span><span class="style-gia-giam font-size-title">250.000</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </slide>
+            <slide>
+                <div class="col-11 style-box-shadow">
+                    <div class="col-4" style="float:left">
+                        <div class="hotel-item">
+                            <!-- <img class="img-lazy" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath"> -->
+                            <!-- <img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""> -->
+                            <router-link @click="chooseSpecitalHotel(dataHotel)" tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/mykhanh-hotel.png" alt=""></router-link>
+                        </div>
+                    </div>
+                    <div class="col-8 style-padd">
+                        <p class="style-bold font-size-title">Mai Villa Sư Vạn Hạnh</p>
+                        <p class="padding-p"> <a @click="chooseSpecitalHotel(dataHotel)" class="style-back-cam font-size-title"><i class="fas fa-star"></i> <span> 4.6 (65) </span></a></p>
+                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 6 </span></a></p>
+                        <div class="float-right style-border-cam">
+                            <p class="style-margin-1 font-size-title"><a class="style-back-cam"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 4 phòng</span></p>
+                        </div>
+                        <br>
+                        <div class="float-right style-padd-10">
+                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">320.000</span><span class="style-gia-giam font-size-title">250.000</span></p>
                         </div>
                     </div>
 

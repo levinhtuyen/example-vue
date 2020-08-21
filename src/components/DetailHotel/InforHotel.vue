@@ -1,7 +1,7 @@
 <template>
-<div class="container">
-    <div class="border-bottom">
-        <p class="style-bold font-size-title">LYN MINI HOTEL</p>
+<div class="padding-top1">
+    <div class="border-bottom ">
+        <p class="style-bold font-size-title ">LYN MINI HOTEL</p>
         <div class="col-7">
             <p class="padding-p">
                 <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.4 </span></a>
@@ -54,7 +54,9 @@ export default {
 .font-size-title {
     font-size: 16px;
 }
-
+.padding-top1{
+    padding-top: 50px;
+}
 .style-btn-comment {
     background: #f0b67c;
     width: 200px;
@@ -83,6 +85,9 @@ export default {
     .border-bottom {
         padding-bottom: 30px;
     }
+    .padding-top1{
+    padding-top: 0px;
+}
 }
 
 @media only screen and (max-width: 768px) and (min-width: 600px) {

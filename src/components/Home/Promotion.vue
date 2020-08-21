@@ -8,11 +8,28 @@
     </div>
     <div class="col-12" style="margin:0;padding:0">
         <carousel :navigationEnabled="false" paginationColor="#7e7e7e" :perPageCustom="[[320, 1],[480, 1], [768, 1], [1024, 2]]">
-            <slide v-for="(data4, index) in data" :key="index">
-                
-                <div class="item">
-                    <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                    <img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/banner/11e3ab4a2bdeef74c177cc38472423fe.png" alt="">
+            <slide>
+                <div class="col-11">
+                    <div class="item">
+                        <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
+                        <img src="https://go2joy.vn/images/banner-stamp.jpg" alt="">
+                    </div>
+                </div>
+            </slide>
+            <slide>
+                <div class="col-11">
+                    <div class="item">
+                        <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
+                        <img src="https://go2joy.vn/images/DangKyTaiKhoanNgang.png" alt="">
+                    </div>
+                </div>
+            </slide>
+            <slide>
+                <div class="col-11">
+                    <div class="item">
+                        <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
+                        <img src="https://go2joy.vn/images/InviteFriend.png" alt="">
+                    </div>
                 </div>
             </slide>
 
@@ -108,10 +125,12 @@ a:hover {
     border-radius: 5px;
 
 }
+
 .item {
     width: 100%;
-   
+
 }
+
 .style-color-xanh {
     color: #1d2dea;
 }
@@ -158,7 +177,8 @@ a:hover {
         height: 145px;
 
     }
-    .font-size-12{
+
+    .font-size-12 {
         font-size: 12px;
     }
 }

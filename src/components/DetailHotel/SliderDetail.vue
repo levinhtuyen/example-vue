@@ -1,5 +1,5 @@
 <template>
-<div>
+<div >
     <carousel :centerMode="false" :perPage="1" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
         <slide v-for="(data0, index) in data" :key="index">
             <div class="col-12">
@@ -80,12 +80,13 @@ export default {
     color: #ffffff;
     opacity: 0.9;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 0px;
     text-align: center;
 }
 
 .style-slider {
-    max-height: 770px;
+    max-height: 750px;
+    border-radius: 0px;
 }
 
 @media only screen and (max-width: 350px) and (min-width: 300px) {
@@ -96,7 +97,7 @@ export default {
     .style-count-image {
         width: 50px;
         margin: 5px;
-        border-radius: 10px;
+        border-radius: 0px;
         font-size: 12px;
     }
 
@@ -113,7 +114,7 @@ export default {
     .style-count-image {
         width: 50px;
         margin: 5px;
-        border-radius: 10px;
+        border-radius: 0px;
         font-size: 12px;
     }
 
@@ -130,7 +131,23 @@ export default {
     .style-count-image {
         width: 50px;
         margin: 5px;
-        border-radius: 10px;
+        border-radius: 0px;
+        font-size: 12px;
+    }
+
+    .whatever {
+        height: 50px;
+        top: -50px;
+    }
+}
+@media only screen and (max-width: 2560) and (min-width: 1920px) {
+    .style-slider {
+        max-height: 310px;
+    }
+    .style-count-image {
+        width: 50px;
+        margin: 5px;
+        border-radius: 0px;
         font-size: 12px;
     }
 

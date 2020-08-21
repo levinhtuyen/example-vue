@@ -1,14 +1,14 @@
 <template>
-<div>
-    <carousel :centerMode="false" :perPage="1" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
-        <slide>
+<div class="container">
+    <carousel :centerMode="false" :autoplay="true" :interval="3000" :perPage="1"  :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
+        <slide class="padd-l-r-10">
 
             <div class="col-12">
                 <div class="item style-slider">
                     <img src="https://go2joy.vn/images/banner_thanh_lam_min.png" alt="image" /> </div>
             </div>
         </slide>
-        <slide>
+        <slide class="padd-l-r-10">
             <div class="col-12">
                 <div class="item style-slider">
                     <img src="https://go2joy.vn/images/banner_dang_ky_tai_khoan_min.png" alt="image" /> </div>
@@ -21,7 +21,7 @@
                     <img src="https://go2joy.vn/images/banner_thanh_lam_min.png" alt="image" /> </div>
             </div>
         </slide>
-        <slide>
+        <slide class="padd-l-r-10">
             <div class="col-12">
                 <div class="item style-slider">
                     <img src="https://go2joy.vn/images/banner_dang_ky_tai_khoan_min.png" alt="image" /> </div>
@@ -69,5 +69,7 @@ export default {
 </script>
 
 <style scoped>
-
+.padd-l-r-10{
+    padding: 0 10px 0 10px;
+}
 </style>
