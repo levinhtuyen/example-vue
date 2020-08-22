@@ -6,6 +6,7 @@ import Vuex from 'vuex'
 import router from './router'
 import { BootstrapVue } from 'bootstrap-vue'
 import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import VueCarousel from 'vue-carousel';
 import { store } from './store/store'
 export const eventBus = new Vue();

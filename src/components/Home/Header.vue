@@ -67,6 +67,26 @@
         <el-dialog title="Tạo bài viết" :visible.sync="dialogFormVisible">
             <el-form :model="form">
                 <el-form ref="form" :model="form" label-width="120px">
+                    <el-upload action="#" list-type="picture-card" :auto-upload="false">
+                        <i slot="default" class="el-icon-plus"></i>
+                        <div slot="file" slot-scope="{file}">
+                            <img class="el-upload-list__item-thumbnail" :src="file.url" alt="">
+                            <span class="el-upload-list__item-actions">
+                                <span class="el-upload-list__item-preview" @click="handlePictureCardPreview(file)">
+                                    <i class="el-icon-zoom-in"></i>
+                                </span>
+                                <span v-if="!disabled" class="el-upload-list__item-delete" @click="handleDownload(file)">
+                                    <i class="el-icon-download"></i>
+                                </span>
+                                <span v-if="!disabled" class="el-upload-list__item-delete" @click="handleRemove(file)">
+                                    <i class="el-icon-delete"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </el-upload>
+                    <el-dialog :visible.sync="dialogVisible">
+                        <img width="100%" :src="dialogImageUrl" alt="">
+                    </el-dialog>
                     <el-form-item label="Tên bài viết">
                         <el-input v-model="form.name"></el-input>
                     </el-form-item>
@@ -147,6 +167,9 @@ export default {
                 desc: ''
             },
             formLabelWidth: '120px',
+            dialogImageUrl: '',
+            dialogVisible: false,
+            disabled: false
 
         };
     },
@@ -201,6 +224,16 @@ export default {
         },
         onSubmit() {
             console.log('Kết thúc!');
+        },
+        handleRemove(file) {
+            console.log(file);
+        },
+        handlePictureCardPreview(file) {
+            this.dialogImageUrl = file.url;
+            this.dialogVisible = true;
+        },
+        handleDownload(file) {
+            console.log(file);
         }
     },
     mounted() {

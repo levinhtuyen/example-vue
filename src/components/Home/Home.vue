@@ -9,6 +9,7 @@
     <HotelNew />
     <Promotion />
     <TopHotel />
+    
 </div>
 </template>
 

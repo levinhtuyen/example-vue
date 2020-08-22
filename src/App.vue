@@ -1,32 +1,38 @@
 <template>
-  <div id="app">
+<div id="app" ref="scrollTarget" class="test-scroll" style=" overflow: auto">
     <!-- <img src="./assets/logo.png"> -->
     <!-- <Home /> -->
-    <router-view/>
-  </div>
+    <router-view />
+
+    <el-backtop >
+        <span><i class="fas fa-angle-up fa-2x style-back-to-top"></i></span>
+    </el-backtop>
+
+</div>
 </template>
 
 <script>
 import Home from "./components/Home/Home.vue"
 import Category from '@/components/Category/Category.vue'
 export default {
-  name: 'App',
-   components: {
+    name: 'App',
+    components: {
         Home,
-        
+
     },
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
-  color: #2c3e50;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* text-align: center; */
+    color: #2c3e50;
 
 }
+
 h1,
 h2,
 h3,
@@ -51,17 +57,28 @@ a {
 .col-12 {
     float: left !important;
 }
-.title-color{
-    color:#ff6400;
+
+.title-color {
+    color: #ff6400;
+}
+.style-back-to-top{
+  color: #fff;
+}
+.el-backtop{
+  background-color: #ff6400;
+}
+.el-backtop:hover {
+ transform: scale(1.1);
 }
 .VueCarousel-pagination {
     position: absolute;
     display: none !important;
 }
 
-.el-input__inner{
+.el-input__inner {
     height: 30px !important;
 }
+
 .float-left {
     float: left;
 }
