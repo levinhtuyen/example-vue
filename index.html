@@ -19,32 +19,33 @@
     rel="stylesheet"
     href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
   />
-   <style>
-        .preloader 
-            {
-                position: fixed;
-                left: 0px;
-                top: 0px;
-                width: 100%;
-                height: 100%;
-                z-index: 9999;
-                background: url('https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif') 50% 50% no-repeat rgb(249,249,249);
-                opacity: .8;
-            }
-    </style>
+  <style>
+    .preloader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url("https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif")
+        50% 50% no-repeat rgb(249, 249, 249);
+      opacity: 0.8;
+    }
+
+  </style>
 
   <body>
     <noscript>
       <!-- <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong> -->
     </noscript>
- <!-- <div id="preloaders" class="preloader"></div> -->
+
+    <div id="preloaders" class="preloader"></div>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
 </html>
 
-
- <!-- import JavaScript -->
+<!-- import JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 <!-- <script async src="//jsfiddle.net/quinnssense/bojn4dz4/embed/js,result/"></script> -->
@@ -64,4 +65,7 @@
       document.getElementById("navbar").style.position = "unset";
     }
   }
+  $(window).on('load', function() {
+    $(".preloader").fadeOut("slow");
+  });
 </script>
