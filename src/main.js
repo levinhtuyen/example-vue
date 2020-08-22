@@ -17,13 +17,13 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(Vuex)
 Vue.use(ElementUI);
-Vue.use(VueLazyload)
-Vue.use(VueLazyload, {
-  preLoad: 1.3,
-  error: 'https://screenshotlayer.com/images/assets/placeholder.png',
-  loading: 'https://screenshotlayer.com/images/assets/placeholder.png',
-  attempt: 2
-})
+// Vue.use(VueLazyload)
+// Vue.use(VueLazyload, {
+//   preLoad: 1.3,
+//   error: 'https://screenshotlayer.com/images/assets/placeholder.png',
+//   loading: 'https://screenshotlayer.com/images/assets/placeholder.png',
+//   attempt: 1
+// })
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
