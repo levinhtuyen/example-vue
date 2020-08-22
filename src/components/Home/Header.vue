@@ -54,15 +54,68 @@
 
             <form class="form-inline">
                 <div class="md-form my-0">
+                    <el-button type="text" @click="dialogFormVisible = true">Form</el-button>
                     <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" placeholder="Nhập từ khóa" @select="handleSelect"></el-autocomplete>
                     <button type="button" @click="show = !show" class="btn" data-toggle="modal" data-target="#myModal">
                         <img src="./../../assets/search.png" class="search" alt="">
                     </button>
-                     <AlertDialog :active.sync="show" title="Hello world" content="Hello world"/>
+                    <AlertDialog :active.sync="show" title="Hello world" content="Hello world" />
                 </div>
             </form>
         </div>
         <!-- Collapsible content -->
+        <el-dialog title="Tạo bài viết" :visible.sync="dialogFormVisible">
+            <el-form :model="form">
+                <el-form ref="form" :model="form" label-width="120px">
+                    <el-form-item label="Tên bài viết">
+                        <el-input v-model="form.name"></el-input>
+                    </el-form-item>
+                    <el-form-item label="Chọn danh mục">
+                        <el-select v-model="form.region" placeholder="--- Chọn ---">
+                            <el-option label="Danh mục 1" value="danhmuc1"></el-option>
+                            <el-option label="Danh mục 2" value="danhmuc2"></el-option>
+                        </el-select>
+                    </el-form-item>
+                    <el-form-item label="Chọn ngày">
+                        <el-col :span="11">
+                            <el-date-picker type="date" placeholder="Từ ngày" v-model="form.date1" style="width: 100%;"></el-date-picker>
+                        </el-col>
+                        <el-col class="line" :span="2">-</el-col>
+                        <el-col :span="11">
+                            <el-time-picker placeholder="Đến ngày" v-model="form.date2" style="width: 100%;"></el-time-picker>
+                        </el-col>
+                    </el-form-item>
+                    <el-form-item label="Ẩn tin">
+                        <el-switch v-model="form.delivery"></el-switch>
+                    </el-form-item>
+                    <el-form-item label="Chọn tag">
+                        <el-checkbox-group v-model="form.type">
+                            <el-checkbox label="Hotel" name="type"></el-checkbox>
+                            <el-checkbox label="Coupon" name="type"></el-checkbox>
+                            <el-checkbox label="Review" name="type"></el-checkbox>
+                            <el-checkbox label="Blog" name="type"></el-checkbox>
+                        </el-checkbox-group>
+                    </el-form-item>
+                    <!-- <el-form-item label="Resources">
+                        <el-radio-group v-model="form.resource">
+                            <el-radio label="Sponsor"></el-radio>
+                            <el-radio label="Venue"></el-radio>
+                        </el-radio-group>
+                    </el-form-item> -->
+                    <el-form-item label="Activity form">
+                        <el-input type="textarea" v-model="form.desc"></el-input>
+                    </el-form-item>
+                    <el-form-item>
+                        <el-button type="primary" @click="onSubmit">Tạo</el-button>
+                        <el-button>Hủy</el-button>
+                    </el-form-item>
+                </el-form>
+            </el-form>
+            <span slot="footer" class="dialog-footer">
+                <!-- <el-button @click="dialogFormVisible = false">Cancel</el-button> -->
+                <el-button type="primary" @click="dialogFormVisible = false">Kết thúc</el-button>
+            </span>
+        </el-dialog>
 
     </nav>
     <!--/.Navbar-->
@@ -73,15 +126,28 @@
 import AlertDialog from "./AlertDialog.vue";
 export default {
     name: 'Header',
-     components: {
-    AlertDialog
-  },
+    components: {
+        AlertDialog
+    },
     data() {
         return {
             links: [],
             state: '',
             timeout: null,
-             show: false,
+            show: false,
+            dialogFormVisible: false,
+            form: {
+                name: '',
+                region: '',
+                date1: '',
+                date2: '',
+                delivery: false,
+                type: [],
+                resource: '',
+                desc: ''
+            },
+            formLabelWidth: '120px',
+
         };
     },
     methods: {
@@ -132,6 +198,9 @@ export default {
         },
         handleSelect(item) {
             console.log(item);
+        },
+        onSubmit() {
+            console.log('Kết thúc!');
         }
     },
     mounted() {

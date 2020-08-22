@@ -51,7 +51,9 @@ a {
 .col-12 {
     float: left !important;
 }
-
+.title-color{
+    color:#ff6400;
+}
 .VueCarousel-pagination {
     position: absolute;
     display: none !important;
