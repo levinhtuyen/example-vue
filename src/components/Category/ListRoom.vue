@@ -2,14 +2,14 @@
 <div class="container">
     <b-row>
         <div class="col-12 " style="margin-bottom:6px">
-            <div class="demo-image__lazy" v-for="(dataHotel, index) in list" :key="index">
+            <div class="demo-image__lazy" v-for="(dataHotel, index) in roomData" :key="index">
                 <div class="col-6 float-left">
                     <div class="col-12 style-box-shadow  margin-15-tb">
 
                         <div class="col-12 demo-image__error">
                             <div class="hotel-item">
                                 <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}">
-                                    <el-image  :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath">
+                                    <el-image :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath">
                                         <div slot="error" class="image-slot">
                                             <img src="https://screenshotlayer.com/images/assets/placeholder.png" alt="">
                                         </div>
@@ -47,8 +47,7 @@
 
         </div>
         <div class="col-12 canh-giua">
-            <el-pagination v-show="total>0" :page.sync="data.page" :limit.sync="data.limit"
-      @current-change="getList" @pagination="getList" :page-size="data.limit" :pager-count="11" layout="prev, pager, next" :total="total">
+            <el-pagination v-show="total>0" :page.sync="data.page" :limit.sync="data.limit" @current-change="getList" @pagination="getList" :page-size="data.limit" :pager-count="11" layout="prev, pager, next" :total="total">
             </el-pagination>
         </div>
     </b-row>
@@ -93,7 +92,8 @@ export default {
         }
     },
     created() {
-        this.getList();
+        // this.getList();
+        console.log('this.store', this.$store)
     },
     methods: {
         async getList() {
@@ -104,7 +104,7 @@ export default {
                 data
             } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
             let data1 = data.detailCollectionList;
-          
+
             let HotHotel = data1[1];
             console.log('data 1 : ', data1)
             let dataGet = HotHotel.hotelFormList
@@ -117,12 +117,18 @@ export default {
             this.newList = this.oldList.slice();
             this.listLoading = false;
         },
-         handleFilter() {
-      this.data.page = 1;
-      this.getList();
+        handleFilter() {
+            this.data.page = 1;
+            this.getList();
+        },
     },
-    }
-    
+    computed: {
+        roomData() {
+            console.log('this.$store.state.dataRoom',this.$store.state.dataRoom)
+            return this.$store.state.dataRoom
+        }
+    },
+
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->

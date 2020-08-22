@@ -5,6 +5,7 @@ import HelloWorld from "@/components/HelloWorld";
 import Home from "@/components/Home/Home.vue";
 import DetailHotel from "@/components/DetailHotel/DetailHotel.vue";
 import Category from "@/components/Category/Category";
+import Specital from "@/components/Home/Specital";
 Vue.use(Router);
 Vue.use(Vuex)
 export default new Router({

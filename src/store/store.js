@@ -1,9 +1,22 @@
 import Vue from "vue";
-import Vuex from 'vuex';
+import Vuex from "vuex";
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
-    getters: {
-        hotdeal: state => {}
+
+  state: {
+    dataRoom: [],
+  },
+  // return ...state.dataRoom
+  mutations: {
+    setDataRoom(state, data) {
+      state.dataRoom = data;
     }
-})
+  },
+  actions: {
+    updateDataRoom(context, data) {
+        console.log(context, data)
+      context.commit("setDataRoom", data.data);
+    }
+  }
+});
