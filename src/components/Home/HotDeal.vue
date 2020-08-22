@@ -6,7 +6,7 @@
     <div class="col-12 float-left padding-0-5-10">
         <div class="col-6 style-color-xanh font-size-12">GIẢM SỐC</div>
         <div class="col-6 style-text-align-right font-size-12">
-             <router-link tag="a"  :to="{ name: 'Category', params: { Sn: 1 }}">Xem tất cả</router-link>
+             <span style="cursor: pointer;" @click="chooseSpecitalHotel(dataHotel)">Xem tất cả</span>
             </div>
     </div>
     <div class="col-12" style="margin-bottom:6px">
@@ -284,6 +284,22 @@ export default {
         let dsHotHotel = HotHotel.hotelFormList
         this.data = dsHotHotel
     },
+     methods: {
+        chooseSpecitalHotel(dataHotel) {
+            this.$emit('dsHotel', dataHotel)
+            console.log('1234')
+            this.$store.dispatch({
+                type: 'updateDataRoom',
+                data: this.data
+            });
+            this.$router.push({
+                name: 'Category',
+                params: {
+                    Sn: 0
+                }
+            })
+        }
+    }
 
 }
 </script>

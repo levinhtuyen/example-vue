@@ -3,7 +3,8 @@
     <b-row>
         <div class="col-12 float-left padding-0-5-10">
             <div class="col-6 style-color-xanh font-size-12">KHÁCH SẠN MỚI</div>
-            <div class="col-6 style-text-align-right font-size-12"><router-link tag="a"  :to="{ name: 'Category', params: { Sn: 1 }}">Xem tất cả</router-link></div>
+            <div class="col-6 style-text-align-right font-size-12">
+                <span style="cursor: pointer;" @click="chooseSpecitalHotel(dataHotel)">Xem tất cả</span></div>
         </div>
         <div class="col-12">
             <carousel :centerMode="false" :perPage="1" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :autoplay="true" :interval="5500" :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
@@ -13,7 +14,7 @@
                             <div class="hotel-item">
                                 <!-- <img class="img-lazy" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath"> -->
                                 <!-- <img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""> -->
-                                <router-link @click="chooseSpecitalHotel(dataHotel)" tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/maivila-pmh-hotel.jpg" alt=""></router-link>
+                                <router-link @click="chooseSpecitalHotel(dataHotel)" tag="a" :to="{ name: 'DetailHotel', params: { Sn: 4 }}"><img src="https://go2joy.vn/images/hotel/maivila-pmh-hotel.jpg" alt=""></router-link>
                             </div>
                         </div>
                         <div class="col-8 style-padd">
@@ -131,23 +132,34 @@ export default {
         }
     },
 
-    async created() {
+     async created() {
         axios.defaults.headers = {
             'deviceid': 'device_for_web',
         }
         let {
             data
         } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
-
         let data1 = data.detailCollectionList;
-        // console.log('data1', data1);
-        // Lấy Obj Hotel giá sốc
-        let HotHotel = (data1[2]);
-        // console.log('dsHotHotel', HotHotel);
-        // Lấy list Hotel gia sốc
+        let HotHotel = (data1[4]);
         let dsHotHotel = HotHotel.hotelFormList
         this.data = dsHotHotel
-        // console.log('ds Hot Hotel this.data : ', this.data);
+
+    },
+    methods: {
+        chooseSpecitalHotel(dataHotel) {
+            this.$emit('dsHotel', dataHotel)
+  
+            this.$store.dispatch({
+                type: 'updateDataRoom',
+                data: this.data
+            });
+            this.$router.push({
+                name: 'Category',
+                params: {
+                    Sn: 4
+                }
+            })
+        }
     },
 }
 </script>
