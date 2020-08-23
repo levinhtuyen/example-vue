@@ -8,8 +8,8 @@
 
                         <div class="col-12 demo-image__error">
                             <div class="hotel-item">
-                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: dataHotel.sn }}">
-                                    <el-image :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath">
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}">
+                                    <el-image  :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath">
                                         <div slot="error" class="image-slot">
                                             <img src="https://screenshotlayer.com/images/assets/placeholder.png" alt="">
                                         </div>
@@ -19,8 +19,8 @@
                             </div>
                         </div>
                         <div class="col-12 style-padd padding-0-5-10">
-                            <div class="col-12">
-                                <p class="style-bold font-size-title-name limit-cow">{{ dataHotel.name }}</p>
+                            <div class="col-6">
+                                <p class="style-bold font-size-title-name">{{ dataHotel.name }}</p>
                             </div>
 
                             <div class="col-12">
@@ -47,7 +47,8 @@
 
         </div>
         <div class="col-12 canh-giua">
-            <el-pagination v-show="total>0" :page.sync="data.page" :limit.sync="data.limit" @current-change="getList" @pagination="getList" :page-size="data.limit" :pager-count="11" layout="prev, pager, next" :total="total">
+            <el-pagination v-show="total>0" :page.sync="data.page" :limit.sync="data.limit"
+      @current-change="getList" @pagination="getList" :page-size="data.limit" :pager-count="11" layout="prev, pager, next" :total="total">
             </el-pagination>
         </div>
     </b-row>
@@ -82,23 +83,17 @@ export default {
                 totalFavorite: 0,
                 lowestPriceOvernight: 0,
                 lowestOneDay: 0,
-                sn: 0,
             },
             list: {
 
             },
             total: 0,
             listLoading: true,
-            roomData1: {}
 
         }
     },
     created() {
-        // this.getList();
-        // console.log('this.store', this.$store)
-        this.roomData1 = this.$store.state.dataRoom
-         console.log('roomData1', this.roomData1)
-         this.getList();
+        this.getList();
     },
     methods: {
         async getList() {
@@ -107,34 +102,27 @@ export default {
             }
             let {
                 data
-            } = this.$store.state.dataRoom
-            // console.log('data',data)
-            // let HotHotel = data.data;
-            // console.log('data 1 : ', data1)
-            let dataGet = this.$store.state.dataRoom
-            console.log('dataGet ',dataGet)
+            } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
+            let data1 = data.detailCollectionList;
+          
+            let HotHotel = data1[1];
+            console.log('data 1 : ', data1)
+            let dataGet = HotHotel.hotelFormList
+            console.log('this.data list room: ', this.data)
             this.total = dataGet.length || 0;
             const curPos = this.data.limit * (this.data.page - 1);
             this.list = dataGet.slice(curPos, curPos + this.data.limit);
-            console.log('this.list', this.list);
+            console.log('data  pagination', this.list);
             this.oldList = this.list.map(v => v.id);
             this.newList = this.oldList.slice();
             this.listLoading = false;
         },
-        handleFilter() {
-            this.data.page = 1;
-            this.getList();
-        },
+         handleFilter() {
+      this.data.page = 1;
+      this.getList();
     },
-    computed: {
-        roomData() {
-            // console.log('this.$store.state.dataRoom',this.$store.state.dataRoom)
-           
-            return this.$store.state.dataRoom
-        }
-        
-    },
-
+    }
+    
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -145,21 +133,11 @@ export default {
     flex-direction: column;
     align-items: center;
 }
-.limit-cow{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+
 .hotel-item img {
     width: 100%
 }
-.el-image {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-}
+
 .col-6 {
     width: 100%;
 
