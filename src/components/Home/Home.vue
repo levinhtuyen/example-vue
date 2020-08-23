@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import Vue from 'vue'
 // import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./Header.vue"
 import Slider from "./Slider.vue"
@@ -24,6 +25,8 @@ import Go2Joy from "./Go2Joy.vue"
 import HotelNew from "./HotelNew.vue"
 import Promotion from "./Promotion.vue"
 import TopHotel from "./TopHotel.vue"
+// import VueI18n from 'vue-i18n'
+// Vue.use(VueI18n)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {

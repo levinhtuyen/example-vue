@@ -8,7 +8,7 @@
 
                         <div class="col-12 demo-image__error">
                             <div class="hotel-item">
-                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}">
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: dataHotel.sn }}">
                                     <el-image  :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath">
                                         <div slot="error" class="image-slot">
                                             <img src="https://screenshotlayer.com/images/assets/placeholder.png" alt="">

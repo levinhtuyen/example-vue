@@ -2,7 +2,7 @@
 <div class="container">
     <b-row>
     <div class="col-12 float-left padding-0-5-10">
-        <div class="col-6 style-color-xanh font-size-12">ƯU ĐÃI ĐẶT BIỆT</div>
+        <div class="col-6 style-color-xanh font-size-12">{{ $t('Home.special') }}</div>
         <div class="col-6 style-text-align-right font-size-12">
             <span style="cursor: pointer;" @click="chooseSpecitalHotel(dataHotel)">Xem tất cả</span></div>
     </div>

@@ -26,6 +26,7 @@
         <button type="button" @click="show = !show" class="btn style-mar-pad-0 navbar-toggler" data-toggle="modal" data-target="#myModal">
             <img src="./../../assets/search.png" class="search" alt="">
         </button>
+        <p>{{ $t('Home.hotdeal') }}</p>
         <!-- Collapsible content -->
         <div class="collapse navbar-collapse" id="basicExampleNav">
 
@@ -51,10 +52,18 @@
 
             </ul>
             <!-- Links -->
-
+            <span class="font-size-title">Chọn ngôn ngữ</span>
+                    <a   @click="changeLocale('vi')">
+                        <img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:0">
+                    </a>
+                    <a  @click="changeLocale('en')">
+                        <img src="./../../assets/en.png" alt="Logo" style="margin:0" class="images-countr">
+                    </a>
             <form class="form-inline">
                 <div class="md-form my-0">
                     <el-button type="text" @click="dialogFormVisible = true">Form</el-button>
+                    <!-- <button class="style-button" v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)"> <flag :iso="entry.flag" v-bind:squared=false /></button> -->
+                    
                     <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" placeholder="Nhập từ khóa" @select="handleSelect"></el-autocomplete>
                     <button type="button" @click="show = !show" class="btn" data-toggle="modal" data-target="#myModal">
                         <img src="./../../assets/search.png" class="search" alt="">
@@ -144,6 +153,7 @@
 
 <script>
 import AlertDialog from "./AlertDialog.vue";
+import i18n from './../../lang/i18n';
 export default {
     name: 'Header',
     components: {
@@ -169,7 +179,17 @@ export default {
             formLabelWidth: '120px',
             dialogImageUrl: '',
             dialogVisible: false,
-            disabled: false
+            disabled: false,
+
+            languages: [{
+                flag: 'us',
+                language: 'en',
+                title: 'English'
+            }, {
+                flag: 'es',
+                language: 'vi',
+                title: 'Tiếng Việt'
+            }]
 
         };
     },
@@ -234,6 +254,9 @@ export default {
         },
         handleDownload(file) {
             console.log(file);
+        },
+        changeLocale(locale) {
+            i18n.locale = locale;
         }
     },
     mounted() {
@@ -244,6 +267,16 @@ export default {
 </script>
 
 <style scoped>
+.images-country {
+    width: 20px;
+    height: auto;
+}
+.style-button {
+  padding: 0;
+  border: none;
+  font-size: 18px;
+
+}
 .style-img {
     width: 200px;
     height: auto;

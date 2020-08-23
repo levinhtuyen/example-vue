@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import Vuex from 'vuex'
 import router from './router'
+import i18n from './lang/i18n';
 import { BootstrapVue } from 'bootstrap-vue'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
@@ -11,12 +12,16 @@ import VueCarousel from 'vue-carousel';
 import { store } from './store/store'
 import VueLazyload from 'vue-lazyload'
 export const eventBus = new Vue();
+import FlagIcon from 'vue-flag-icon';
+
+Vue.use(FlagIcon);
 Vue.use(VueLazyload)
 Vue.use(VueCarousel);
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(Vuex)
 Vue.use(ElementUI);
+Vue.use(i18n)
 // Vue.use(VueLazyload)
 // Vue.use(VueLazyload, {
 //   preLoad: 1.3,
@@ -27,6 +32,7 @@ Vue.use(ElementUI);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  i18n,
   router,
   store,
   components: { App },
