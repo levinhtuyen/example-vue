@@ -2,13 +2,13 @@
 <div class="container">
     <b-row>
         <div class="col-12 " style="margin-bottom:6px">
-            <div class="demo-image__lazy" v-for="(dataHotel, index) in roomData" :key="index">
+            <div class="demo-image__lazy" v-for="(dataHotel, index) in list" :key="index">
                 <div class="col-6 float-left">
                     <div class="col-12 style-box-shadow  margin-15-tb">
 
                         <div class="col-12 demo-image__error">
                             <div class="hotel-item">
-                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}">
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: dataHotel.sn }}">
                                     <el-image :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath">
                                         <div slot="error" class="image-slot">
                                             <img src="https://screenshotlayer.com/images/assets/placeholder.png" alt="">
@@ -19,8 +19,8 @@
                             </div>
                         </div>
                         <div class="col-12 style-padd padding-0-5-10">
-                            <div class="col-6">
-                                <p class="style-bold font-size-title-name">{{ dataHotel.name }}</p>
+                            <div class="col-12">
+                                <p class="style-bold font-size-title-name limit-cow">{{ dataHotel.name }}</p>
                             </div>
 
                             <div class="col-12">
@@ -82,18 +82,23 @@ export default {
                 totalFavorite: 0,
                 lowestPriceOvernight: 0,
                 lowestOneDay: 0,
+                sn: 0,
             },
             list: {
 
             },
             total: 0,
             listLoading: true,
+            roomData1: {}
 
         }
     },
     created() {
         // this.getList();
-        console.log('this.store', this.$store)
+        // console.log('this.store', this.$store)
+        this.roomData1 = this.$store.state.dataRoom
+         console.log('roomData1', this.roomData1)
+         this.getList();
     },
     methods: {
         async getList() {
@@ -102,17 +107,16 @@ export default {
             }
             let {
                 data
-            } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
-            let data1 = data.detailCollectionList;
-
-            let HotHotel = data1[1];
-            console.log('data 1 : ', data1)
-            let dataGet = HotHotel.hotelFormList
-            console.log('this.data list room: ', this.data)
+            } = this.$store.state.dataRoom
+            // console.log('data',data)
+            // let HotHotel = data.data;
+            // console.log('data 1 : ', data1)
+            let dataGet = this.$store.state.dataRoom
+            console.log('dataGet ',dataGet)
             this.total = dataGet.length || 0;
             const curPos = this.data.limit * (this.data.page - 1);
             this.list = dataGet.slice(curPos, curPos + this.data.limit);
-            console.log('data  pagination', this.list);
+            console.log('this.list', this.list);
             this.oldList = this.list.map(v => v.id);
             this.newList = this.oldList.slice();
             this.listLoading = false;
@@ -124,9 +128,11 @@ export default {
     },
     computed: {
         roomData() {
-            console.log('this.$store.state.dataRoom',this.$store.state.dataRoom)
+            // console.log('this.$store.state.dataRoom',this.$store.state.dataRoom)
+           
             return this.$store.state.dataRoom
         }
+        
     },
 
 }
@@ -139,11 +145,21 @@ export default {
     flex-direction: column;
     align-items: center;
 }
-
+.limit-cow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .hotel-item img {
     width: 100%
 }
-
+.el-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
 .col-6 {
     width: 100%;
 

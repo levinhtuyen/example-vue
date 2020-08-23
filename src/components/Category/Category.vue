@@ -86,7 +86,10 @@ a:hover {
 p {
     margin-bottom: 0.3rem;
 }
-
+.hotel-item img {
+    width: 100%;
+    height: auto;
+}
 .VueCarousel-dot-container {
     display: none !important;
 }
@@ -230,10 +233,10 @@ p {
     font-weight: 600;
 }
 
-.hotel-item img {
+/* .hotel-item img {
     width: 305px;
     height: 245px;
-}
+} */
 
 .hotel-item {
     width: 100%;

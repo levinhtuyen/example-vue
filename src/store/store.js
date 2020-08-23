@@ -14,9 +14,9 @@ export const store = new Vuex.Store({
     }
   },
   actions: {
-    updateDataRoom(context, data) {
+    updateDataRoom(context, data, sn) {
         console.log(context, data)
-      context.commit("setDataRoom", data.data);
+      context.commit("setDataRoom", data.data, sn);
     }
   }
 });
