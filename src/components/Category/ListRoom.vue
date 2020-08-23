@@ -19,8 +19,8 @@
                             </div>
                         </div>
                         <div class="col-12 style-padd padding-0-5-10">
-                            <div class="col-6">
-                                <p class="style-bold font-size-title-name">{{ dataHotel.name }}</p>
+                            <div class="col-12">
+                                <p class="style-bold font-size-title-name limit-title">{{ dataHotel.name }}</p>
                             </div>
 
                             <div class="col-12">
@@ -154,7 +154,10 @@ export default {
     text-decoration: underline;
     color: #ff6401;
 }
-
+.hotel-item img {
+    width: 100%;
+    height: auto;
+}
 .margin-15-tb {
     margin: 30px 0 30px 0;
 }

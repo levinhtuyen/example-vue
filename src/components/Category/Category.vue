@@ -228,11 +228,18 @@ p {
     border: 1px solid red;
     border-radius: 5px;
 }
-
+.limit-title{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .style-bold {
     font-weight: 600;
 }
-
+.el-image {
+    width: 100%;
+    height: auto;
+}
 /* .hotel-item img {
     width: 305px;
     height: 245px;
