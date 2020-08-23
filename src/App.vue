@@ -1,5 +1,5 @@
 <template>
-<div id="app" ref="scrollTarget" class="test-scroll" style=" overflow: auto">
+<div id="app" ref="scrollTarget" class="test-scroll" >
     <!-- <img src="./assets/logo.png"> -->
     <!-- <Home /> -->
 

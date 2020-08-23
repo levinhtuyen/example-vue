@@ -10,7 +10,8 @@ const messages = {
       go2joy: "GO2JOY TOP PICK",
       hotelnew: "NEW HOTEL",
       promotion: "HOT PROMOTION",
-      tophotel: "TOP RATE HOTEL"
+      tophotel: "TOP RATE HOTEL",
+      language: "Choose language"
     }
   },
   vi: {
@@ -20,7 +21,8 @@ const messages = {
       go2joy: "GO2JOY ĐỀ XUẤT",
       hotelnew: "KHÁCH SẠN MỚi",
       promotion: "CHƯƠNG TRÌNH KHUYẾN MÃI",
-      tophotel: "TOP KHÁCH SẠN ĐƯỢC BÌNH CHỌN"
+      tophotel: "TOP KHÁCH SẠN ĐƯỢC BÌNH CHỌN",
+      language: "Chọn ngôn ngữ"
     }
   }
 };

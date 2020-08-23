@@ -52,13 +52,13 @@
 
             </ul>
             <!-- Links -->
-            <span class="font-size-title">Chọn ngôn ngữ</span>
-                    <a   @click="changeLocale('vi')">
-                        <img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:0">
-                    </a>
-                    <a  @click="changeLocale('en')">
-                        <img src="./../../assets/en.png" alt="Logo" style="margin:0" class="images-countr">
-                    </a>
+             <span class="font-size-title">{{ $t('Home.language') }}</span>
+            <a @click="changeLocale('vi')">
+                <img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:5px">
+            </a>
+            <a @click="changeLocale('en')">
+                <img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
+            </a>
             <form class="form-inline">
                 <div class="md-form my-0">
                     <el-button type="text" @click="dialogFormVisible = true">Form</el-button>
