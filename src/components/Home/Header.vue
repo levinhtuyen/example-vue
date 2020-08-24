@@ -1,16 +1,5 @@
 <template>
-<div id="navbar">
-    <!-- <div id="navbar" class=" row style-mar-padd-0">
-        <b-row class="style-mar-padd-0">
-        <div class="col-lg-10 col-md-10-col-sm-10">
-
-        </div>
-        <div class="col-lg-2 col-md-2-col-sm-2">
-            <img src="./../assets/search.png" style="width:50px;" alt="">
-        </div>
-        </b-row>
-
-    </div> -->
+<div id="navbar" class="container">
     <!--Navbar-->
     <nav class="navbar navbar-expand-md bg-light navbar-light">
         <!-- Brand -->
@@ -40,9 +29,6 @@
             <AlertDialog :active.sync="show" title="Hello world" content="Hello world" />
         </div>
     </nav>
-
-    <!-- Navbar brand -->
-
     <!-- Collapsible content -->
     <el-dialog title="Tạo bài viết" :visible.sync="dialogFormVisible">
         <el-form :model="form">
@@ -116,7 +102,6 @@
             <el-button type="primary" @click="dialogFormVisible = false">Kết thúc</el-button>
         </span>
     </el-dialog>
-
     <!--/.Navbar-->
 </div>
 </template>
@@ -237,6 +222,10 @@ export default {
 </script>
 
 <style scoped>
+.container{
+    padding-left:0;
+    padding-right: 0;
+}
 .images-country {
     width: 20px;
     height: auto;
@@ -265,7 +254,13 @@ export default {
 .md-form img {
     margin: 0 20px
 }
-
+.navbar-light .navbar-toggler{
+    border-color: rgb(255 253 253 / 10%);
+}
+.navbar-toggler-icon{
+    width: 1.0em;
+    height: 1.0em;
+}
 @media only screen and (max-width: 480px) {
     .logo {
         width: 30px;

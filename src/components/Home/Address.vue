@@ -1,6 +1,5 @@
 <template>
 <div>
-
     <b-row>
         <div class="col-5 style-can-giua padd-top-botton-10">
 
@@ -11,10 +10,7 @@
                 Thành phố Hồ Chí Minh <i style="color:#000" class="fas fa-angle-down"></i>
             </button>
         
-             <AlertDialog :active.sync="show" title="Hello world" content="Hello world"/>
-    
-
-          
+             <AlertDialog :active.sync="show" title="Hello world" content="Hello world"/>  
         </div>
         <!-- <div class="col-3">
             <div class="hotel-item ">
@@ -50,7 +46,6 @@
         </div>
 
     </b-row>
-
 </div>
 </template>
 

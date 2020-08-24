@@ -2,7 +2,6 @@
 <div>
     <Header />
     <div class="container">
-
         <Slider />
         <Address />
         <HotDeal />
@@ -11,11 +10,9 @@
         <HotelNew />
         <Promotion />
         <TopHotel />
-
     </div>
 </div>
 </template>
-
 <script>
 import Vue from 'vue'
 // import HelloWorld from "./components/HelloWorld.vue";

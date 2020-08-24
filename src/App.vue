@@ -1,18 +1,14 @@
 <template>
-<div id="app" ref="scrollTarget" class="test-scroll" >
+<div id="app" ref="scrollTarget" class="test-scroll">
     <!-- <img src="./assets/logo.png"> -->
     <!-- style=" overflow: auto" -->
     <!-- <Home /> -->
-
     <router-view />
-
-    <el-backtop >
+    <el-backtop>
         <span><i class="fas fa-angle-up fa-2x style-back-to-top"></i></span>
     </el-backtop>
-
 </div>
 </template>
-
 <script>
 import Home from "./components/Home/Home.vue"
 import Category from '@/components/Category/Category.vue'
@@ -24,7 +20,6 @@ export default {
     },
 }
 </script>
-
 <style>
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -63,15 +58,19 @@ a {
 .title-color {
     color: #ff6400;
 }
-.style-back-to-top{
-  color: #fff;
+
+.style-back-to-top {
+    color: #fff;
 }
-.el-backtop{
-  background-color: #ff6400;
+
+.el-backtop {
+    background-color: #ff6400;
 }
+
 .el-backtop:hover {
- transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .VueCarousel-pagination {
     position: absolute;
     display: none !important;
@@ -93,5 +92,4 @@ a {
     margin-bottom: 15px;
     margin-top: 15px;
 }
-
 </style>
