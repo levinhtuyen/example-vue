@@ -20,6 +20,7 @@
             </a>
             <el-button type="text" @click="dialogFormVisible = true">{{ $t('Home.form') }}</el-button>
              <router-link tag="a" class="font-size-title" :to="{ name: 'About'}">{{ $t('Home.about') }}</router-link>
+              <router-link tag="a" class="font-size-title" :to="{ name: 'Blog'}">{{ $t('Home.blog') }}</router-link>
             <!-- <button class="style-button" v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)"> <flag :iso="entry.flag" v-bind:squared=false /></button> -->
 
             <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete>

@@ -15,7 +15,8 @@ const messages = {
       language: "Choose language",
       form: "FORM",
       about: "ABOUT",
-      placeholdersearch: "Please input keyword..."
+      placeholdersearch: "Please input keyword...",
+      blog: "BLOG DISCOVER"
     }
   },
   vi: {
@@ -30,7 +31,8 @@ const messages = {
       language: "Chọn ngôn ngữ",
       form: "FORM",
       about: "GIỚI THIỆU",
-      placeholdersearch: "Nhập từ khóa..."
+      placeholdersearch: "Nhập từ khóa...",
+      blog: "BLOG KHÁM PHÁ"
     }
   }
 };
