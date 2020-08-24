@@ -9,7 +9,7 @@
                         <div class="col-12 demo-image__error">
                             <div class="hotel-item">
                                 <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: dataHotel.sn }}">
-                                    <el-image  :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath" lazy="true" placeholder="Images loading...">
+                                    <el-image  :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath" lazy placeholder="Images loading...">
                                         <div slot="error" class="image-slot">
                                         <img class="hotel-item" src="./../../assets/loading_big.png" alt="">
                                         </div>
@@ -175,7 +175,7 @@ export default {
     }
 
     .font-size-title-name {
-        font-size: 12px;
+        font-size: 9px;
     }
 
     .font-size-title {

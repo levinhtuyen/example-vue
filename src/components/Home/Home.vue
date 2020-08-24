@@ -1,15 +1,18 @@
 <template>
-<div class="container">
+<div>
     <Header />
-    <Slider />
-    <Address />
-    <HotDeal />
-    <specital />
-    <Go2Joy />
-    <HotelNew />
-    <Promotion />
-    <TopHotel />
-    
+    <div class="container">
+
+        <Slider />
+        <Address />
+        <HotDeal />
+        <specital />
+        <Go2Joy />
+        <HotelNew />
+        <Promotion />
+        <TopHotel />
+
+    </div>
 </div>
 </template>
 

@@ -4,7 +4,7 @@
     <b-row>
         <div class="col-5 style-can-giua padd-top-botton-10">
 
-            <p class="style-address  style-can-giua">CHỌN ĐỊA ĐIỂM</p>
+            <p class="style-address  style-can-giua">{{ $t('Home.chooseaddress') }}</p>
         </div>
         <div class="col-7 style-right padd-top-botton-10">
             <button type="button" @click="show = !show" class="btn style-mar-pad-0 " data-toggle="modal" data-target="#myModal"><i style="color:#ff6400" class="fas fa-map-marker-alt"></i>

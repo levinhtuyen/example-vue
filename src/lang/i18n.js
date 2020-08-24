@@ -5,6 +5,7 @@ Vue.use(VueI18n);
 const messages = {
   en: {
     Home: {
+      chooseaddress: "CHOOSE LOCATION",
       hotdeal: "FLASHSALE",
       special: "SPECIAL OFFER",
       go2joy: "GO2JOY TOP PICK",
@@ -16,6 +17,7 @@ const messages = {
   },
   vi: {
     Home: {
+      chooseaddress: "CHỌN ĐỊA ĐIỂM",
       hotdeal: "GIẢM SỐC",
       special: "ƯU ĐÃI ĐẶT BIỆT",
       go2joy: "GO2JOY ĐỀ XUẤT",
