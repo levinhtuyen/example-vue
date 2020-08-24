@@ -11,7 +11,7 @@
                                 <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: dataHotel.sn }}">
                                     <el-image  :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath">
                                         <div slot="error" class="image-slot">
-                                            <img src="https://screenshotlayer.com/images/assets/placeholder.png" alt="">
+                                        <img src="./../../assets/loading_big.png" alt="">
                                         </div>
                                     </el-image>
                                     <!-- <img class="img-lazy" v-lazy="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath"> -->

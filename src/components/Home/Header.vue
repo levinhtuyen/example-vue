@@ -15,9 +15,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
 
         <!-- Navbar brand -->
-        <a href="#">
+        <router-link tag="a" :to="{ name: 'Home'}">
             <img src="https://go2joy.vn/images/logo.jpg" alt="Logo" class="logo">
-        </a>
+        </router-link>
 
         <!-- Collapse button -->
         <!-- <button class="navbar-toggler" @click="show = !show" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
