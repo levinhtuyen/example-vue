@@ -7,7 +7,6 @@
             <img src="https://go2joy.vn/images/logo.jpg" alt="Logo" class="logo">
         </router-link>
 
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,12 +19,14 @@
                 <img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
             </a>
             <el-button type="text" @click="dialogFormVisible = true">Form</el-button>
+             <router-link tag="a" class="font-size-title" :to="{ name: 'About'}">About</router-link>
             <!-- <button class="style-button" v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)"> <flag :iso="entry.flag" v-bind:squared=false /></button> -->
 
             <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" placeholder="Nhập từ khóa" @select="handleSelect"></el-autocomplete>
             <button type="button" @click="show = !show" class="btn" data-toggle="modal" data-target="#myModal">
                 <img src="./../../assets/search.png" class="search" alt="">
             </button>
+
             <AlertDialog :active.sync="show" title="Hello world" content="Hello world" />
         </div>
     </nav>
@@ -222,10 +223,11 @@ export default {
 </script>
 
 <style scoped>
-.container{
-    padding-left:0;
+.container {
+    padding-left: 0;
     padding-right: 0;
 }
+
 .images-country {
     width: 20px;
     height: auto;
@@ -254,13 +256,16 @@ export default {
 .md-form img {
     margin: 0 20px
 }
-.navbar-light .navbar-toggler{
+
+.navbar-light .navbar-toggler {
     border-color: rgb(255 253 253 / 10%);
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
     width: 1.0em;
     height: 1.0em;
 }
+
 @media only screen and (max-width: 480px) {
     .logo {
         width: 30px;
@@ -301,11 +306,11 @@ export default {
 /* Style the navbar links */
 #navbar a {
     float: left;
-    color: black;
+ 
     text-align: center;
     padding: 5px;
     text-decoration: none;
-    font-size: 18px;
+
     line-height: 25px;
     border-radius: 4px;
 }
