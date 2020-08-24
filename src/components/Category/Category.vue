@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div >
     <Header />
     <ListRoom />
 </div>
@@ -285,13 +285,13 @@ p {
 @media only screen and (max-width: 480px) {
     .hotel-item img {
         width: 205px;
-        height: 165px;
+        height: 110px;
 
     }
 
     .hotel-item {
         width: 100%;
-        height: 165px;
+        height: 110px;
 
     }
 

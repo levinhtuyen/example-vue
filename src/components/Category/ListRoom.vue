@@ -2,16 +2,16 @@
 <div class="container">
     <b-row>
         <div class="col-12 " style="margin-bottom:6px">
-            <div class="demo-image__lazy" v-for="(dataHotel, index) in list" :key="index">
-                <div class="col-6 float-left">
+            <div class=" scroll-container" v-for="(dataHotel, index) in list" :key="index">
+                <div class="col-6 float-left" >
                     <div class="col-12 style-box-shadow  margin-15-tb">
 
                         <div class="col-12 demo-image__error">
                             <div class="hotel-item">
                                 <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: dataHotel.sn }}">
-                                    <el-image  :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath">
+                                    <el-image  :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath" lazy="true" placeholder="Images loading...">
                                         <div slot="error" class="image-slot">
-                                        <img src="./../../assets/loading_big.png" alt="">
+                                        <img class="hotel-item" src="./../../assets/loading_big.png" alt="">
                                         </div>
                                     </el-image>
                                     <!-- <img class="img-lazy" v-lazy="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath"> -->
@@ -141,8 +141,8 @@ export default {
 .col-6 {
     width: 100%;
 
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .style-btn-dat-ngay {
@@ -185,6 +185,12 @@ export default {
     .margin-15-tb {
         margin: 15px 0 15px 0;
     }
-
+    .hotel-item {
+        width: 100%;
+        height: 110px;
+    }
+    .hotel-item img{
+        height: 110px;
+    }
 }
 </style>
