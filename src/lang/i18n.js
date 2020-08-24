@@ -12,7 +12,10 @@ const messages = {
       hotelnew: "NEW HOTEL",
       promotion: "HOT PROMOTION",
       tophotel: "TOP RATE HOTEL",
-      language: "Choose language"
+      language: "Choose language",
+      form: "FORM",
+      about: "ABOUT",
+      placeholdersearch: "Please input keyword..."
     }
   },
   vi: {
@@ -24,7 +27,10 @@ const messages = {
       hotelnew: "KHÁCH SẠN MỚi",
       promotion: "CHƯƠNG TRÌNH KHUYẾN MÃI",
       tophotel: "TOP KHÁCH SẠN ĐƯỢC BÌNH CHỌN",
-      language: "Chọn ngôn ngữ"
+      language: "Chọn ngôn ngữ",
+      form: "FORM",
+      about: "GIỚI THIỆU",
+      placeholdersearch: "Nhập từ khóa..."
     }
   }
 };

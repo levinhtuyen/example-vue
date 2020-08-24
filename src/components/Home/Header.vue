@@ -18,11 +18,11 @@
             <a @click="changeLocale('en')">
                 <img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
             </a>
-            <el-button type="text" @click="dialogFormVisible = true">Form</el-button>
-             <router-link tag="a" class="font-size-title" :to="{ name: 'About'}">About</router-link>
+            <el-button type="text" @click="dialogFormVisible = true">{{ $t('Home.form') }}</el-button>
+             <router-link tag="a" class="font-size-title" :to="{ name: 'About'}">{{ $t('Home.about') }}</router-link>
             <!-- <button class="style-button" v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)"> <flag :iso="entry.flag" v-bind:squared=false /></button> -->
 
-            <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" placeholder="Nhập từ khóa" @select="handleSelect"></el-autocomplete>
+            <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete>
             <button type="button" @click="show = !show" class="btn" data-toggle="modal" data-target="#myModal">
                 <img src="./../../assets/search.png" class="search" alt="">
             </button>
