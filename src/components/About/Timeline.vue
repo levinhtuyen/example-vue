@@ -9,12 +9,14 @@
                 <div class="row timeline-movement timeline-movement-top">
                     <div class="timeline-badge timeline-future-movement">
                         <a href="#">
-                            <span class="glyphicon glyphicon-plus"></span>
+                            <!-- <span class="glyphicon glyphicon-plus"></span> -->
+                             <img style="width:100%" src="https://go2joy.vn/images/logo.jpg" alt="">
                         </a>
                     </div>
                     <div class="timeline-badge timeline-filter-movement">
                         <a href="#">
                             <span class="glyphicon glyphicon-time"></span>
+                           
                         </a>
                     </div>
 
