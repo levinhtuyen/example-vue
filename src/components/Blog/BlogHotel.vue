@@ -8,8 +8,7 @@
 
                         <div class="row">
 
-
-                              <!-- late -->
+                            <!-- late -->
                             <div class="col-md-12">
                                 <div class="main_title  text-center  ">
                                     <h2 class="title">TOP HOTEL NỔI BẬT</h2>
@@ -76,8 +75,7 @@
                                 </div>
                             </div>
 
-
-                              <!-- late -->
+                            <!-- late -->
                             <div class="col-md-4 second-place">
                                 <div class="place-item">
                                     <figure class="gradient-overlay zoom-hover">
@@ -153,7 +151,6 @@
                                 </div>
                             </div>
 
-
                             <!-- late -->
                             <div class="vc_row wpb_row vc_row-fluid gray-bg vc_custom_1531849737322 vc_row-has-fill">
                                 <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -168,7 +165,7 @@
                                                 <div class="col-md-6 big-item">
                                                     <div class="room-item">
                                                         <figure class="room-image gradient-overlay overlay-opacity-02 slide-right-hover room-image1">
-                                                            <div class="room-price"><span class="text-before-price"></span> <span class="price-number">65.000 VNĐ</span><span class="per-night-text"> / 1 Giờ đầu</span></div> <a href="https://preview.eagle-themes.com/zante/rooms/family-room/">
+                                                            <div class="room-price"><span class="text-before-price"></span> <span class="price-number">65.000 VNĐ</span><span class="per-night-text"> / 1 Giờ đầu</span></div> <a href="#">
                                                                 <img style="height:100%" src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/05/1-720x470.jpg" class="img-responsive" alt="Cupid Hotel Trung Sơn">
                                                             </a>
                                                         </figure>
@@ -207,7 +204,7 @@
                                                         <div class="col-md-6 small-item">
                                                             <div class="room-item">
                                                                 <figure class="room-image gradient-overlay overlay-opacity-02 slide-right-hover">
-                                                                    <div class="room-price"><span class="text-before-price"></span> <span class="price-number">50.000 VNĐ</span><span class="per-night-text"> / 1 Giờ đầu</span></div> <a href="https://preview.eagle-themes.com/zante/rooms/king-room/">
+                                                                    <div class="room-price"><span class="text-before-price"></span> <span class="price-number">50.000 VNĐ</span><span class="per-night-text"> / 1 Giờ đầu</span></div> <a href="#">
                                                                         <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/05/king-room-720x470.jpg" class="img-responsive" alt="King Room">
                                                                     </a>
                                                                 </figure>
@@ -238,7 +235,7 @@
                                                         <div class="col-md-6 small-item">
                                                             <div class="room-item">
                                                                 <figure class="room-image gradient-overlay overlay-opacity-02 slide-right-hover">
-                                                                    <div class="room-price"><span class="text-before-price"></span> <span class="price-number">100.000 VND</span><span class="per-night-text"> / 1 Giờ đầu</span></div> <a href="https://preview.eagle-themes.com/zante/rooms/honeymoon/">
+                                                                    <div class="room-price"><span class="text-before-price"></span> <span class="price-number">100.000 VND</span><span class="per-night-text"> / 1 Giờ đầu</span></div> <a href="#">
                                                                         <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/05/honeymoon-720x470.jpg" class="img-responsive" alt="Honeymoon Room">
                                                                     </a>
                                                                 </figure>
@@ -269,7 +266,7 @@
                                                         <div class="col-md-6 small-item">
                                                             <div class="room-item">
                                                                 <figure class="room-image gradient-overlay overlay-opacity-02 slide-right-hover">
-                                                                    <div class="room-price"><span class="text-before-price"></span> <span class="price-number">120.000 VNĐ</span><span class="per-night-text"> / 1 Giờ đầu</span></div> <a href="https://preview.eagle-themes.com/zante/rooms/deluxe-room/">
+                                                                    <div class="room-price"><span class="text-before-price"></span> <span class="price-number">120.000 VNĐ</span><span class="per-night-text"> / 1 Giờ đầu</span></div> <a href="#">
                                                                         <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/05/1-1-720x470.jpg" class="img-responsive" alt="Deluxe Room">
                                                                     </a>
                                                                 </figure>
@@ -300,7 +297,7 @@
                                                         <div class="col-md-6 small-item">
                                                             <div class="room-item">
                                                                 <figure class="room-image gradient-overlay overlay-opacity-02 slide-right-hover">
-                                                                    <div class="room-price"><span class="text-before-price"></span> <span class="price-number">115.000 VNĐ</span><span class="per-night-text"> / 1 Giờ đầu</span></div> <a href="https://preview.eagle-themes.com/zante/rooms/single-room/">
+                                                                    <div class="room-price"><span class="text-before-price"></span> <span class="price-number">115.000 VNĐ</span><span class="per-night-text"> / 1 Giờ đầu</span></div> <a href="#">
                                                                         <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/05/single-720x470.jpg" class="img-responsive" alt="Single Room">
                                                                     </a>
                                                                 </figure>
@@ -341,7 +338,6 @@
                                 </div>
                             </div>
 
-                            
                             <!-- late -->
                             <div class="vc_row wpb_row vc_row-fluid vc_custom_1531698784896">
                                 <div class="wpb_column vc_column_container vc_col-sm-12">

@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="col-12">
-            <carousel :centerMode="false" :perPage="1" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :autoplay="true" :interval="5000" :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
+            <carousel :loop="true" :centerMode="false" :perPage="1" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :autoplay="true" :interval="5000" :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
                 <slide>
                     <div class="col-11 style-box-shadow">
                         <div class="col-4" style="float:left">

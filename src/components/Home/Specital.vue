@@ -7,7 +7,7 @@
             <span style="cursor: pointer;" @click="chooseSpecitalHotel(dataHotel)">Xem tất cả</span></div>
     </div>
     <div class="col-12">
-        <carousel  :centerMode="false" :perPage="1" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
+        <carousel  :centerMode="false" :loop="true" :perPage="1" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
             <slide v-for="(dataHotel, index) in data" :key="index">
                 <div class="col-11 style-box-shadow">
                     <div class="col-4" style="float:left">

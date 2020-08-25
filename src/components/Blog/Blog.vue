@@ -41,7 +41,7 @@ h5,
 h6 p,
 span,
 a {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif !important;
 }
 
 .col-1,

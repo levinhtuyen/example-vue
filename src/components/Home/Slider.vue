@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class="row">
-        <carousel :centerMode="false" :autoplay="true" :interval="3000" :perPage="1" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
+        <carousel :loop="true" :centerMode="false" :autoplay="true" :interval="3000" :perPage="4" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
             <slide class="padd-l-r-10">
 
                 <div class="col-12">
@@ -16,7 +16,6 @@
                 </div>
             </slide>
             <slide>
-
                 <div class="col-12">
                     <div class="item style-slider">
                         <img src="https://go2joy.vn/images/banner_thanh_lam_min.png" alt="image" /> </div>
@@ -74,4 +73,5 @@ export default {
 .padd-l-r-10 {
     padding: 0 10px 0 10px;
 }
+
 </style>

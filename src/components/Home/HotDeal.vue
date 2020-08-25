@@ -13,9 +13,9 @@
         <carousel 
         :centerMode="false"
         :perPage="1"
-        
+       
         :navigationEnabled="false" 
-        :autoplay="true" :interval="4000"
+        :autoplay="true" :interval="5000"
         :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
             <slide >
                 <div class="col-11 style-box-shadow">
