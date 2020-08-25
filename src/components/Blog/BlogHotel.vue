@@ -7,6 +7,9 @@
                     <div class="wpb_wrapper">
 
                         <div class="row">
+
+
+                              <!-- late -->
                             <div class="col-md-12">
                                 <div class="main_title  text-center  ">
                                     <h2 class="title">TOP HOTEL NỔI BẬT</h2>
@@ -72,6 +75,9 @@
                                     <p class="main_description">Tóp các khách sạn được yêu thích nhất</p>
                                 </div>
                             </div>
+
+
+                              <!-- late -->
                             <div class="col-md-4 second-place">
                                 <div class="place-item">
                                     <figure class="gradient-overlay zoom-hover">
@@ -146,6 +152,8 @@
                                     </figure>
                                 </div>
                             </div>
+
+
                             <!-- late -->
                             <div class="vc_row wpb_row vc_row-fluid gray-bg vc_custom_1531849737322 vc_row-has-fill">
                                 <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -332,6 +340,8 @@
                                     </div>
                                 </div>
                             </div>
+
+                            
                             <!-- late -->
                             <div class="vc_row wpb_row vc_row-fluid vc_custom_1531698784896">
                                 <div class="wpb_column vc_column_container vc_col-sm-12">
