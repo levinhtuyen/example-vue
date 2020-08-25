@@ -1,14 +1,18 @@
 <template>
 <div>
     <Header />
-    <BlogHotel />
+    <div class="container">
+        <Slider />
+        <BlogHotel />
+    </div>
 </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import Header from "./../Home/Header.vue"
-import BlogHotel from "./BlogHotel"
+import BlogHotel from "./BlogHotel.vue"
+import Slider from './../Home/Slider.vue'
 // import VueI18n from 'vue-i18n'
 // Vue.use(VueI18n)
 import 'bootstrap/dist/css/bootstrap.css'
@@ -17,7 +21,7 @@ export default {
     path: '/blog',
     name: "Blog",
     components: {
-        Header,BlogHotel
+        Header,Slider,BlogHotel
 
     },
     data() {
@@ -576,7 +580,7 @@ body {
 }
 
 .place-item {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     position: relative;
 }
 
@@ -719,7 +723,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
+a {
+    color: #ff6400;
+    text-decoration: none;
+    background-color: transparent;
+}
 @media (min-width: 1200px) {
 
     .col-lg-1,
@@ -837,7 +845,7 @@ body {
     color: #606060;
     border-radius: 2px;
     font-weight: 700;
-    z-index: 120;
+    z-index: 98;
     border-top: none;
     border-left: none;
 }
@@ -895,8 +903,8 @@ body {
     z-index: 9;
 }
 .gradient-overlay:after, .gradient-overlay-hover:after, .gradient-overlay-slider rs-slide:after {
-    background: -webkit-gradient(linear, left bottom, right top, from(#0870f9), to(#ed6392));
-    background: linear-gradient(to top right, #0870f9 0%, #ed6392 100%);
+    background: -webkit-gradient(linear, left bottom, right top, from(#ff6400), to(#ed6392));
+    background: linear-gradient(to top right ,#ff6400 0%, #ed6392 100%);
 }
 a:hover, a:focus, a:active {
     color: #b69854;
@@ -934,6 +942,6 @@ a:hover, a:focus, a:active {
     position: relative;
 }
 .room-image1 {
-    height: 425px;
+    height: 412px;
 }
 </style>

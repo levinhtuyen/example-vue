@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="container">
+<div>
+    <div class="container">
         <div class="vc_row wpb_row vc_row-fluid vc_custom_1531852688581 vc_row-has-fill">
             <div class="wpb_column vc_column_container vc_col-sm-12">
                 <div class="vc_column-inner">
@@ -146,71 +146,8 @@
                                     </figure>
                                 </div>
                             </div>
-
                             <!-- late -->
-                            <div class="vc_row wpb_row vc_row-fluid vc_custom_1531698784896">
-                                <div class="wpb_column vc_column_container vc_col-sm-12">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="main_title  text-center  ">
-                                                <h2 class="title">TIN TỨC VÀ SỰ KIỆN</h2>
-                                                <p class="main_description">Tin tức và sự kiện được cập nhật thường xuyên và liên tục</p>
-                                            </div>
-                                            <div class="latest-posts-grid">
-                                                <div class="row grid-row">
-
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <article class="news-grid-item">
-                                                            <figure class="gradient-overlay slide-right-hover">
-                                                                <a href="#"><img src="https://go2joy.vn/images/hotel/cupid-hotel.jpg" class="img-responsive" alt="Hotel Zante in pictures"></a>
-                                                            </figure>
-                                                            <div class="details">
-                                                                <h3><a href="#">TIN TỨC 1</a></h3>
-                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut...</p>
-
-                                                                <!-- <div class="info">
-                                                                    <a href="https://preview.eagle-themes.com/zante/author/">
-                                                                        <img class="author-avatar" src="https://secure.gravatar.com/avatar/4bb7ecf65c4865cc500764daefa121ba?s=13&amp;d=mm&amp;r=g" alt="admin">admin </a>
-                                                                    <i class="las la-clock"></i><a href="https://preview.eagle-themes.com/zante/2020/08/24/">June 17, 2018</a>
-                                                                    <i class="las la-comments"></i><a href="https://preview.eagle-themes.com/zante/hotel-zante-in-pictures/">0 Comments</a>
-                                                                </div> -->
-                                                            </div>
-                                                        </article>
-                                                    </div>
-
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <article class="news-grid-item">
-                                                            <figure class="gradient-overlay slide-right-hover">
-                                                                <a href="#"><img src="https://go2joy.vn/images/hotel/maivila-svh-hotel.jpg" class="img-responsive" alt="10 Things You Should Know"></a>
-                                                            </figure>
-                                                            <div class="details">
-                                                                <h3><a href="#">TIN TỨC 2</a></h3>
-                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut...</p>
-
-                                                            </div>
-                                                        </article>
-                                                    </div>
-
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <article class="news-grid-item">
-                                                            <figure class="gradient-overlay slide-right-hover">
-                                                                <a href="#"><img src="https://go2joy.vn/images/hotel/everest-hotel.jpg" class="img-responsive" alt="Hotel Zante Weddings"></a>
-                                                            </figure>
-                                                            <div class="details">
-                                                                <h3><a href="#">TIN TỨC 3</a></h3>
-                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut...</p>
-
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- late -->
-                            <div  class="vc_row wpb_row vc_row-fluid gray-bg vc_custom_1531849737322 vc_row-has-fill">
+                            <div class="vc_row wpb_row vc_row-fluid gray-bg vc_custom_1531849737322 vc_row-has-fill">
                                 <div class="wpb_column vc_column_container vc_col-sm-12">
                                     <div class="vc_column-inner">
                                         <div class="wpb_wrapper">
@@ -395,6 +332,68 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- late -->
+                            <div class="vc_row wpb_row vc_row-fluid vc_custom_1531698784896">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner">
+                                        <div class="wpb_wrapper">
+                                            <div class="main_title  text-center  ">
+                                                <h2 class="title">TIN TỨC VÀ SỰ KIỆN</h2>
+                                                <p class="main_description">Tin tức và sự kiện được cập nhật thường xuyên và liên tục</p>
+                                            </div>
+                                            <div class="latest-posts-grid">
+                                                <div class="row grid-row">
+
+                                                    <div class="col-md-4 col-sm-4">
+                                                        <article class="news-grid-item">
+                                                            <figure class="gradient-overlay slide-right-hover">
+                                                                <a href="#"><img src="https://go2joy.vn/images/hotel/cupid-hotel.jpg" class="img-responsive" alt="Hotel Zante in pictures"></a>
+                                                            </figure>
+                                                            <div class="details">
+                                                                <h3><a href="#">TIN TỨC 1</a></h3>
+                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut...</p>
+
+                                                                <!-- <div class="info">
+                                                                    <a href="https://preview.eagle-themes.com/zante/author/">
+                                                                        <img class="author-avatar" src="https://secure.gravatar.com/avatar/4bb7ecf65c4865cc500764daefa121ba?s=13&amp;d=mm&amp;r=g" alt="admin">admin </a>
+                                                                    <i class="las la-clock"></i><a href="https://preview.eagle-themes.com/zante/2020/08/24/">June 17, 2018</a>
+                                                                    <i class="las la-comments"></i><a href="https://preview.eagle-themes.com/zante/hotel-zante-in-pictures/">0 Comments</a>
+                                                                </div> -->
+                                                            </div>
+                                                        </article>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-sm-4">
+                                                        <article class="news-grid-item">
+                                                            <figure class="gradient-overlay slide-right-hover">
+                                                                <a href="#"><img src="https://go2joy.vn/images/hotel/maivila-svh-hotel.jpg" class="img-responsive" alt="10 Things You Should Know"></a>
+                                                            </figure>
+                                                            <div class="details">
+                                                                <h3><a href="#">TIN TỨC 2</a></h3>
+                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut...</p>
+
+                                                            </div>
+                                                        </article>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-sm-4">
+                                                        <article class="news-grid-item">
+                                                            <figure class="gradient-overlay slide-right-hover">
+                                                                <a href="#"><img src="https://go2joy.vn/images/hotel/everest-hotel.jpg" class="img-responsive" alt="Hotel Zante Weddings"></a>
+                                                            </figure>
+                                                            <div class="details">
+                                                                <h3><a href="#">TIN TỨC 3</a></h3>
+                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut...</p>
+
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -402,13 +401,13 @@
             </div>
         </div>
     </div>
-    </div>
+</div>
 </template>
 
 <script>
-    export default {
-         name: "BlogHotel", 
-    }
+export default {
+    name: "BlogHotel",
+}
 </script>
 
 <style scoped>
