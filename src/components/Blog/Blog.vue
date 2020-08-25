@@ -1,227 +1,14 @@
 <template>
 <div>
     <Header />
-    <div class="container">
-        <div class="vc_row wpb_row vc_row-fluid vc_custom_1531852688581 vc_row-has-fill">
-            <div class="wpb_column vc_column_container vc_col-sm-12">
-                <div class="vc_column-inner">
-                    <div class="wpb_wrapper">
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="main_title  text-center  ">
-                                    <h2 class="title">TOP HOTEL NỔI BẬT</h2>
-                                    <p class="main_description">Top các khách sạn nổi bật nhất</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 first-place">
-                                <div class="place-item">
-                                    <figure class="gradient-overlay zoom-hover">
-                                        <a href="https://preview.eagle-themes.com/zante/places/mykonos/">
-                                            <img style="max-height: 370px;" src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/04/mykonos-720x470.jpg" class="img-responsive" alt="Mykonos">
-                                            <div class="place-name">
-                                                <h2>Mykonos</h2>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-12 second-place">
-                                        <div class="place-item">
-                                            <figure class="gradient-overlay zoom-hover">
-                                                <a href="https://preview.eagle-themes.com/zante/places/rodos/">
-                                                    <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/04/rhodos-720x470.jpg" class="img-responsive" alt="Rodos">
-                                                    <div class="place-name">
-                                                        <h2>Rodos</h2>
-                                                    </div>
-                                                </a>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 second-place">
-                                        <div class="place-item">
-                                            <figure class="gradient-overlay zoom-hover">
-                                                <a href="https://preview.eagle-themes.com/zante/places/rodos/">
-                                                    <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/04/rhodos-720x470.jpg" class="img-responsive" alt="Rodos">
-                                                    <div class="place-name">
-                                                        <h2>Rodos</h2>
-                                                    </div>
-                                                </a>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 second-place">
-                                        <div class="place-item">
-                                            <figure class="gradient-overlay zoom-hover">
-                                                <a href="https://preview.eagle-themes.com/zante/places/rodos/">
-                                                    <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/04/rhodos-720x470.jpg" class="img-responsive" alt="Rodos">
-                                                    <div class="place-name">
-                                                        <h2>Rodos</h2>
-                                                    </div>
-                                                </a>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="main_title  text-center  ">
-                                    <h2 class="title">TOP HOTEL YÊU THÍCH</h2>
-                                    <p class="main_description">Tóp các khách sạn được yêu thích nhất</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 second-place">
-                                <div class="place-item">
-                                    <figure class="gradient-overlay zoom-hover">
-                                        <a href="https://preview.eagle-themes.com/zante/places/rodos/">
-                                            <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/04/rhodos-720x470.jpg" class="img-responsive" alt="Rodos">
-                                            <div class="place-name">
-                                                <h2>Rodos</h2>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="col-md-4 third-place">
-                                <div class="place-item">
-                                    <figure class="gradient-overlay zoom-hover">
-                                        <a href="https://preview.eagle-themes.com/zante/places/naxos/">
-                                            <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/04/naxos-720x470.jpg" class="img-responsive" alt="Naxos">
-                                            <div class="place-name">
-                                                <h2>Naxos</h2>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 fourth-place">
-                                <div class="place-item">
-                                    <figure class="gradient-overlay zoom-hover">
-                                        <a href="https://preview.eagle-themes.com/zante/places/acropolis/">
-                                            <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/04/acropolis-720x470.jpg" class="img-responsive" alt="Acropolis">
-                                            <div class="place-name">
-                                                <h2>Acropolis</h2>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="col-md-4 third-place">
-                                <div class="place-item">
-                                    <figure class="gradient-overlay zoom-hover">
-                                        <a href="https://preview.eagle-themes.com/zante/places/naxos/">
-                                            <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/04/naxos-720x470.jpg" class="img-responsive" alt="Naxos">
-                                            <div class="place-name">
-                                                <h2>Naxos</h2>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 fourth-place">
-                                <div class="place-item">
-                                    <figure class="gradient-overlay zoom-hover">
-                                        <a href="https://preview.eagle-themes.com/zante/places/acropolis/">
-                                            <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/04/acropolis-720x470.jpg" class="img-responsive" alt="Acropolis">
-                                            <div class="place-name">
-                                                <h2>Acropolis</h2>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="col-md-4 second-place">
-                                <div class="place-item">
-                                    <figure class="gradient-overlay zoom-hover">
-                                        <a href="https://preview.eagle-themes.com/zante/places/rodos/">
-                                            <img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/04/rhodos-720x470.jpg" class="img-responsive" alt="Rodos">
-                                            <div class="place-name">
-                                                <h2>Rodos</h2>
-                                            </div>
-                                        </a>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <!-- late -->
-                            <div class="vc_row wpb_row vc_row-fluid vc_custom_1531698784896">
-                                <div class="wpb_column vc_column_container vc_col-sm-12">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="main_title  text-center  ">
-                                                <h2 class="title">TIN TỨC VÀ SỰ KIỆN</h2>
-                                                <p class="main_description">Tin tức và sự kiện được cập nhật thường xuyên và liên tục</p>
-                                            </div>
-                                            <div class="latest-posts-grid">
-                                                <div class="row grid-row">
-
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <article class="news-grid-item">
-                                                            <figure class="gradient-overlay slide-right-hover">
-                                                                <a href="https://preview.eagle-themes.com/zante/hotel-zante-in-pictures/"><img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/06/zante-in-pictures-720x520.jpg" class="img-responsive" alt="Hotel Zante in pictures"></a>
-                                                            </figure>
-                                                            <div class="details">
-                                                                <h3><a href="https://preview.eagle-themes.com/zante/hotel-zante-in-pictures/">TIN TỨC 1</a></h3>
-                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut...</p>
-
-                                                                <!-- <div class="info">
-                                                                    <a href="https://preview.eagle-themes.com/zante/author/">
-                                                                        <img class="author-avatar" src="https://secure.gravatar.com/avatar/4bb7ecf65c4865cc500764daefa121ba?s=13&amp;d=mm&amp;r=g" alt="admin">admin </a>
-                                                                    <i class="las la-clock"></i><a href="https://preview.eagle-themes.com/zante/2020/08/24/">June 17, 2018</a>
-                                                                    <i class="las la-comments"></i><a href="https://preview.eagle-themes.com/zante/hotel-zante-in-pictures/">0 Comments</a>
-                                                                </div> -->
-                                                            </div>
-                                                        </article>
-                                                    </div>
-
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <article class="news-grid-item">
-                                                            <figure class="gradient-overlay slide-right-hover">
-                                                                <a href="https://preview.eagle-themes.com/zante/10-things-you-should-know/"><img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/02/blog_post5-720x520.jpg" class="img-responsive" alt="10 Things You Should Know"></a>
-                                                            </figure>
-                                                            <div class="details">
-                                                                <h3><a href="https://preview.eagle-themes.com/zante/10-things-you-should-know/">TIN TỨC 2</a></h3>
-                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut...</p>
-
-                                                            </div>
-                                                        </article>
-                                                    </div>
-
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <article class="news-grid-item">
-                                                            <figure class="gradient-overlay slide-right-hover">
-                                                                <a href="https://preview.eagle-themes.com/zante/hotel-zante-weddings/"><img src="https://preview.eagle-themes.com/zante/wp-content/uploads/2018/02/blog_post4-720x520.jpg" class="img-responsive" alt="Hotel Zante Weddings"></a>
-                                                            </figure>
-                                                            <div class="details">
-                                                                <h3><a href="https://preview.eagle-themes.com/zante/hotel-zante-weddings/">TIN TỨC 3</a></h3>
-                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut...</p>
-
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <BlogHotel />
 </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import Header from "./../Home/Header.vue"
+import BlogHotel from "./BlogHotel"
 // import VueI18n from 'vue-i18n'
 // Vue.use(VueI18n)
 import 'bootstrap/dist/css/bootstrap.css'
@@ -230,7 +17,7 @@ export default {
     path: '/blog',
     name: "Blog",
     components: {
-        Header
+        Header,BlogHotel
 
     },
     data() {
@@ -392,7 +179,9 @@ p {
     padding: 0;
     margin: 0;
 }
-
+img{
+    width: 100%;
+}
 .style-back-nau {
     background-color: #ced3cb;
     color: #000;
@@ -987,5 +776,164 @@ body {
 
 .news-grid-item {
     margin-bottom: 30px;
+}
+  #btn-container-tpZh8 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#btn-tpZh8 {
+    background: rgba(255, 255, 255, 0.01);
+    border-style: solid;
+    border-color: #deb668;
+    border-width: 2px;
+    color: #deb668;
+    padding: 6px 12px;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+#btn-tpZh8:hover {
+    background: #deb668;
+    border-color: #deb668;
+    color: #ffffff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+
+}
+
+#btn-tpZh8 i {
+    right: 14px;
+    margin-top: 0;
+    vertical-align: middle;
+    border-radius: 50%;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    background: #deb668;
+    margin-left: 8px;
+    margin-right: 0;
+    color: #ffffff;
+    font-size: 8px;
+    text-align: center;
+}
+
+#btn-tpZh8:hover i {
+    background: #ffffff;
+    color: #deb668;
+}
+.room-item .room-image .room-price {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 10px;
+    background: #ffffff;
+    color: #606060;
+    border-radius: 2px;
+    font-weight: 700;
+    z-index: 120;
+    border-top: none;
+    border-left: none;
+}
+.small-item .room-item .room-details {
+    padding: 7px 10px;
+}
+.room-item .room-details {
+    position: relative;
+    padding: 12px 10px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-top: none;
+    text-align: center;
+}
+.room-item .room-details .room-title {
+    display: inline-block;
+    line-height: 20px;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.small-item .room-item .room-services {
+    padding: 3px 0;
+}
+.room-item .room-services .room-service-item {
+    display: inline-block;
+    padding: 5px 12px;
+    border: 1px dashed #dedede;
+    margin: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.room-item .room-services .room-service-item i {
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+}
+.room-item .room-services {
+    text-align: center;
+}
+.room-item .room-services {
+    position: absolute;
+    padding: 10px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0 auto;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: 9;
+}
+.gradient-overlay:after, .gradient-overlay-hover:after, .gradient-overlay-slider rs-slide:after {
+    background: -webkit-gradient(linear, left bottom, right top, from(#0870f9), to(#ed6392));
+    background: linear-gradient(to top right, #0870f9 0%, #ed6392 100%);
+}
+a:hover, a:focus, a:active {
+    color: #b69854;
+    text-decoration: none;
+    outline: none;
+    background: none;
+}
+.room-item .room-details .room-title a {
+    font-size: 18px;
+    font-weight: 700;
+}
+.slide-right-hover img:hover {
+    -webkit-transform: translate3d(3%, 0, 0) scale(1.06);
+    transform: translate3d(3%, 0, 0) scale(1.06);
+}
+.slide-right-hover img {
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+    z-index: 9;
+}
+.room-item .room-services.active {
+    opacity: 1;
+    visibility: visible;
+}
+.room-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+.entry figure {
+    max-width: 100%;
+    position: relative;
+}
+.room-image1 {
+    height: 425px;
 }
 </style>
