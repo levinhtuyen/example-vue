@@ -3,41 +3,11 @@
     <Header />
     <div class="container">
 
-        <div class="padd-top-20">
+        <div class="padd-top-20" v-for="(data1, index) in data" :key="index">
             <div class="col-lg-6 col-md-6 col-sm-12 max-height-blog float-left">
                 <div class=" style-box-shadow ">
                     <div class="hotel-item">
-                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/banner_thanh_lam_min.png" alt=""></router-link>
-                        <div class="whatever">
-                            <p class="style-count-image"><a href="#"> Áp dụng ngay</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 max-height-blog float-left">
-                <div class=" style-box-shadow ">
-                    <div class="hotel-item">
-                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/banner_thanh_lam_min.png" alt=""></router-link>
-                        <div class="whatever">
-                            <p class="style-count-image"><a href="#"> Áp dụng ngay</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 max-height-blog float-left">
-                <div class=" style-box-shadow ">
-                    <div class="hotel-item">
-                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/banner_dang_ky_tai_khoan_min.png" alt=""></router-link>
-                        <div class="whatever">
-                            <p class="style-count-image"><a href="#"> Áp dụng ngay</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 max-height-blog float-left">
-                <div class=" style-box-shadow ">
-                    <div class="hotel-item">
-                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/banner_thanh_lam_min.png" alt=""></router-link>
+                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath"  alt=""></router-link>
                         <div class="whatever">
                             <p class="style-count-image"><a href="#"> Áp dụng ngay</a></p>
                         </div>
@@ -72,8 +42,31 @@ export default {
     },
     data() {
         return {
+            data: {
 
+            },
         }
+    },
+
+    created() {
+        this.getList();
+    },
+    methods: {
+        async getList() {
+            axios.defaults.headers = {
+                'deviceid': 'device_for_web',
+            }
+
+            let {
+                data
+            } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
+
+            let listBanner = data.bannerFormList;
+            //console.log('this.data : ', this.data);
+
+            this.data = listBanner
+            console.log('this.data.detailCollectionList', this.data);
+        },
     },
 
 };
@@ -89,9 +82,11 @@ export default {
 .margin-15-tb {
     margin: 15px 0 15px 0;
 }
- .padd-top-20 {
-        padding-top: 50px;
-    }
+
+.padd-top-20 {
+    padding-top: 50px;
+}
+
 .whatever {
     position: relative;
     width: 100%;

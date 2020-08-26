@@ -9,6 +9,7 @@ import About from "@/components/About/About.vue";
 import Blog from "@/components/Blog/Blog.vue";
 import ListPromotion from "@/components/Promotion/ListPromotion.vue";
 import PromotionDetail from "@/components/Promotion/PromotionDetail.vue";
+import Area from "@/components/Area/Area.vue";
 Vue.use(ElementUI)
 Vue.use(Router);
 Vue.use(Vuex)
@@ -49,6 +50,12 @@ export default new Router({
       path: "/promotiondetail",
       name: "PromotionDetail",
       component: PromotionDetail
+    }
+    ,
+    {
+      path: "/area",
+      name: "Area",
+      component: Area
     }
   ]
 });

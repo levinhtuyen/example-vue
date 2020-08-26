@@ -38,7 +38,7 @@ export default {
 
             let {
                 data
-            } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo?userType=1');
+            } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
 
             let listBanner = data.bannerFormList;
             //console.log('this.data : ', this.data);
