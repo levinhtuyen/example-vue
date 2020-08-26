@@ -6,7 +6,7 @@
         <router-link tag="a" :to="{ name: 'Home'}">
             <img src="https://go2joy.vn/images/logo.jpg" alt="Logo" class="logo">
         </router-link>
-
+         <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,7 +23,7 @@
               <router-link tag="a" class="font-size-title" :to="{ name: 'Blog'}">{{ $t('Home.blog') }}</router-link>
             <!-- <button class="style-button" v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)"> <flag :iso="entry.flag" v-bind:squared=false /></button> -->
 
-            <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete>
+            <!-- <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete> -->
             <button type="button" @click="show = !show" class="btn" data-toggle="modal" data-target="#myModal">
                 <img src="./../../assets/search.png" class="search" alt="">
             </button>

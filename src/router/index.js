@@ -1,12 +1,15 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Vuex from 'vuex'
-import HelloWorld from "@/components/HelloWorld";
+import ElementUI from 'element-ui';
 import Home from "@/components/Home/Home.vue";
 import DetailHotel from "@/components/DetailHotel/DetailHotel.vue";
 import Category from "@/components/Category/Category.vue";
 import About from "@/components/About/About.vue";
 import Blog from "@/components/Blog/Blog.vue";
+import ListPromotion from "@/components/Promotion/ListPromotion.vue";
+import PromotionDetail from "@/components/Promotion/PromotionDetail.vue";
+Vue.use(ElementUI)
 Vue.use(Router);
 Vue.use(Vuex)
 export default new Router({
@@ -35,6 +38,17 @@ export default new Router({
       path: "/blog",
       name: "Blog",
       component: Blog
+    },
+    {
+      path: "/listpromotion",
+      name: "ListPromotion",
+      component: ListPromotion
+    }
+    ,
+    {
+      path: "/promotiondetail",
+      name: "PromotionDetail",
+      component: PromotionDetail
     }
   ]
 });
