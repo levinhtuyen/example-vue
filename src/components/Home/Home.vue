@@ -303,7 +303,15 @@ p {
     border-radius: 5px;
 
 }
-
+.padding {
+    padding: 3rem
+}
+.el-carousel__container{
+    height: 450px
+}
+.el-carousel__indicators{
+    display: none;
+}
 @media only screen and (max-width: 480px) {
     .hotel-item img {
         width: 205px;
@@ -362,6 +370,9 @@ p {
         border-radius: 10px;
         background: #eeeeee;
     }
+    .el-carousel__container{
+    height: 135px
+}
 }
 
 @media only screen and (max-width: 768px) and (min-width: 600px) {
@@ -370,7 +381,9 @@ p {
         height: 195px;
 
     }
-
+    .el-carousel__container{
+    height: 324px
+}
     .hotel-item {
         width: 100%;
         height: 195px;
@@ -555,7 +568,6 @@ body {
     }
 }
 
-.padding {
-    padding: 3rem
-}
+
+
 </style>
