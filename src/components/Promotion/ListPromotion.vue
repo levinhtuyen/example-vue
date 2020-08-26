@@ -1,9 +1,9 @@
 <template>
 <div>
-
+    <Header />
     <div class="container">
-        <Header />
-        <div>
+
+        <div class="padd-top-20">
             <div class="col-lg-6 col-md-6 col-sm-12 max-height-blog float-left">
                 <div class=" style-box-shadow ">
                     <div class="hotel-item">
@@ -46,11 +46,14 @@
             </div>
 
         </div>
-        <div class="block">
-            <span class="demonstration">&nbsp;&nbsp;&nbsp;</span>
-            <el-pagination small layout="prev, pager, next" :total="100">
-            </el-pagination>
+        <div class="col-12 style-can-giua ">
+            <div class="block">
+                <span class="demonstration">&nbsp;&nbsp;&nbsp;</span>
+                <el-pagination small layout="prev, pager, next" :total="100">
+                </el-pagination>
+            </div>
         </div>
+
     </div>
 
 </div>
@@ -79,15 +82,16 @@ export default {
 <style scoped>
 .hotel-item img {
     width: 100%;
-    height: 265px;
+    height: auto;
     border-radius: 15px;
-
 }
 
 .margin-15-tb {
     margin: 15px 0 15px 0;
 }
-
+ .padd-top-20 {
+        padding-top: 50px;
+    }
 .whatever {
     position: relative;
     width: 100%;
@@ -126,18 +130,17 @@ export default {
     text-align: left;
 }
 
-.hotel-item .img img {
-    height: 255px;
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .hotel-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .padd-top-20 {
+        padding-top: 30px;
+    }
 }
-
-.hotel-item .img {
-    display: block;
-    overflow: hidden;
-
-    height: auto;
-}
-
-@media only screen and (max-width: 768px) and (min-width: 600) {}
 
 @media only screen and (max-width: 480px) {
 
@@ -170,6 +173,10 @@ export default {
 
     .style-count-image a {
         font-size: 9px;
+    }
+
+    .padd-top-20 {
+        padding-top: 20px;
     }
 }
 </style>
