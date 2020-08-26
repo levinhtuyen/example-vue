@@ -1,114 +1,49 @@
 <template>
 <div id="navbar" class="container">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md bg-light navbar-light">
-        <!-- Brand -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <router-link tag="a" :to="{ name: 'Home'}">
             <img src="https://go2joy.vn/images/logo.jpg" alt="Logo" class="logo">
         </router-link>
-         <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <button class="navbar-toggler" type="button" v-on:click="isHidden = !isHidden">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <span class="font-size-title">{{ $t('Home.language') }}</span>
-            <a @click="changeLocale('vi')">
-                <img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:5px">
-            </a>
-            <a @click="changeLocale('en')">
-                <img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
-            </a>
-            <el-button type="text" @click="dialogFormVisible = true">{{ $t('Home.form') }}</el-button>
-             <router-link tag="a" class="font-size-title" :to="{ name: 'About'}">{{ $t('Home.about') }}</router-link>
-              <router-link tag="a" class="font-size-title" :to="{ name: 'Blog'}">{{ $t('Home.blog') }}</router-link>
-            <!-- <button class="style-button" v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)"> <flag :iso="entry.flag" v-bind:squared=false /></button> -->
 
-            <!-- <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete> -->
-            <button type="button" @click="show = !show" class="btn" data-toggle="modal" data-target="#myModal">
-                <img src="./../../assets/search.png" class="search" alt="">
-            </button>
+        <div class="collapse navbar-collapse" v-if="!isHidden">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item padding-left-right active">
+                    <router-link tag="a" class="font-size-title" :to="{ name: 'About'}">{{ $t('Home.about') }}</router-link>
 
-            <AlertDialog :active.sync="show" title="Hello world" content="Hello world" />
+                </li>
+                <li class="nav-item padding-left-right">
+                    <router-link tag="a" class="font-size-title" :to="{ name: 'Blog'}">{{ $t('Home.blog') }}</router-link>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <el-autocomplete class="form-control style-width" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete>
+
+                <button type="button" @click="show = !show" class="btn" data-toggle="modal" data-target="#myModal">
+                    <img src="./../../assets/search.png" class="search" alt="">
+                </button>
+                <p> <a @click="changeLocale('vi')">
+                        <img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:5px">
+                    </a>
+
+                    <a @click="changeLocale('en')">
+                        <img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
+                    </a></p>
+
+            </form>
         </div>
     </nav>
-    <!-- Collapsible content -->
-    <el-dialog title="Tạo bài viết" :visible.sync="dialogFormVisible">
-        <el-form :model="form">
-            <el-form ref="form" :model="form" label-width="120px">
-                <el-upload action="#" list-type="picture-card" :auto-upload="false">
-                    <i slot="default" class="el-icon-plus"></i>
-                    <div slot="file" slot-scope="{file}">
-                        <img class="el-upload-list__item-thumbnail" :src="file.url" alt="">
-                        <span class="el-upload-list__item-actions">
-                            <span class="el-upload-list__item-preview" @click="handlePictureCardPreview(file)">
-                                <i class="el-icon-zoom-in"></i>
-                            </span>
-                            <span v-if="!disabled" class="el-upload-list__item-delete" @click="handleDownload(file)">
-                                <i class="el-icon-download"></i>
-                            </span>
-                            <span v-if="!disabled" class="el-upload-list__item-delete" @click="handleRemove(file)">
-                                <i class="el-icon-delete"></i>
-                            </span>
-                        </span>
-                    </div>
-                </el-upload>
-                <el-dialog :visible.sync="dialogVisible">
-                    <img width="100%" :src="dialogImageUrl" alt="">
-                </el-dialog>
-                <el-form-item label="Tên bài viết">
-                    <el-input v-model="form.name"></el-input>
-                </el-form-item>
-                <el-form-item label="Chọn danh mục">
-                    <el-select v-model="form.region" placeholder="--- Chọn ---">
-                        <el-option label="Danh mục 1" value="danhmuc1"></el-option>
-                        <el-option label="Danh mục 2" value="danhmuc2"></el-option>
-                    </el-select>
-                </el-form-item>
-                <el-form-item label="Chọn ngày">
-                    <el-col :span="11">
-                        <el-date-picker type="date" placeholder="Từ ngày" v-model="form.date1" style="width: 100%;"></el-date-picker>
-                    </el-col>
-                    <el-col class="line" :span="2">-</el-col>
-                    <el-col :span="11">
-                        <el-time-picker placeholder="Đến ngày" v-model="form.date2" style="width: 100%;"></el-time-picker>
-                    </el-col>
-                </el-form-item>
-                <el-form-item label="Ẩn tin">
-                    <el-switch v-model="form.delivery"></el-switch>
-                </el-form-item>
-                <el-form-item label="Chọn tag">
-                    <el-checkbox-group v-model="form.type">
-                        <el-checkbox label="Hotel" name="type"></el-checkbox>
-                        <el-checkbox label="Coupon" name="type"></el-checkbox>
-                        <el-checkbox label="Review" name="type"></el-checkbox>
-                        <el-checkbox label="Blog" name="type"></el-checkbox>
-                    </el-checkbox-group>
-                </el-form-item>
-                <!-- <el-form-item label="Resources">
-                        <el-radio-group v-model="form.resource">
-                            <el-radio label="Sponsor"></el-radio>
-                            <el-radio label="Venue"></el-radio>
-                        </el-radio-group>
-                    </el-form-item> -->
-                <el-form-item label="Activity form">
-                    <el-input type="textarea" v-model="form.desc"></el-input>
-                </el-form-item>
-                <el-form-item>
-                    <el-button type="primary" @click="onSubmit">Tạo</el-button>
-                    <el-button>Hủy</el-button>
-                </el-form-item>
-            </el-form>
-        </el-form>
-        <span slot="footer" class="dialog-footer">
-            <!-- <el-button @click="dialogFormVisible = false">Cancel</el-button> -->
-            <el-button type="primary" @click="dialogFormVisible = false">Kết thúc</el-button>
-        </span>
-    </el-dialog>
-    <!--/.Navbar-->
 </div>
 </template>
 
 <script>
+import Vue from 'vue'
 import AlertDialog from "./AlertDialog.vue";
 import i18n from './../../lang/i18n';
 export default {
@@ -146,9 +81,10 @@ export default {
                 flag: 'es',
                 language: 'vi',
                 title: 'Tiếng Việt'
-            }]
+            }],
+            isHidden: false
 
-        };
+        }
     },
     methods: {
         loadAll() {
@@ -214,7 +150,8 @@ export default {
         },
         changeLocale(locale) {
             i18n.locale = locale;
-        }
+        },
+
     },
     mounted() {
         this.links = this.loadAll();
@@ -234,6 +171,17 @@ export default {
     height: auto;
 }
 
+.form-control {
+    padding: 0;
+    height: unset;
+    margin: 5px;
+}
+
+.margin-5 {
+    margin: 5px;
+
+}
+
 .style-button {
     padding: 0;
     border: none;
@@ -241,9 +189,17 @@ export default {
 
 }
 
+.style-width {
+    width: 50%;
+}
+
 .style-img {
     width: 200px;
     height: auto;
+}
+
+.collapse {
+    display: block;
 }
 
 .logo {
@@ -267,9 +223,23 @@ export default {
     height: 1.0em;
 }
 
+@media only screen and (max-width: 330px) {
+    .font-size-title {
+        font-size: 8px;
+    }
+
+}
+
 @media only screen and (max-width: 480px) {
     .logo {
         width: 30px;
+    }
+
+    .style-back-cam {
+        background: #ddc620;
+        color: #fff;
+        padding: 1px 1px 1px 1px;
+        border-radius: 5px;
     }
 }
 
@@ -307,7 +277,7 @@ export default {
 /* Style the navbar links */
 #navbar a {
     float: left;
- 
+
     text-align: center;
     padding: 5px;
     text-decoration: none;
@@ -342,5 +312,9 @@ export default {
 /* Display some links to the right */
 #navbar-right {
     float: right;
+}
+
+.padding-left-right {
+    padding: 0 15px 0 15px
 }
 </style>
