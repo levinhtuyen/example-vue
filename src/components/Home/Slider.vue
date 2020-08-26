@@ -1,7 +1,7 @@
 <template>
 <div >
     <div class="block">
-        <el-carousel :autoplay="true" :loop="true" :interval="5000" direction="horizontal">
+        <el-carousel :autoplay="true" :loop="true" :interval="3000" direction="horizontal">
             <el-carousel-item class="border-radius" v-for="(data1, index) in data" :key="index">
                 <div class="item style-slider">
                     <img img class="img-lazy" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath" alt="image" />

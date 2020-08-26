@@ -16,7 +16,12 @@ const messages = {
       form: "FORM",
       about: "ABOUT",
       placeholdersearch: "Please input keyword...",
-      blog: "BLOG DISCOVER"
+      blog: "BLOG DISCOVER",
+      travelHotel: "Travel Hotels",
+      riverside: "A-IN RIVERSIDE HOTEL",
+      love: "Love",
+      youneed: "WHAT DO YOU NEED?",
+      seeall: "See all"
     }
   },
   vi: {
@@ -32,7 +37,12 @@ const messages = {
       form: "FORM",
       about: "GIỚI THIỆU",
       placeholdersearch: "Nhập từ khóa...",
-      blog: "BLOG KHÁM PHÁ"
+      blog: "BLOG KHÁM PHÁ",
+      travelHotel: "Du Lịch",
+      riverside: "Nơi đã tìm",
+      love: "Tình yêu",
+      youneed: "HÔM NAY BẠN CẦN GÌ?",
+      seeall: "Xem tất cả", 
     }
   }
 };

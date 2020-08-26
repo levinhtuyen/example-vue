@@ -1,12 +1,12 @@
 <template>
 <div class="container">
     <b-row>
-    <p class="style-bold font-size-12">HÔM NAY BẠN CẦN GÌ ?</p>
+    <p class="style-bold font-size-12">{{ $t('Home.youneed') }}</p>
 
     <div class="col-12 float-left padding-0-5-10">
         <div class="col-6 style-color-xanh font-size-12">{{ $t('Home.hotdeal') }}</div>
         <div class="col-6 style-text-align-right font-size-12">
-             <span style="cursor: pointer;" @click="chooseSpecitalHotel(dataHotel)">Xem tất cả</span>
+             <span style="cursor: pointer;" @click="chooseSpecitalHotel(dataHotel)">{{ $t('Home.seeall') }}</span>
             </div>
     </div>
     <div class="col-12" style="margin-bottom:6px">

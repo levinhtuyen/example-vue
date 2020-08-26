@@ -5,7 +5,7 @@
             <div class="col-8 float-left" style="margin:0;padding:0">
                 <p class="style-color-xanh font-size-12">{{ $t('Home.promotion') }}</p>
             </div>
-            <div class="col-4 float-left font-size-12" style="text-align:right"><router-link tag="a"  :to="{ name: 'ListPromotion'}">Xem tất cả</router-link></div>
+            <div class="col-4 float-left font-size-12" style="text-align:right"><router-link tag="a"  :to="{ name: 'ListPromotion'}">{{ $t('Home.seeall') }}</router-link></div>
         </div>
         <div class="col-12" style="margin:0;padding:0">
             <carousel :navigationEnabled="false" paginationColor="#7e7e7e" :perPageCustom="[[320, 1],[480, 1], [768, 1], [1024, 2]]">

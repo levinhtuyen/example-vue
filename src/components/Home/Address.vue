@@ -9,8 +9,8 @@
             <button type="button" @click="show = !show" class="btn style-mar-pad-0 " data-toggle="modal" data-target="#myModal"><i style="color:#ff6400" class="fas fa-map-marker-alt"></i>
                 Thành phố Hồ Chí Minh <i style="color:#000" class="fas fa-angle-down"></i>
             </button>
-        
-             <AlertDialog :active.sync="show" title="Hello world" content="Hello world"/>  
+
+            <AlertDialog :active.sync="show" title="Hello world" content="Hello world" />
         </div>
         <!-- <div class="col-3">
             <div class="hotel-item ">
@@ -24,8 +24,9 @@
             <div class="hotel-item1">
                 <div class="style-giua-img">
                     <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/NOVIA-HOTEL.jpg">
+                    
                 </div>
-                <p class="style-p padd-top-botton-10">Nơi đã tìm</p>
+                <p class="style-p padd-top-botton-10">{{ $t('Home.riverside') }}</p>
             </div>
         </div>
         <div class="col-4">
@@ -33,7 +34,7 @@
                 <div class="style-giua-img">
                     <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/A-IN-HOTEL-GLAMOUR-HOTEL.jpg">
                 </div>
-                <p class="style-p padd-top-botton-10">Du lịch</p>
+                <p class="style-p padd-top-botton-10">{{ $t('Home.travelHotel') }}</p>
             </div>
         </div>
         <div class="col-4">
@@ -41,7 +42,7 @@
                 <div class="style-giua-img">
                     <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/EVA-ADAM-HOTEL.jpg">
                 </div>
-                <p class="style-p padd-top-botton-10">Tình yêu</p>
+                <p class="style-p padd-top-botton-10">{{ $t('Home.love') }}</p>
             </div>
         </div>
 
@@ -50,6 +51,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import AlertDialog from "./AlertDialog.vue";
 export default {
     name: 'Address',
@@ -57,11 +59,33 @@ export default {
         AlertDialog
     },
     data() {
-    return {
-      show: false,
+        return {
+            show: false,
+            data1: [],
+            data2: [],
+            data3: []
 
-    };
-  }
+        };
+
+    },
+    created() {
+        this.getList();
+    },
+    methods: {
+        async getList() {
+            axios.defaults.headers = {
+                'deviceid': 'device_for_web',
+            }
+            let {
+                data
+            } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
+            let listBanner = data.circleCollectionList;
+            this.data1 = listBanner[0]
+            this.data2 = listBanner[1]
+            this.data2 = listBanner[2]
+            console.log('list banner top hotel', this.data);
+        },
+    },
 }
 </script>
 

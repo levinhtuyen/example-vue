@@ -6,7 +6,7 @@
                 <p class="style-color-xanh font-size-12">{{ $t('Home.tophotel') }}</p>
             </div>
             <div class="col-4 float-left font-size-12" style="text-align:right">
-                <router-link tag="a" :to="{ name: 'Category', params: { Sn: 1 }}">Xem tất cả</router-link>
+                <router-link tag="a" :to="{ name: 'Category', params: { Sn: 1 }}">{{ $t('Home.seeall') }}</router-link>
             </div>
         </div>
         <div class="col-12" style="margin:0;padding:0">
