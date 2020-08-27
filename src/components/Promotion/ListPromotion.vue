@@ -7,7 +7,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 max-height-blog float-left margin-15-tb" v-for="(data1, index) in data" :key="index">
                     <div class=" style-box-shadow ">
                         <div class="hotel-item">
-                            <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath" alt=""></router-link>
+                            <router-link tag="a" :to="{ name: 'PromotionDetail'}"><img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath" alt=""></router-link>
                             <div class="whatever">
                                 <p class="style-count-image style-canh-giua"><a href="#"> Áp dụng ngay</a></p>
                             </div>
@@ -19,7 +19,7 @@
             <div class="col-12 style-can-giua ">
                 <div class="block">
                     <span class="demonstration">&nbsp;&nbsp;&nbsp;</span>
-                    <el-pagination small layout="prev, pager, next" v-show="total>0" :page.sync="data.page" :limit.sync="data.limit" @current-change="getList" @pagination="getList" :page-size="data.limit" :pager-count="11"  :total="total">
+                    <el-pagination small layout="prev, pager, next" v-show="total>0" :page.sync="data.page" :limit.sync="data.limit" @current-change="getList" @pagination="getList" :page-size="data.limit" :pager-count="11" :total="total">
                     </el-pagination>
                 </div>
             </div>
@@ -84,12 +84,12 @@ export default {
 
             let listBanner = data.bannerFormList;
             //console.log('this.data : ', this.data);
-
+            console.log('listbanner 123', listBanner)
             this.data = listBanner
             this.total = listBanner.length || 0;
             const curPos = this.data.limit * (this.data.page - 1);
             this.list = listBanner.slice(curPos, curPos + this.data.limit);
-            console.log('data  pagination', this.list);
+            console.log('data  pagination 123', this.list);
             this.oldList = this.list.map(v => v.id);
             this.newList = this.oldList.slice();
             this.listLoading = false;
@@ -235,6 +235,18 @@ export default {
 
     .padd-top-20 {
         padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1920px) {
+    .hotel-item {
+        width: 100%;
+        height: 265px;
+    }
+
+    .hotel-item img {
+        overflow: hidden;
+        height: auto;
     }
 }
 </style>

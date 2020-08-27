@@ -1,7 +1,7 @@
 <template>
-<div>
+<div class="container">
     <b-row>
-        <div class="col-12 " style="margin:0;padding:10px 0">
+        <div class="col-12 ">
             <div class="col-8 float-left" style="margin:0;padding:0">
                 <p class="style-color-xanh font-size-12">{{ $t('Home.promotion') }}</p>
             </div>

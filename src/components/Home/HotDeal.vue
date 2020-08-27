@@ -6,7 +6,7 @@
         <div class="col-12 float-left padding-0-5-10">
             <div class="col-6 style-color-xanh font-size-12">{{ $t('Home.hotdeal') }}</div>
             <div class="col-6 style-text-align-right font-size-12">
-                <span style="cursor: pointer;" @click="chooseSpecitalHotel(dataHotel)">{{ $t('Home.seeall') }}</span>
+                <span style="cursor: pointer;color: #007bff;" @click="chooseSpecitalHotel(dataHotel)">{{ $t('Home.seeall') }}</span>
             </div>
         </div>
         <div class="col-12 ">

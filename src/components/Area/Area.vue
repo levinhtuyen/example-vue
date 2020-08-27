@@ -3,7 +3,7 @@
     <Header />
     <div class="container">
 
-        <el-collapse v-model="activeNames" @change="handleChange" v-for="(dataTinh, index) in data" :key="index">
+        <!-- <el-collapse v-model="activeNames" @change="handleChange" v-for="(dataTinh, index) in data" :key="index">
             <el-collapse-item v-bind:title="dataTinh.name" v-bind:name="dataTinh.sn">
                 <div>
                     <el-collapse v-model="activeNames" @change="handleChange" v-for="(dataHuyen, index) in dataTinh" :key="index">
@@ -14,8 +14,14 @@
                 </div>
 
             </el-collapse-item>
-        </el-collapse>
+        </el-collapse> -->
+        <div class="col-4">
+            <ul class="infinite-list" v-infinite-scroll="load" style="overflow:auto; padding:0">
+                <li v-for="(dataTinh, index) in data" :key="index" class="infinite-list-item"><button class="btn btn-light" style="width:100%">{{ dataTinh.name }}</button></li>
+            </ul>
 
+        </div>
+      
     </div>
 </div>
 </template>
@@ -42,9 +48,12 @@ export default {
             snTinh: '',
             data1: [],
             data2: [],
-            activeNames: ['1']
+            activeNames: ['1'],
+            count: 0,
+
         }
     },
+
     async created() {
         axios.defaults.headers = {
             'deviceid': 'device_for_web',
@@ -65,6 +74,9 @@ export default {
 
     },
     methods: {
+        load() {
+            this.count += 2
+        },
         async getDanhSachTinh(data) {
             axios.defaults.headers = {
                 'deviceid': 'device_for_web',
@@ -112,5 +124,15 @@ export default {
 .col-11,
 .col-12 {
     float: left !important;
+}
+
+.infinite-list li {
+    list-style: none;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+.padd-0{
+    padding : 0;
 }
 </style>

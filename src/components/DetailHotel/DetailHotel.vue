@@ -242,6 +242,18 @@ p {
     overflow: hidden;
 }
 
+.style-back-cam {
+    background-color: #eac34c;
+    color: #ffffff;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+}
+.style-back-cam:hover{
+    background-color: #ff6400;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 .style-padd {
     padding: 15px;
 }

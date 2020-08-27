@@ -186,6 +186,131 @@ export default {
     padding-left: 0;
 }
 
+.hotel-item-cate1 {
+    width: 100%;
+    height: 256px;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.hotel-item-cate {
+    width: 100%;
+
+    height: auto;
+
+}
+
+.font-size-title-name {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.style-back-cam {
+    background-color: #eac34c;
+    color: #ffffff;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+}
+
+.style-back-nau {
+    background-color: #f2f4f0;
+    color: #000;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.font-size-title-qd {
+    font-size: 12px;
+}
+
+.font-size-title-km {
+    font-size: 18px;
+}
+
+.padding-p {
+    padding: 5px
+}
+
+.font-size-title-price {
+    font-size: 13px;
+    text-decoration: line-through;
+
+}
+
+.style-padd {
+    padding: 10px;
+}
+
+.style-padd-10 {
+    padding: 10px;
+}
+
+.style-padd-top-bottom-10 {
+    padding: 10px 0 10px 0
+}
+
+.font-size-title {
+    font-size: 12px;
+}
+
+.style-box-shadow {
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.style-back-do {
+    background-color: #ffdbc4;
+    color: #ff6e11;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+}
+
+.margin-10 {
+    margin-top: 10px
+}
+
+.hotel-item-cate img {
+    width: 100%;
+    height: 265px;
+}
+
+.giam-gia-soc {
+    position: absolute;
+    top: 20px;
+    background: red;
+    opacity: 0.9;
+    border-radius: 0 10px 10px 0;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px;
+    background-color: red;
+    background: -moz-linear-gradient(right, #f05634 60%, red 40%);
+    background: -o-linear-gradient(right, #f05634 60%, red 40%);
+    background: -ms-linear-gradient(right, #f05634 60%, red 40%);
+    background: -webkit-gradient(linear, right top, left top, color-stop(0.4, #f05634), color-stop(0.6, red));
+}
+
+.loai-hotel {
+    position: absolute;
+    top: 70px;
+    background: #fa679b;
+    opacity: 0.9;
+    border-radius: 0 10px 10px 0;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px;
+    background-color: #fa679b;
+    background: -moz-linear-gradient(right, #fa679b 60%, #f81364 40%);
+    background: -o-linear-gradient(right, #fa679b 60%, #f81364 40%);
+    background: -ms-linear-gradient(right, #fa679b 60%, #f81364 40%);
+    background: -webkit-gradient(linear, right top, left top, color-stop(0.4, #fa679b), color-stop(0.6, #f81364));
+}
+
+.style-back-cam {
+    padding: 2px 5px 2px 5px;
+}
+
 .margin-15-tb {
     margin: 30px 0px 30px 0px;
 }
@@ -242,7 +367,7 @@ export default {
 
     background: #ddc620;
     color: #fff;
-    padding: 4px 5px 5px 5px;
+ 
     border-radius: 5px;
 
 }
@@ -437,13 +562,14 @@ export default {
         font-size: 20px;
         color: #ffffff;
         padding: 5px;
-         background-color: red;
+        background-color: red;
         background: -moz-linear-gradient(right, #f05634 60%, red 40%);
         background: -o-linear-gradient(right, #f05634 60%, red 40%);
         background: -ms-linear-gradient(right, #f05634 60%, red 40%);
-        background: -webkit-gradient(linear,right top,left top,color-stop(0.4, #f05634),color-stop(0.6, red));
+        background: -webkit-gradient(linear, right top, left top, color-stop(0.4, #f05634), color-stop(0.6, red));
     }
-    .loai-hotel{
+
+    .loai-hotel {
         position: absolute;
         top: 70px;
         background: #fa679b;
@@ -452,11 +578,11 @@ export default {
         font-size: 20px;
         color: #ffffff;
         padding: 5px;
-         background-color: #fa679b;
+        background-color: #fa679b;
         background: -moz-linear-gradient(right, #fa679b 60%, #f81364 40%);
         background: -o-linear-gradient(right, #fa679b 60%, #f81364 40%);
         background: -ms-linear-gradient(right, #fa679b 60%, #f81364 40%);
-        background: -webkit-gradient(linear,right top,left top,color-stop(0.4, #fa679b),color-stop(0.6, #f81364));
+        background: -webkit-gradient(linear, right top, left top, color-stop(0.4, #fa679b), color-stop(0.6, #f81364));
     }
 }
 </style>

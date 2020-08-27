@@ -21,7 +21,7 @@
                             <p class="style-bold font-size-title-name">LUXURY ROOM</p>
                         </div>
                         <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
-                        <div class="col-12">
+                        <div class="col-12 padding-top-60">
 
                             <div class="float-right style-border-cam">
                                 <p class="style-margin-1 font-size-title"><a class="style-back-cam"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
@@ -52,7 +52,7 @@
                             <p class="style-bold font-size-title-name">LUXURY ROOM</p>
                         </div>
                         <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
-                        <div class="col-12">
+                        <div class="col-12 padding-top-60">
 
                             <div class="float-right style-border-cam">
                                 <p class="style-margin-1 font-size-title"><a class="style-back-cam"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
@@ -83,7 +83,7 @@
                             <p class="style-bold font-size-title-name">LUXURY ROOM</p>
                         </div>
                         <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
-                        <div class="col-12">
+                        <div class="col-12 padding-top-60">
 
                             <div class="float-right style-border-cam">
                                 <p class="style-margin-1 font-size-title"><a class="style-back-cam"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
@@ -114,7 +114,7 @@
                             <p class="style-bold font-size-title-name">LUXURY ROOM</p>
                         </div>
                         <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
-                        <div class="col-12">
+                        <div class="col-12 padding-top-60">
 
                             <div class="float-right style-border-cam">
                                 <p class="style-margin-1 font-size-title"><a class="style-back-cam"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
@@ -183,15 +183,22 @@ export default {
 .style-btn-dat-ngay {
     background: #ffffff;
     width: 100px;
-    font-size: 10px;
+    font-size: 15px;
     border-radius: 5px;
     border: none;
     text-decoration: underline;
     color: #ff6401;
+    margin: 10px;
 }
+
 .margin-15-tb {
-        margin: 30px 0 30px 0;
-    }
+    margin: 30px 0 30px 0;
+}
+
+.padding-top-60 {
+    padding: 60px 20px 0 0;
+}
+
 @media only screen and (max-width: 480px) and (min-width: 320px) {
 
     .style-btn-dat-ngay {
