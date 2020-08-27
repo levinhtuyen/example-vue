@@ -9,9 +9,10 @@
                 <router-link tag="a" :to="{ name: 'Category', params: { Sn: 1 }}">{{ $t('Home.seeall') }}</router-link>
             </div>
         </div>
-        <div class="col-12" style="margin:0;padding:0">
+       
+         <div class="col-12" style="margin:0;padding:0">
             <carousel :navigationEnabled="false" paginationColor="#7e7e7e" :perPageCustom="[[320, 1],[480, 1], [768, 1], [1024, 2]]">
-                <slide>
+               <slide>
                     <div class="col-11">
                         <div class="item">
                             <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->

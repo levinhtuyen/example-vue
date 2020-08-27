@@ -104,6 +104,10 @@ a {
     margin-top: 15px;
 }
 
+.margin-20 {
+    margin: 20px 0 20px 0;
+}
+
 p,
 span,
 a:hover {
@@ -140,7 +144,7 @@ p {
 }
 
 .style-gia-giam {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .style-text-align-right {
@@ -166,9 +170,13 @@ p {
 
 .style-back-xanh {
     background-color: #c2f2a9;
-    color: #1e5302;
-    padding: 5px;
+    color: #41b405;
+    padding: 2px 10px 2px 10px;
     border-radius: 10px;
+}
+
+.style-title-trang {
+    color: #ffffff;
 }
 
 .owl-item {
@@ -176,7 +184,6 @@ p {
     border-radius: 20px !important;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3) !important;
 }
-
 
 .no-padd {
     padding-right: 0;
@@ -221,13 +228,23 @@ p {
     border-radius: 10px;
 }
 
-.style-back-doback-do a {
+.style-back-red {
     background-color: red;
+    padding: 2px 10px 2px 10px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.style-back-do {
+    background-color: red;
+    color: #fff;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
 }
 
 .style-border-red {
     border: 1px solid red;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .style-bold {
@@ -273,15 +290,6 @@ p {
     padding: 20px 0 20px;
 }
 
-.style-back-do {
-
-    background: red;
-    color: #fff;
-    padding: 2px 3px 2px 3px;
-    border-radius: 5px;
-
-}
-
 .padding {
     padding: 3rem
 }
@@ -293,6 +301,7 @@ p {
 .el-carousel__indicators {
     display: none;
 }
+
 .images-country {
     width: 20px;
     height: auto;
@@ -402,7 +411,6 @@ p {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
 }
 
-
 /* Style the navbar links */
 #navbar a {
     float: left;
@@ -446,7 +454,6 @@ p {
 .padding-left-right {
     padding: 0 15px 0 15px
 }
-
 
 @media only screen and (max-width: 480px) {
     .hotel-item img {
@@ -538,12 +545,10 @@ p {
     }
 
     .style-back-do {
-
-        background: #ddc620;
+        background-color: red;
         color: #fff;
-        padding: 2px 3px 2px 3px;
-        border-radius: 5px;
-
+        padding: 2px 10px 2px 10px;
+        border-radius: 10px;
     }
 
     .padding-p {
@@ -591,13 +596,26 @@ p {
         padding: 15px 0 30px;
     }
 
-    .style-back-do {
+    .style-back-cam {
+        background-color: #eac34c;
+        color: #ffffff;
+        padding: 2px 10px 2px 10px;
+        border-radius: 10px;
+    }
 
-        background: #ddc620;
-        color: #fff;
-        padding: 2px 3px 2px 3px;
-        border-radius: 5px;
+    .style-back-nau {
+        background-color: #f2f4f0;
+        color: #000;
+        padding: 5px;
+        border-radius: 10px;
+    }
 
+    .font-size-title-qd {
+        font-size: 12px;
+    }
+
+    .font-size-title-km {
+        font-size: 18px;
     }
 
     .padding-p {
@@ -605,7 +623,7 @@ p {
     }
 
     .font-size-title-price {
-        font-size: 18px;
+        font-size: 13px;
     }
 
     .style-padd {
@@ -614,6 +632,10 @@ p {
 
     .style-padd-10 {
         padding: 10px;
+    }
+
+    .style-padd-top-bottom-10 {
+        padding: 10px 0 10px 0
     }
 
     .font-size-title {
@@ -629,6 +651,18 @@ p {
         border-radius: 10px;
         background: #ffffff;
     }
+
+    .style-back-do {
+        background-color: #ffdbc4;
+        color: #ff6e11;
+        padding: 2px 10px 2px 10px;
+        border-radius: 10px;
+    }
+
+    .item img {
+        border-radius: 40px;
+    }
+
 }
 
 .style-color-blue {

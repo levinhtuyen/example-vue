@@ -106,8 +106,8 @@ p {
 }
 
 .padd-top-botton-10 {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .style-img {
