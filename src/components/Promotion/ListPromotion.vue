@@ -3,8 +3,8 @@
     <Header />
     <div class="container">
         <b-row>
-            <div class="padd-top-20" v-for="(data1, index) in data" :key="index">
-                <div class="col-lg-6 col-md-6 col-sm-12 max-height-blog float-left" v-for="(data1, index) in data" :key="index">
+            <div class="padd-top-20 ">
+                <div class="col-lg-6 col-md-6 col-sm-12 max-height-blog float-left margin-15-tb" v-for="(data1, index) in data" :key="index">
                     <div class=" style-box-shadow ">
                         <div class="hotel-item">
                             <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath" alt=""></router-link>
@@ -19,7 +19,7 @@
             <div class="col-12 style-can-giua ">
                 <div class="block">
                     <span class="demonstration">&nbsp;&nbsp;&nbsp;</span>
-                    <el-pagination small layout="prev, pager, next" :total="100">
+                    <el-pagination small layout="prev, pager, next" v-show="total>0" :page.sync="data.page" :limit.sync="data.limit" @current-change="getList" @pagination="getList" :page-size="data.limit" :pager-count="11"  :total="total">
                     </el-pagination>
                 </div>
             </div>
@@ -45,8 +45,26 @@ export default {
     data() {
         return {
             data: {
+                page: 1,
+                limit: 10,
+                importance: undefined,
+                name: undefined,
+                type: undefined,
+                category: [''],
+                sort: '+id',
+                status: undefined,
+                imagePath: undefined,
+                averageMark: 0,
+                districtName: undefined,
+                totalFavorite: 0,
+                lowestPriceOvernight: 0,
+                lowestOneDay: 0,
+            },
+            list: {
 
             },
+            total: 0,
+            listLoading: true,
         }
     },
 
@@ -54,20 +72,31 @@ export default {
         this.getList();
     },
     methods: {
+
         async getList() {
             axios.defaults.headers = {
                 'deviceid': 'device_for_web',
             }
-
             let {
                 data
             } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
+            let data1 = data.detailCollectionList;
 
             let listBanner = data.bannerFormList;
             //console.log('this.data : ', this.data);
 
             this.data = listBanner
-            console.log('this.data.detailCollectionList', this.data);
+            this.total = listBanner.length || 0;
+            const curPos = this.data.limit * (this.data.page - 1);
+            this.list = listBanner.slice(curPos, curPos + this.data.limit);
+            console.log('data  pagination', this.list);
+            this.oldList = this.list.map(v => v.id);
+            this.newList = this.oldList.slice();
+            this.listLoading = false;
+        },
+        handleFilter() {
+            this.data.page = 1;
+            this.getList();
         },
     },
 
@@ -84,11 +113,13 @@ export default {
 .margin-15-tb {
     margin: 15px 0 15px 0;
 }
+
 .style-canh-giua {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .padd-top-20 {
     padding-top: 50px;
 }
