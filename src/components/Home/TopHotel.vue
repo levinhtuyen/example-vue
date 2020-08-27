@@ -10,7 +10,7 @@
             </div>
         </div>
        
-         <div class="col-12" style="margin:0;padding:0">
+         <div class="col-12 style-padding-bottom" >
             <carousel :navigationEnabled="false" paginationColor="#7e7e7e" :perPageCustom="[[320, 1],[480, 1], [768, 1], [1024, 2]]">
                <slide>
                     <div class="col-11">
@@ -95,7 +95,9 @@ a:hover {
     padding: 5px;
     border-radius: 10px;
 }
-
+.style-padding-bottom{
+    padding-bottom: 40px;
+}
 .style-back-do {
 
     background: red;

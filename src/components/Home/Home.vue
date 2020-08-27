@@ -75,7 +75,8 @@ a {
 .col-1,
 .col-2,
 .col-3,
-.col-4.col-5,
+.col-4,
+.col-5,
 .col-6,
 .col-7,
 .col-8,
@@ -642,10 +643,6 @@ p {
         font-size: 16px;
     }
 
-    .hotel-item img {
-        width: 255px;
-        height: 265px;
-    }
 
     .style-box-shadow {
         border-radius: 10px;
