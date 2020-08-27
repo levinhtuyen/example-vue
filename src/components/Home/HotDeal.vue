@@ -9,16 +9,12 @@
              <span style="cursor: pointer;" @click="chooseSpecitalHotel(dataHotel)">{{ $t('Home.seeall') }}</span>
             </div>
     </div>
-    <div class="col-12" style="margin-bottom:6px">
+    <div class="col-12  no-padd" style="margin-bottom:6px">
         <carousel 
-        :centerMode="false"
-        :perPage="1"
-       
-        :navigationEnabled="false" 
-        :autoplay="true" :interval="5000"
+        :autoplay="true" :interval="25000"
         :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
             <slide >
-                <div class="col-11 style-box-shadow">
+                <div class="col-12 style-box-shadow no-padd">
                     <div class="col-4" style="float:left">
                         <div class="hotel-item">
                             <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>

@@ -6,7 +6,7 @@
             <p class="style-address  style-can-giua">{{ $t('Home.chooseaddress') }}</p>
         </div>
         <div class="col-7 style-right padd-top-botton-10">
-            <button type="button" @click="show = !show" class="btn style-mar-pad-0 " data-toggle="modal" data-target="#myModal"><i style="color:#ff6400" class="fas fa-map-marker-alt"></i>
+            <button type="button"  class="btn style-mar-pad-0 " data-toggle="modal" data-target="#myModal"><i style="color:#ff6400" class="fas fa-map-marker-alt"></i>
                 Thành phố Hồ Chí Minh <i style="color:#000" class="fas fa-angle-down"></i>
             </button>
 

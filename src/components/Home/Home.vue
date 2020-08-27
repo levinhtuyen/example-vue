@@ -13,6 +13,7 @@
     </div>
 </div>
 </template>
+
 <script>
 import Vue from 'vue'
 // import HelloWorld from "./components/HelloWorld.vue";
@@ -133,7 +134,7 @@ p {
 }
 
 .style-box-shadow {
-    background: #eeeeee;
+    background: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -176,39 +177,10 @@ p {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3) !important;
 }
 
-.col-lg-6,
-.col-md-6,
-.col-sm-6,
-.col-xs-6 {
-    width: 50%;
-}
 
-.col-4 {
-    width: 33.3%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-2 {
-    width: 20%;
-}
-
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-    padding: 0;
-    margin: 0;
+.no-padd {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .style-back-nau {
@@ -262,6 +234,12 @@ p {
     font-weight: 600;
 }
 
+.style-canh-giua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hotel-item img {
     width: 305px;
     height: 245px;
@@ -303,15 +281,173 @@ p {
     border-radius: 5px;
 
 }
+
 .padding {
     padding: 3rem
 }
-.el-carousel__container{
+
+.el-carousel__container {
     height: 450px
 }
-.el-carousel__indicators{
+
+.el-carousel__indicators {
     display: none;
 }
+.images-country {
+    width: 20px;
+    height: auto;
+}
+
+.form-control {
+    padding: 0;
+    height: unset;
+    margin: 5px;
+}
+
+.margin-5 {
+    margin: 5px;
+
+}
+
+.style-button {
+    padding: 0;
+    border: none;
+    font-size: 18px;
+
+}
+
+.style-width {
+    width: 50%;
+}
+
+.style-img {
+    width: 200px;
+    height: auto;
+}
+
+.collapse {
+    display: block;
+}
+
+.logo {
+    width: 60px;
+}
+
+.search {
+    width: 50px;
+}
+
+.md-form img {
+    margin: 0 20px
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgb(255 253 253 / 10%);
+}
+
+.navbar-toggler-icon {
+    width: 1.0em;
+    height: 1.0em;
+}
+
+@media only screen and (max-width: 330px) {
+    .font-size-title {
+        font-size: 8px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 30px;
+    }
+
+    .style-back-cam {
+        background: #ddc620;
+        color: #fff;
+        padding: 1px 1px 1px 1px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .logo {
+        width: 40px;
+    }
+
+    .search {
+        width: 40px;
+    }
+}
+
+.style-mar-padd-0 {
+    margin: 0;
+    padding: 0;
+}
+
+.search {
+    width: 25px;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: 0.4s;
+    /* Adds a transition effect when the padding is decreased */
+    /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0;
+    /* At the top */
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+}
+
+
+/* Style the navbar links */
+#navbar a {
+    float: left;
+
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Style the logo */
+#navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.navbar {
+    padding: 0;
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active/current link */
+#navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Display some links to the right */
+#navbar-right {
+    float: right;
+}
+
+.padding-left-right {
+    padding: 0 15px 0 15px
+}
+
+
 @media only screen and (max-width: 480px) {
     .hotel-item img {
         width: 205px;
@@ -359,7 +495,7 @@ p {
     }
 
     .font-size-title {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .hotel-item img {
@@ -368,11 +504,12 @@ p {
 
     .style-box-shadow {
         border-radius: 10px;
-        background: #eeeeee;
+        background: #ffffff;
     }
-    .el-carousel__container{
-    height: 135px
-}
+
+    .el-carousel__container {
+        height: 135px
+    }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 600px) {
@@ -381,9 +518,11 @@ p {
         height: 195px;
 
     }
-    .el-carousel__container{
-    height: 324px
-}
+
+    .el-carousel__container {
+        height: 324px
+    }
+
     .hotel-item {
         width: 100%;
         height: 195px;
@@ -433,7 +572,7 @@ p {
 
     .style-box-shadow {
         border-radius: 10px;
-        background: #eeeeee;
+        background: #ffffff;
     }
 }
 
@@ -488,7 +627,7 @@ p {
 
     .style-box-shadow {
         border-radius: 10px;
-        background: #eeeeee;
+        background: #ffffff;
     }
 }
 
@@ -567,7 +706,4 @@ body {
         padding: 1rem
     }
 }
-
-
-
 </style>

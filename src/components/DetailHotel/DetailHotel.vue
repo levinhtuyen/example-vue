@@ -100,7 +100,7 @@ p {
 }
 
 .style-box-shadow {
-    background: #eeeeee;
+    background: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -327,7 +327,7 @@ p {
 
     .style-box-shadow {
         border-radius: 10px;
-        background: #eeeeee;
+        background: #ffffff;
     }
 }
 
@@ -387,7 +387,7 @@ p {
 
     .style-box-shadow {
         border-radius: 10px;
-        background: #eeeeee;
+        background: #ffffff;
     }
 }
 
@@ -442,7 +442,7 @@ p {
 
     .style-box-shadow {
         border-radius: 10px;
-        background: #eeeeee;
+        background: #ffffff;
     }
 }
 

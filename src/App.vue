@@ -27,9 +27,12 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     /* text-align: center; */
     color: #2c3e50;
+    
 
 }
-
+.container{
+    background-color: #ffffff;
+}
 h1,
 h2,
 h3,

@@ -8,9 +8,9 @@
             </div>
         </div>
         <div class="col-12">
-            <carousel :loop="true" :centerMode="false" :perPage="1" :navigationEnabled="false" paginationColor="#7e7e7e" paginationPosition="bottom" :autoplay="true" :interval="5000" :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
+            <carousel  :autoplay="true" :interval="5000" :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
                 <slide>
-                    <div class="col-11 style-box-shadow">
+                    <div class="col-12 style-box-shadow">
                         <div class="col-4" style="float:left">
                             <div class="hotel-item">
                                 <!-- <img class="img-lazy" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath"> -->

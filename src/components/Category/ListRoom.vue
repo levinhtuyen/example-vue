@@ -3,15 +3,15 @@
     <b-row>
         <div class="col-12 " style="margin-bottom:6px">
             <div class=" scroll-container" v-for="(dataHotel, index) in list" :key="index">
-                <div class="col-6 float-left" >
-                    <div class="col-12 style-box-shadow  margin-15-tb">
+                <div class="col-6 float-left">
+                    <div class="col-12 style-box-shadow  margin-15-tb no-padd">
 
-                        <div class="col-12 demo-image__error">
+                        <div class="col-12 demo-image__error no-padd">
                             <div class="hotel-item">
                                 <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: dataHotel.sn }}">
-                                    <el-image  :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath" lazy placeholder="Images loading...">
+                                    <el-image class="hotel-item" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath" lazy placeholder="Images loading...">
                                         <div slot="error" class="image-slot">
-                                        <img class="hotel-item" src="./../../assets/loading_big.png" alt="">
+                                            <img class="hotel-item" src="./../../assets/loading_big.png" alt="">
                                         </div>
                                     </el-image>
                                     <!-- <img class="img-lazy" v-lazy="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath"> -->
@@ -20,7 +20,7 @@
                         </div>
                         <div class="col-12 style-padd padding-0-5-10">
                             <div class="col-12">
-                                <p class="style-bold font-size-title-name limit-title">{{ dataHotel.name }}</p>
+                                <p class="padding-p style-bold font-size-title-name limit-title">{{ dataHotel.name }}</p>
                             </div>
 
                             <div class="col-12">
@@ -47,8 +47,7 @@
 
         </div>
         <div class="col-12 canh-giua">
-            <el-pagination v-show="total>0" :page.sync="data.page" :limit.sync="data.limit"
-      @current-change="getList" @pagination="getList" :page-size="data.limit" :pager-count="11" layout="prev, pager, next" :total="total">
+            <el-pagination v-show="total>0" :page.sync="data.page" :limit.sync="data.limit" @current-change="getList" @pagination="getList" :page-size="data.limit" :pager-count="11" layout="prev, pager, next" :total="total">
             </el-pagination>
         </div>
     </b-row>
@@ -104,7 +103,7 @@ export default {
                 data
             } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
             let data1 = data.detailCollectionList;
-          
+
             let HotHotel = data1[1];
             console.log('data 1 : ', data1)
             let dataGet = HotHotel.hotelFormList
@@ -117,12 +116,12 @@ export default {
             this.newList = this.oldList.slice();
             this.listLoading = false;
         },
-         handleFilter() {
-      this.data.page = 1;
-      this.getList();
-    },
+        handleFilter() {
+            this.data.page = 1;
+            this.getList();
+        },
     }
-    
+
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -141,12 +140,12 @@ export default {
 .col-6 {
     width: 100%;
 
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .style-btn-dat-ngay {
-    background: #eeeeee;
+    background: #ffffff;
     width: 100px;
     font-size: 10px;
     border-radius: 5px;
@@ -154,18 +153,25 @@ export default {
     text-decoration: underline;
     color: #ff6401;
 }
+
 .hotel-item img {
     width: 100%;
     height: auto;
 }
+
+.no-padd {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .margin-15-tb {
-    margin: 30px 0 30px 0;
+    margin: 30px 0px 30px 0px;
 }
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
 
     .style-btn-dat-ngay {
-        background: #eeeeee;
+        background: #ffffff;
         width: 80px;
         font-size: 10px;
         border-radius: 5px;
@@ -185,11 +191,13 @@ export default {
     .margin-15-tb {
         margin: 15px 0 15px 0;
     }
+
     .hotel-item {
         width: 100%;
         height: 110px;
     }
-    .hotel-item img{
+
+    .hotel-item img {
         height: 110px;
     }
 }

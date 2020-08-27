@@ -35,7 +35,7 @@ export default {
 }
 
 .style-btn-dat-ngay {
-    background: #eeeeee;
+    background: #ffffff;
     width: 100px;
     font-size: 10px;
     border-radius: 5px;
@@ -49,7 +49,7 @@ export default {
 @media only screen and (max-width: 480px) and (min-width: 320px) {
 
     .style-btn-dat-ngay {
-        background: #eeeeee;
+        background: #ffffff;
         width: 80px;
         font-size: 10px;
         border-radius: 5px;

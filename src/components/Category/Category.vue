@@ -77,11 +77,6 @@ a:hover {
     text-decoration: unset;
 }
 
-.row {
-    margin: 0;
-    padding: 0;
-    ;
-}
 
 p {
     margin-bottom: 0.3rem;
@@ -104,7 +99,7 @@ p {
 }
 
 .style-box-shadow {
-    background: #eeeeee;
+    background: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -166,21 +161,7 @@ p {
     width: 20%;
 }
 
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-    padding: 0;
-    margin: 0;
-}
+
 
 .style-back-nau {
     background-color: #ced3cb;
@@ -292,6 +273,7 @@ p {
     .hotel-item {
         width: 100%;
         height: 110px;
+               overflow: hidden;
 
     }
 
@@ -338,7 +320,7 @@ p {
 
     .style-box-shadow {
         border-radius: 10px;
-        background: #eeeeee;
+        background: #ffffff;
     }
 }
 
@@ -352,6 +334,7 @@ p {
     .hotel-item {
         width: 100%;
         height: 195px;
+        overflow: hidden;
 
     }
 
@@ -398,14 +381,15 @@ p {
 
     .style-box-shadow {
         border-radius: 10px;
-        background: #eeeeee;
+        background: #ffffff;
     }
 }
 
 @media only screen and (max-width: 2560px) and (min-width: 1920px) {
     .hotel-item img {
-        width: 255px;
-        height: 265px;
+        width: 100%;
+        height: auto;
+        
 
     }
 
@@ -446,14 +430,10 @@ p {
         font-size: 16px;
     }
 
-    .hotel-item img {
-        width: 255px;
-        height: 265px;
-    }
 
     .style-box-shadow {
         border-radius: 10px;
-        background: #eeeeee;
+        background: #ffffff;
     }
 }
 

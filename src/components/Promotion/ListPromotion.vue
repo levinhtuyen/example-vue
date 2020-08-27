@@ -2,27 +2,28 @@
 <div>
     <Header />
     <div class="container">
-
-        <div class="padd-top-20" v-for="(data1, index) in data" :key="index">
-            <div class="col-lg-6 col-md-6 col-sm-12 max-height-blog float-left">
-                <div class=" style-box-shadow ">
-                    <div class="hotel-item">
-                        <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath"  alt=""></router-link>
-                        <div class="whatever">
-                            <p class="style-count-image"><a href="#"> Áp dụng ngay</a></p>
+        <b-row>
+            <div class="padd-top-20" v-for="(data1, index) in data" :key="index">
+                <div class="col-lg-6 col-md-6 col-sm-12 max-height-blog float-left" v-for="(data1, index) in data" :key="index">
+                    <div class=" style-box-shadow ">
+                        <div class="hotel-item">
+                            <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath" alt=""></router-link>
+                            <div class="whatever">
+                                <p class="style-count-image style-canh-giua"><a href="#"> Áp dụng ngay</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
-        <div class="col-12 style-can-giua ">
-            <div class="block">
-                <span class="demonstration">&nbsp;&nbsp;&nbsp;</span>
-                <el-pagination small layout="prev, pager, next" :total="100">
-                </el-pagination>
             </div>
-        </div>
+            <div class="col-12 style-can-giua ">
+                <div class="block">
+                    <span class="demonstration">&nbsp;&nbsp;&nbsp;</span>
+                    <el-pagination small layout="prev, pager, next" :total="100">
+                    </el-pagination>
+                </div>
+            </div>
+        </b-row>
 
     </div>
 
@@ -31,6 +32,7 @@
 
 <script>
 import Vue from 'vue'
+import axios from 'axios'
 import Header from "../Home/Header.vue"
 // import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -82,7 +84,11 @@ export default {
 .margin-15-tb {
     margin: 15px 0 15px 0;
 }
-
+.style-canh-giua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .padd-top-20 {
     padding-top: 50px;
 }
@@ -132,8 +138,34 @@ export default {
         border-radius: 15px;
     }
 
+    .hotel-item {
+        width: 100%;
+        height: 147px;
+        margin: 15px 0;
+    }
+
     .padd-top-20 {
         padding-top: 30px;
+    }
+
+    .style-count-image {
+        float: right;
+        color: #ffffff;
+        opacity: 0.9;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #ff6400;
+        top: 0;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .whatever {
+        position: relative;
+        width: 100%;
+        top: -40px;
+        background-color: chocolate;
+        padding: 0 15px 0 0;
     }
 }
 
