@@ -7,7 +7,7 @@
                 <el-input v-model="search" size="medium" placeholder="Tìm bằng tên, địa chỉ ..." />
             </div>
             <div class="col-12" >
-                <p class="mar-top-bottom"><i class="fal fa-sms color-cam"></i> Từ khóa Hot</p>
+                <p class="mar-top-bottom"> <i class="fas fa-hotel color-trang"></i> Từ khóa Hot</p>
                 <el-link class="style-padd-left-right" type="primary">#bontam</el-link>
                 <el-link class="style-padd-left-right" type="primary">#ghetinhyeu</el-link>
                 <el-link class="style-padd-left-right" type="primary">#KSHot</el-link>
