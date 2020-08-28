@@ -44,12 +44,12 @@
 
 <script>
 import Vue from 'vue'
-// import AlertDialog from "./AlertDialog.vue";
+import AlertDialog from "./AlertDialog.vue";
 import i18n from './../../lang/i18n';
 export default {
     name: 'Header',
     components: {
-        // AlertDialog
+        AlertDialog
     },
     data() {
         return {
@@ -473,10 +473,10 @@ p {
 }
 
 /* Links on mouse-over */
-#navbar a:hover {
+/* #navbar a:hover {
     background-color: #ddd;
     color: black;
-}
+} */
 
 /* Style the active/current link */
 #navbar a.active {

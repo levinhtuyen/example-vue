@@ -320,7 +320,7 @@ export default {
 }
 
 .margin-left-right-10 {
-    margin: 0 10px 0 10px;
+    margin: 0 5px 0 5px;
 }
 
 .style-box-shadow {
@@ -503,7 +503,7 @@ export default {
     }
 
     .font-size-title-km {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .padding-p {
@@ -511,7 +511,7 @@ export default {
     }
 
     .font-size-title-price {
-        font-size: 13px;
+        font-size: 12px;
         text-decoration: line-through;
 
     }

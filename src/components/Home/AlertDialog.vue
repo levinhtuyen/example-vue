@@ -6,7 +6,7 @@
         <!---->
         <el-form ref="form" :model="form" label-width="120px">
             <el-form-item label="Nhập từ khóa">
-                <el-autocomplete class="form-control style-width" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete>
+                <el-autocomplete class="form-control" v-model="state1" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete>
 
             </el-form-item>
             <el-form-item label="Chọn địa điểm">
@@ -35,7 +35,9 @@
     </div>
 
     <div class="dialog-footer">
-        <button class="btn btn-color" type="button" @click="$emit('update:active', false)">Áp dụng</button>
+        <button class="btn btn-color" type="button" @click="$emit('update:active', false)">
+            <router-link tag="a" :to="{ name: 'Category'}">Áp dụng</router-link>
+        </button>
     </div>
 </BaseDialog>
 </template>
@@ -63,6 +65,7 @@ export default {
             props: {
                 multiple: true
             },
+            state1: '',
             options: [{
                 value: 1,
                 label: 'Asia',
@@ -217,7 +220,7 @@ export default {
                     "link": "#"
                 },
                 {
-                    "value": "Giá giảm dần",
+                    "value": "Giá giảm dần ",
                     "link": "#"
                 },
                 {
@@ -238,6 +241,7 @@ export default {
                 }
             ];
         },
+        
         querySearchAsync(queryString, cb) {
             var links = this.links;
             var results = queryString ? links.filter(this.createFilter(queryString)) : links;
@@ -284,10 +288,25 @@ export default {
 </script>
 
 <style scoped>
+.form-control {
+    width: 100%;
+    height: 30px;
+    padding: 0;
+}
+
 .dialog-title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 18px;
+}
+
+.router-link-active {
+    color: #ffffff
+}
+
+.router-link-active:hover {
+    -webkit-transform: scale(1.1);
+    text-decoration: none;
 }
 
 .dialog-footer {

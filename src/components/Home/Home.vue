@@ -202,7 +202,7 @@ p {
 
     background: #ddc620;
     color: #fff;
-    padding: 4px 5px 5px 5px;
+    padding: 1px 5px 2px 5px;
     border-radius: 5px;
 
 }
@@ -642,7 +642,6 @@ p {
     .font-size-title {
         font-size: 16px;
     }
-
 
     .style-box-shadow {
         border-radius: 10px;
