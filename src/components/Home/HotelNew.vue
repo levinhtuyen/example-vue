@@ -66,7 +66,7 @@ export default {
         }
         let {
             data
-        } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
+        } = await axios.get('http://118.69.235.218:8080/hotelapi/home/view/findHomePageInfo');
         let data1 = data.detailCollectionList;
         let HotHotel = (data1[4]);
         let dsHotHotel = HotHotel.hotelFormList

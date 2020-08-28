@@ -58,7 +58,7 @@ export default {
         axios.defaults.headers = {
             'deviceid': 'device_for_web',
         }
-        let dataTinh = await axios.get('http://192.168.0.36:8080/hotelapi/area/view/findAllProvinceCity');
+        let dataTinh = await axios.get('http://118.69.235.218:8080/hotelapi/area/view/findAllProvinceCity');
         let data = dataTinh.data;
 
         console.log('data Tinh', data)
@@ -82,7 +82,7 @@ export default {
                 'deviceid': 'device_for_web',
             }
             let dsHuyen = [];
-            const result = await axios.get('http://192.168.0.36:8080/hotelapi/area/view/findAllDistrictInProvince?provinceSn=' + data.sn)
+            const result = await axios.get('http://118.69.235.218:8080/hotelapi/area/view/findAllDistrictInProvince?provinceSn=' + data.sn)
             this.dsHuyen = result
             return result.data;
         },
@@ -96,7 +96,7 @@ export default {
                 'deviceid': 'device_for_web',
             }
             let dsTotel = [];
-            const result = await axios.get('http://192.168.0.36:8080/hotelapi/hotel/view/findLimitHotelListInFilter2?provinceSn=1&districtSn=2&longitude=106.6813272&latitude=10.7642163&sort=0&loveHotel=false&travelHotel=false&directDiscount=false&hasPromotion=false&newHotel=false&hotHotel=false&stamp=false&exifImage=false&minPrice=0&maxPrice=3000000&offset=0&limit=50?districtSn=' + data.districtSn + '&provinceSn=' + data.provinceSn)
+            const result = await axios.get('http://118.69.235.218:8080/hotelapi/hotel/view/findLimitHotelListInFilter2?provinceSn=1&districtSn=2&longitude=106.6813272&latitude=10.7642163&sort=0&loveHotel=false&travelHotel=false&directDiscount=false&hasPromotion=false&newHotel=false&hotHotel=false&stamp=false&exifImage=false&minPrice=0&maxPrice=3000000&offset=0&limit=50?districtSn=' + data.districtSn + '&provinceSn=' + data.provinceSn)
             console.log('getDanhSachHotel', result.data);
             this.dsHotel = result
             return result.data;

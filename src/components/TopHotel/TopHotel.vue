@@ -59,7 +59,7 @@ export default {
             }
             let {
                 data
-            } = await axios.get('http://192.168.0.36:8080/hotelapi/home/view/findHomePageInfo');
+            } = await axios.get('http://118.69.235.218:8080/hotelapi/home/view/findHomePageInfo');
             let listBanner = data.collectionList;
             this.data = listBanner[0]
             console.log('list banner top hotel', this.data);
