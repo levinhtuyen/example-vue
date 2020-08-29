@@ -69,7 +69,9 @@ a {
     margin-bottom: 15px;
     margin-top: 15px;
 }
-
+.container{
+    background: #ffffff;
+}
 p,
 span,
 a:hover {

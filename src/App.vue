@@ -1,5 +1,5 @@
 <template>
-<div id="app" ref="scrollTarget" class="test-scroll">
+<div id="app" ref="scrollTarget" class="test-scroll" style=" background: #f9f9fa">
     <!-- <img src="./assets/logo.png"> -->
     <!-- style=" overflow: auto" -->
     <!-- <Home /> -->
@@ -23,7 +23,7 @@ export default {
 <style>
 #app {
 
-    color: #2c3e50;
+    color: #d5d5d5;
     
 
 }

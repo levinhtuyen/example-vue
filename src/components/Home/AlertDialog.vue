@@ -36,7 +36,7 @@
 
     <div class="dialog-footer">
         <button class="btn btn-color" type="button" @click="$emit('update:active', false)">
-            <router-link tag="a" :to="{ name: 'Category'}">Áp dụng</router-link>
+            <router-link tag="a" :to="{ name: 'Category', params: { Sn: 1 }}">Áp dụng</router-link>
         </button>
     </div>
 </BaseDialog>

@@ -1,5 +1,5 @@
 <template>
-<div style=" background: #f9f9fa">
+<div style=" background: #f9f9fa" id="category">
     <Header />
     <div class="container">
         <b-row>

@@ -654,10 +654,12 @@ p {
         padding: 2px 10px 2px 10px;
         border-radius: 10px;
     }
-
-    .item img {
-        border-radius: 40px;
+    .el-carousel__container{
+        min-height: 400px;
     }
+    /* .item img {
+        border-radius: 40px;
+    } */
 
 }
 

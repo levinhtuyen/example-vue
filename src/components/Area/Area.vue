@@ -1,5 +1,5 @@
 <template>
-<div>
+<div style=" background: #f9f9fa">
     <Header />
     <div class="container">
 
@@ -15,13 +15,24 @@
 
             </el-collapse-item>
         </el-collapse> -->
-        <div class="col-4">
+        <!-- <div class="col-4">
             <ul class="infinite-list" v-infinite-scroll="load" style="overflow:auto; padding:0">
                 <li v-for="(dataTinh, index) in data" :key="index" class="infinite-list-item"><button class="btn btn-light" style="width:100%">{{ dataTinh.name }}</button></li>
             </ul>
 
-        </div>
-      
+        </div> -->
+        <el-tabs :tab-position="tabPosition1">
+            <el-tab-pane v-for="(dataTinh, tinh) in data" :key="tinh" style="max-height:700px;overflow:hidden" :label="dataTinh.name">
+                <el-tabs :tab-position="tabPosition2" >
+                    <el-tab-pane v-for="(dataHuyen, huyen) in dataTinh.dsHuyen" :key="huyen" :label="dataHuyen.name" @click="onSelectHuyen(dataHuyen)">
+                        <el-tabs :tab-position="tabPosition3">
+                            <!-- <el-tab-pane v-for="(dataHotel, hotel) in dataHuyen.dsHotel" :key="hotel" :label="dataHotel.name">
+                            </el-tab-pane> -->
+                        </el-tabs>
+                    </el-tab-pane>
+                </el-tabs>
+            </el-tab-pane>
+        </el-tabs>
     </div>
 </div>
 </template>
@@ -50,7 +61,10 @@ export default {
             data2: [],
             activeNames: ['1'],
             count: 0,
-
+            tabPosition1: 'left',
+            tabPosition2: 'left',
+            tabPosition3: 'left',
+            dsHotel: []
         }
     },
 
@@ -64,16 +78,19 @@ export default {
         console.log('data Tinh', data)
         for (let i in data) {
             let dsHuyen = await this.getDanhSachTinh(data[i]);
-            console.log('dsHuyen', dsHuyen);
             data[i].dsHuyen = dsHuyen;
-            for (let j in dsHuyen) {
-                dsHuyen[j].dsHotel = [];
-            }
+            // for (let j in dsHuyen) {
+            //     let dsHotel = await this.getDanhSachHotel(dsHuyen[j]);
+            //     dsHuyen[j].dsHotel = dsHotel;
+            //     console.log('ds Hotel theo huyện', dsHuyen[j].dsHotel)
+            // }
+           
         }
         this.data = data;
 
     },
     methods: {
+     
         load() {
             this.count += 2
         },
@@ -91,14 +108,20 @@ export default {
         //         dataHuyen.dsHotel = await this.getDanhSachHotel(dataHuyen);
         //     }
         // },
-        async getDanhSachHotel(data) {
+        async onSelectHuyen(dsHuyen) {
+				if (dsHuyen.dsHotel.length == 0) {
+					dsHuyen.dsHotel = await this.getDanhSachHotel(dsHuyen);
+				}
+            },
+            
+        async getDanhSachHotel(dsHuyen) {
             axios.defaults.headers = {
-                'deviceid': 'device_for_web',
+                'deviceid': 'device_for_web'
             }
-            let dsTotel = [];
-            const result = await axios.get('http://118.69.235.218:8080/hotelapi/hotel/view/findLimitHotelListInFilter2?provinceSn=1&districtSn=2&longitude=106.6813272&latitude=10.7642163&sort=0&loveHotel=false&travelHotel=false&directDiscount=false&hasPromotion=false&newHotel=false&hotHotel=false&stamp=false&exifImage=false&minPrice=0&maxPrice=3000000&offset=0&limit=50?districtSn=' + data.districtSn + '&provinceSn=' + data.provinceSn)
-            console.log('getDanhSachHotel', result.data);
-            this.dsHotel = result
+            // let provinceSn = dsHuyen.provinceSn
+            let dsHotel = [];
+            const result = await axios.get('http://118.69.235.218:8080/hotelapi/home/view/findLimitHotelInCollection?hotelCollectionSn=8&longitude=106.6813099&latitude=10.7642086&limit=15&offset=0&provinceSn=' + dsHuyen.provinceSn + '&districtSn='+ dsHuyen.districtSn )
+            this.dsHotel = result.data
             return result.data;
         },
         handleChange(val) {
@@ -132,7 +155,16 @@ export default {
     text-transform: uppercase;
 
 }
-.padd-0{
-    padding : 0;
+
+.is-left {
+    width: 400px;
+}
+
+.el-tabs__header {
+    width: 400px
+}
+
+.padd-0 {
+    padding: 0;
 }
 </style>
