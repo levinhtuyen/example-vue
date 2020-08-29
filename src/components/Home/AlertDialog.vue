@@ -68,125 +68,125 @@ export default {
             state1: '',
             options: [{
                 value: 1,
-                label: 'Asia',
+                label: 'Miền Bắc',
                 children: [{
                     value: 2,
-                    label: 'China',
+                    label: 'Hà Nội',
                     children: [{
                             value: 3,
-                            label: 'Beijing'
+                            label: 'Ba đình'
                         },
                         {
                             value: 4,
-                            label: 'Shanghai'
+                            label: 'Đống đa'
                         },
                         {
                             value: 5,
-                            label: 'Hangzhou'
+                            label: 'Hoàn kiếm'
                         }
                     ]
                 }, {
                     value: 6,
-                    label: 'Japan',
+                    label: 'Hải Phòng',
                     children: [{
                             value: 7,
-                            label: 'Tokyo'
+                            label: 'Đồ Sơn'
                         },
                         {
                             value: 8,
-                            label: 'Osaka'
+                            label: 'Kiến An'
                         },
                         {
                             value: 9,
-                            label: 'Kyoto'
+                            label: 'Thủy Nguyên'
                         }
                     ]
                 }, {
                     value: 10,
-                    label: 'Korea',
+                    label: 'Hải Dương',
                     children: [{
                             value: 11,
-                            label: 'Seoul'
+                            label: 'Tứ Kỳ'
                         },
                         {
                             value: 12,
-                            label: 'Busan'
+                            label: 'Thành phố Hải Dương'
                         },
                         {
                             value: 13,
-                            label: 'Taegu'
+                            label: 'Thanh Miện'
                         }
                     ]
                 }]
             }, {
                 value: 14,
-                label: 'Europe',
+                label: 'Miền Trung',
                 children: [{
                     value: 15,
-                    label: 'France',
+                    label: 'Huế',
                     children: [{
                             value: 16,
-                            label: 'Paris'
+                            label: 'Quảng Điền'
                         },
                         {
                             value: 17,
-                            label: 'Marseille'
+                            label: 'Quảng Điền'
                         },
                         {
                             value: 18,
-                            label: 'Lyon'
+                            label: 'Hương Thủy'
                         }
                     ]
                 }, {
                     value: 19,
-                    label: 'UK',
+                    label: 'Đà Nẵng',
                     children: [{
                             value: 20,
-                            label: 'London'
+                            label: 'Sơn Trà'
                         },
                         {
                             value: 21,
-                            label: 'Birmingham'
+                            label: 'Cẩm Lệ'
                         },
                         {
                             value: 22,
-                            label: 'Manchester'
+                            label: 'Hải Châu'
                         }
                     ]
                 }]
             }, {
                 value: 23,
-                label: 'North America',
+                label: 'Miền Nam',
                 children: [{
                     value: 24,
-                    label: 'US',
+                    label: 'TP Hồ Chí Minh',
                     children: [{
                             value: 25,
-                            label: 'New York'
+                            label: 'Quận 1'
                         },
                         {
                             value: 26,
-                            label: 'Los Angeles'
+                            label: 'Quận 2'
                         },
                         {
                             value: 27,
-                            label: 'Washington'
+                            label: 'Quận 5'
                         }
                     ]
                 }, {
                     value: 28,
-                    label: 'Canada',
+                    label: 'Đồng Nai',
                     children: [{
                             value: 29,
-                            label: 'Toronto'
+                            label: 'TP Biên Hòa'
                         },
                         {
                             value: 30,
-                            label: 'Montreal'
+                            label: 'Trảng Bom'
                         },
                         {
                             value: 31,
-                            label: 'Ottawa'
+                            label: 'Nhơn Trạch'
                         }
                     ]
                 }]

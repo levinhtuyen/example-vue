@@ -9,6 +9,7 @@
     </el-backtop>
 </div>
 </template>
+
 <script>
 import Home from "./components/Home/Home.vue"
 import Category from '@/components/Category/Category.vue'
@@ -20,16 +21,17 @@ export default {
     },
 }
 </script>
+
 <style>
 #app {
 
-    color: #d5d5d5;
-    
-
+    background: #d5d5d5;
 }
-.container{
+
+.container {
     background-color: #ffffff;
 }
+
 h1,
 h2,
 h3,
@@ -93,5 +95,4 @@ a {
     margin-bottom: 15px;
     margin-top: 15px;
 }
-
 </style>

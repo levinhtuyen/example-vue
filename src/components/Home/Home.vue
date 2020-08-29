@@ -434,7 +434,9 @@ p {
 .navbar {
     padding: 0;
 }
-
+.color-den{
+    color: #000;
+}
 /* Links on mouse-over */
 #navbar a:hover {
     background-color: #ddd;
@@ -455,7 +457,9 @@ p {
 .padding-left-right {
     padding: 0 15px 0 15px
 }
-
+.text-red{
+    color:red;
+}
 @media only screen and (max-width: 480px) {
     .hotel-item img {
         width: 205px;
@@ -597,6 +601,12 @@ p {
         padding: 15px 0 30px;
     }
 
+    .style-back-red {
+        background-color: red;
+        padding: 3px 6px 3px 6px;
+        border-radius: 5px;
+    }
+
     .style-back-cam {
         background-color: #eac34c;
         color: #ffffff;
@@ -613,10 +623,12 @@ p {
 
     .font-size-title-qd {
         font-size: 12px;
+        color: #000000
     }
 
     .font-size-title-km {
         font-size: 18px;
+        color: #000000
     }
 
     .padding-p {
@@ -625,6 +637,7 @@ p {
 
     .font-size-title-price {
         font-size: 13px;
+        color: #000000
     }
 
     .style-padd {
@@ -641,6 +654,7 @@ p {
 
     .font-size-title {
         font-size: 16px;
+      
     }
 
     .style-box-shadow {
@@ -654,9 +668,11 @@ p {
         padding: 2px 10px 2px 10px;
         border-radius: 10px;
     }
-    .el-carousel__container{
+
+    .el-carousel__container {
         min-height: 400px;
     }
+
     /* .item img {
         border-radius: 40px;
     } */

@@ -1,12 +1,12 @@
 <template>
-<div class="container">
-    <b-row>
-        <div class="col-12 " style="margin-bottom:6px">
-            <div class=" scroll-container" v-for="(dataHotel, index) in list" :key="index">
-                <div class="col-6 float-left">
+<div >
+  
+        <div class="col-12 ">
+            <div class=" scroll-container" >
+                <div class="col-6 float-left" v-for="(dataHotel, index) in list" :key="index">
                     <div class="col-12 style-box-shadow  margin-15-tb no-padd">
 
-                        <div class="col-12 demo-image__error no-padd">
+                        <div class="col-11 demo-image__error ">
                             <div class="hotel-item-cate1">
                                 <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: dataHotel.sn }}">
                                     <el-image class="hotel-item-cate" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath" lazy placeholder="Images loading...">
@@ -60,7 +60,7 @@
             <el-pagination v-show="total>0" :page.sync="data.page" :limit.sync="data.limit" @current-change="getList" @pagination="getList" :page-size="data.limit" :pager-count="11" layout="prev, pager, next" :total="total">
             </el-pagination>
         </div>
-    </b-row>
+ 
 </div>
 </template>
 
@@ -113,7 +113,7 @@ export default {
                 data
             } = await axios.get('http://118.69.235.218:8080/hotelapi/home/view/findHomePageInfo');
             let data1 = data.detailCollectionList;
-
+            
             let HotHotel = data1[1];
             console.log('data 1 : ', data1)
             let dataGet = HotHotel.hotelFormList

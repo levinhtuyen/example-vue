@@ -25,8 +25,8 @@
                 <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
                 <!-- <el-autocomplete class="form-control style-width" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete> -->
 
-                <button type="button" @click="show = !show" class="btn">
-                    <img src="./../../assets/search.png" class="search" alt="">
+                <button type="button"  class="btn">
+                   <router-link tag="a" :to="{ name: 'Search'}">  <img src="./../../assets/search.png" class="search" alt=""></router-link>
                 </button>
                 <p> <a @click="changeLocale('vi')">
                         <img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:5px">

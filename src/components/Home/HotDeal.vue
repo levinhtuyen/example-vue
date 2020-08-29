@@ -10,242 +10,240 @@
             </div>
         </div>
         <div class="col-12  no-padd" style="margin-bottom:6px">
-        <carousel 
-        :autoplay="true" :interval="8000"
-        :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
-            <slide >
-                <div class="col-12 style-box-shadow no-padd">
-                    <div class="col-4" style="float:left">
-                        <div class="hotel-item">
-                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
+            <carousel :autoplay="true" :interval="8000" :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
+                <slide>
+                    <div class="col-12 style-box-shadow no-padd">
+                        <div class="col-4" style="float:left">
+                            <div class="hotel-item">
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">SAMI HOTEL</p>
-                        <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
-                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
-                        <div class="float-right style-border-red">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                        <div class="col-8 style-padd">
+                            <p class="style-bold font-size-title color-den">SAMI HOTEL</p>
+                            <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
+                            <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                            <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
+                            <div class="float-right style-border-red">
+                                <p class="style-margin-1 font-size-title"><a class="style-back-red"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title text-red"> Còn lại 1 phòng</span></p>
+                            </div>
+                            <br>
+                            <div class="float-right style-padd-10">
+                                <p class="color-den"><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
-                        </div>
-                    </div>
 
-                </div>
-            </slide>
-            <slide >
-                 <div class="col-11 style-box-shadow  no-padd margin-20">
+                    </div>
+                </slide>
+                <slide>
+                    <div class="col-11 style-box-shadow  no-padd margin-20">
                         <div class="col-4  no-padd" style="float:left">
                             <div class="hotel-item">
-                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/sa-mi-hotel.jpg" alt=""></router-link>
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/sa-mi-hotel.jpg" alt=""></router-link>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">HUỲNH ANH HOTEL</p>
-                        <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
-                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
-                        <div class="float-right style-border-red">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                        <div class="col-8 style-padd">
+                            <p class="style-bold font-size-title">HUỲNH ANH HOTEL</p>
+                            <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
+                            <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                            <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
+                            <div class="float-right style-border-red">
+                                <p class="style-margin-1 font-size-title"><a class="style-back-red"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title text-red"> Còn lại 1 phòng</span></p>
+                            </div>
+                            <br>
+                            <div class="float-right style-padd-10">
+                                <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
-                        </div>
-                    </div>
 
-                </div>
-            </slide>
-            <slide >
-                 <div class="col-11 style-box-shadow  no-padd margin-20">
+                    </div>
+                </slide>
+                <slide>
+                    <div class="col-11 style-box-shadow  no-padd margin-20">
                         <div class="col-4  no-padd" style="float:left">
                             <div class="hotel-item">
-                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/HUYNH-ANH-HOTEL.jpg" alt=""></router-link>
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/HUYNH-ANH-HOTEL.jpg" alt=""></router-link>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">REDDOORZ NEAR TAN SON NHAT AIRPORT 3</p>
-                        <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
-                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
-                        <div class="float-right style-border-red">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                        <div class="col-8 style-padd">
+                            <p class="style-bold font-size-title">REDDOORZ NEAR TAN SON NHAT AIRPORT 3</p>
+                            <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
+                            <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                            <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
+                            <div class="float-right style-border-red">
+                                <p class="style-margin-1 font-size-title"><a class="style-back-red"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title text-red"> Còn lại 1 phòng</span></p>
+                            </div>
+                            <br>
+                            <div class="float-right style-padd-10">
+                                <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
-                        </div>
-                    </div>
 
-                </div>
-            </slide>
-            <slide >
-                <div class="col-11 style-box-shadow  no-padd margin-20">
+                    </div>
+                </slide>
+                <slide>
+                    <div class="col-11 style-box-shadow  no-padd margin-20">
                         <div class="col-4  no-padd" style="float:left">
                             <div class="hotel-item">
-                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/REDDOORZ-NEAR-TAN-SON-NHAT-AIRPORT-3.jpg" alt=""></router-link>
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/REDDOORZ-NEAR-TAN-SON-NHAT-AIRPORT-3.jpg" alt=""></router-link>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">HÀ NỘI HOTEL</p>
-                        <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
-                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
-                        <div class="float-right style-border-red">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                        <div class="col-8 style-padd">
+                            <p class="style-bold font-size-title">HÀ NỘI HOTEL</p>
+                            <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
+                            <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                            <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
+                            <div class="float-right style-border-red">
+                                <p class="style-margin-1 font-size-title"><a class="style-back-red"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title text-red"> Còn lại 1 phòng</span></p>
+                            </div>
+                            <br>
+                            <div class="float-right style-padd-10">
+                                <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
-                        </div>
-                    </div>
 
-                </div>
-            </slide>
-            <slide >
-                <div class="col-11 style-box-shadow  no-padd margin-20">
+                    </div>
+                </slide>
+                <slide>
+                    <div class="col-11 style-box-shadow  no-padd margin-20">
                         <div class="col-4  no-padd" style="float:left">
                             <div class="hotel-item">
-                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg" alt=""></router-link>
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg" alt=""></router-link>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">SAMI HOTEL</p>
-                        <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
-                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
-                        <div class="float-right style-border-red">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                        <div class="col-8 style-padd">
+                            <p class="style-bold font-size-title">SAMI HOTEL</p>
+                            <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
+                            <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                            <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
+                            <div class="float-right style-border-red">
+                                <p class="style-margin-1 font-size-title"><a class="style-back-red"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title text-red"> Còn lại 1 phòng</span></p>
+                            </div>
+                            <br>
+                            <div class="float-right style-padd-10">
+                                <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
-                        </div>
-                    </div>
 
-                </div>
-            </slide>
-            <slide >
-               <div class="col-11 style-box-shadow  no-padd margin-20">
+                    </div>
+                </slide>
+                <slide>
+                    <div class="col-11 style-box-shadow  no-padd margin-20">
                         <div class="col-4  no-padd" style="float:left">
                             <div class="hotel-item">
-                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">SAMI HOTEL</p>
-                        <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
-                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
-                        <div class="float-right style-border-red">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                        <div class="col-8 style-padd">
+                            <p class="style-bold font-size-title">SAMI HOTEL</p>
+                            <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
+                            <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                            <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
+                            <div class="float-right style-border-red">
+                                <p class="style-margin-1 font-size-title"><a class="style-back-red"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title text-red"> Còn lại 1 phòng</span></p>
+                            </div>
+                            <br>
+                            <div class="float-right style-padd-10">
+                                <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
-                        </div>
-                    </div>
 
-                </div>
-            </slide>
-            <slide >
-                <div class="col-11 style-box-shadow  no-padd margin-20">
+                    </div>
+                </slide>
+                <slide>
+                    <div class="col-11 style-box-shadow  no-padd margin-20">
                         <div class="col-4  no-padd" style="float:left">
                             <div class="hotel-item">
-                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/sa-mi-hotel.jpg" alt=""></router-link>
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/sa-mi-hotel.jpg" alt=""></router-link>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">HUỲNH ANH HOTEL</p>
-                        <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
-                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
-                        <div class="float-right style-border-red">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                        <div class="col-8 style-padd">
+                            <p class="style-bold font-size-title">HUỲNH ANH HOTEL</p>
+                            <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
+                            <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                            <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
+                            <div class="float-right style-border-red">
+                                <p class="style-margin-1 font-size-title"><a class="style-back-red"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title text-red"> Còn lại 1 phòng</span></p>
+                            </div>
+                            <br>
+                            <div class="float-right style-padd-10">
+                                <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
-                        </div>
-                    </div>
 
-                </div>
-            </slide>
-            <slide >
-                <div class="col-11 style-box-shadow  no-padd margin-20">
+                    </div>
+                </slide>
+                <slide>
+                    <div class="col-11 style-box-shadow  no-padd margin-20">
                         <div class="col-4  no-padd" style="float:left">
                             <div class="hotel-item">
-                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/HUYNH-ANH-HOTEL.jpg" alt=""></router-link>
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/HUYNH-ANH-HOTEL.jpg" alt=""></router-link>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">REDDOORZ NEAR TSN AIRPORT 3</p>
-                        <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
-                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
-                        <div class="float-right style-border-red">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                        <div class="col-8 style-padd">
+                            <p class="style-bold font-size-title">REDDOORZ NEAR TSN AIRPORT 3</p>
+                            <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
+                            <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                            <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
+                            <div class="float-right style-border-red">
+                                <p class="style-margin-1 font-size-title"><a class="style-back-red"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title text-red"> Còn lại 1 phòng</span></p>
+                            </div>
+                            <br>
+                            <div class="float-right style-padd-10">
+                                <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
-                        </div>
-                    </div>
 
-                </div>
-            </slide>
-            <slide >
-                <div class="col-11 style-box-shadow  no-padd margin-20">
+                    </div>
+                </slide>
+                <slide>
+                    <div class="col-11 style-box-shadow  no-padd margin-20">
                         <div class="col-4  no-padd" style="float:left">
                             <div class="hotel-item">
-                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/REDDOORZ-NEAR-TAN-SON-NHAT-AIRPORT-3.jpg" alt=""></router-link>
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/REDDOORZ-NEAR-TAN-SON-NHAT-AIRPORT-3.jpg" alt=""></router-link>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">HÀ NỘI HOTEL</p>
-                        <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
-                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
-                        <div class="float-right style-border-red">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                        <div class="col-8 style-padd">
+                            <p class="style-bold font-size-title">HÀ NỘI HOTEL</p>
+                            <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
+                            <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                            <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
+                            <div class="float-right style-border-red">
+                                <p class="style-margin-1 font-size-title"><a class="style-back-red"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title text-red"> Còn lại 1 phòng</span></p>
+                            </div>
+                            <br>
+                            <div class="float-right style-padd-10">
+                                <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
-                        </div>
-                    </div>
 
-                </div>
-            </slide>
-            <slide >
-                <div class="col-11 style-box-shadow  no-padd margin-20">
+                    </div>
+                </slide>
+                <slide>
+                    <div class="col-11 style-box-shadow  no-padd margin-20">
                         <div class="col-4  no-padd" style="float:left">
                             <div class="hotel-item">
-                            <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg" alt=""></router-link>
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg" alt=""></router-link>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-8 style-padd">
-                        <p class="style-bold font-size-title">SAMI HOTEL</p>
-                        <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
-                        <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
-                        <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
-                        <div class="float-right style-border-red">
-                            <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
+                        <div class="col-8 style-padd">
+                            <p class="style-bold font-size-title">SAMI HOTEL</p>
+                            <p class="padding-p"> <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.2 (31) </span></a></p>
+                            <p class="padding-p"><a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a></p>
+                            <p class="padding-p"><a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> Quận 7 </span></a></p>
+                            <div class="float-right style-border-red">
+                                <p class="style-margin-1 font-size-title"><a class="style-back-red"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title text-red"> Còn lại 1 phòng</span></p>
+                            </div>
+                            <br>
+                            <div class="float-right style-padd-10">
+                                <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
+                            </div>
                         </div>
-                        <br>
-                        <div class="float-right style-padd-10">
-                            <p><span class="style-qua-dem font-size-title"> Qua đêm </span><span class="font-size-title"> VND</span><span class="style-gia font-size-title-price">250.000</span><span class="style-gia-giam font-size-title">155.000</span></p>
-                        </div>
-                    </div>
 
-                </div>
-            </slide>
+                    </div>
+                </slide>
 
-        </carousel>
-    </div>
+            </carousel>
+        </div>
     </b-row>
 </div>
 </template>
@@ -306,8 +304,10 @@ export default {
 </script>
 
 <style scoped>
-.no-pad{
+.no-pad {
     padding-left: 0;
     padding-right: 0;
 }
+
+
 </style>
