@@ -18,7 +18,7 @@
             </div>
             <div class="col-12">
                 <p class="mar-top-bottom">Đang có Flash sale</p>
-                <el-table  @row-click="rowClicked"  lazy :data="tableData.filter(data => !search || data.name.toLowerCase().includes(search.toLowerCase()) || data.address.toLowerCase().includes(search.toLowerCase()) || data.lowestPrice || data.lowestPriceOvernight)" style="width: 100%">
+                <el-table  @row-click="rowClicked"  lazy :data="tableData.filter(data => !search || data.name.toLowerCase().includes(search.toLowerCase()) || data.address.toLowerCase().includes(search.toLowerCase()))" style="width: 100%">
                     <el-table-column width="100px" align="center" >
                         <i class="fas fa-hotel color-trang"></i>
                     </el-table-column>

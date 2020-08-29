@@ -1,12 +1,12 @@
 <template>
-<div >
+<div class="container">
   
         <div class="col-12 ">
             <div class=" scroll-container" >
                 <div class="col-6 float-left" v-for="(dataHotel, index) in list" :key="index">
-                    <div class="col-12 style-box-shadow  margin-15-tb no-padd">
+                    <div class="col-11 style-box-shadow  margin-15-tb no-padd">
 
-                        <div class="col-11 demo-image__error ">
+                        <div class="col-12 demo-image__error no-padd">
                             <div class="hotel-item-cate1">
                                 <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: dataHotel.sn }}">
                                     <el-image class="hotel-item-cate" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath" lazy placeholder="Images loading...">
