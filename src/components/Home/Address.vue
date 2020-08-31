@@ -23,8 +23,8 @@
         <div class="col-4">
             <div class="hotel-item1">
                 <div class="style-giua-img">
-                    <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/NOVIA-HOTEL.jpg">
-                    
+                  <router-link tag="a" :to="{ name: 'Category'}"> <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/NOVIA-HOTEL.jpg">
+                  </router-link>
                 </div>
                 <p class="style-p padd-top-botton-10">{{ $t('Home.riverside') }}</p>
             </div>
@@ -32,7 +32,9 @@
         <div class="col-4">
             <div class="hotel-item1">
                 <div class="style-giua-img">
+                    <router-link tag="a" :to="{ name: 'Category'}">
                     <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/A-IN-HOTEL-GLAMOUR-HOTEL.jpg">
+                    </router-link>
                 </div>
                 <p class="style-p padd-top-botton-10">{{ $t('Home.travelHotel') }}</p>
             </div>
@@ -40,7 +42,9 @@
         <div class="col-4">
             <div class="hotel-item1">
                 <div class="style-giua-img">
+                    <router-link tag="a" :to="{ name: 'Category'}">
                     <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/EVA-ADAM-HOTEL.jpg">
+                    </router-link>
                 </div>
                 <p class="style-p padd-top-botton-10">{{ $t('Home.love') }}</p>
             </div>
