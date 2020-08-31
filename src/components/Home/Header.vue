@@ -4,75 +4,79 @@
 
     <nav class="navbar navbar-expand-lg ">
         <router-link tag="a" :to="{ name: 'Home'}">
-            <img src="https://go2joy.vn/images/logo.jpg" alt="Logo" class="logo">
+            <img src="./../../assets/logo_app_home.png" alt="Logo" class="logo">
         </router-link>
         <button class="navbar-toggler" type="button" v-on:click="isHidden = !isHidden">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+            <el-submenu index="2">
+                <template class="style-menu-header" slot="title">{{ $t('Home.about') }}</template>
+                <el-submenu index="2-4">
+                    <template class="style-menu-header" slot="title">{{ $t('Home.tongquan') }}</template>
+                    <el-menu-item index="2-4-1" class="style-menu-header">{{ $t('Home.vision') }}</el-menu-item>
+                    <el-menu-item index="2-4-2" class="style-menu-header">{{ $t('Home.milestones') }}</el-menu-item>
+                </el-submenu>
+                <el-menu-item index="2-2" class="style-menu-header">{{ $t('Home.recruitment') }}</el-menu-item>
+            </el-submenu>
+            <el-menu-item index="3"><a target="_blank" class="style-menu-header" href="https://docs.google.com/forms/d/e/1FAIpQLScCtwnRHg0BcfpQ_I2fKWAMY5CDwFytHWhx1oI8YlOA99wu2Q/viewform"></a> {{ $t('Home.contact') }}</el-menu-item>
 
-        <div class="collapse navbar-collapse" v-if="!isHidden">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item padding-left-right active">
-                    <router-link tag="a" class="font-size-title" :to="{ name: 'About'}">{{ $t('Home.about') }}</router-link>
+            <el-menu-item index="4"><a href="#" target="_blank" class="style-menu-header">{{ $t('Home.events') }}</a></el-menu-item>
+        </el-menu>
+        <div class="line"></div>
+        <button type="button" class="btn">
+            <router-link tag="a" :to="{ name: 'Search'}"> <img src="./../../assets/search.png" class="search" alt=""></router-link>
+        </button>
+        <el-dropdown>
+            <span class="el-dropdown-link style-menu-header">
+                {{ $t('Home.chooselanguage') }}<i class="el-icon-arrow-down el-icon--right"></i>
+            </span>
+            <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item> <a @click="changeLocale('vi')" style="cursor: pointer;">
+                        <span>Tiếng Việt</span><img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:5px">
+                    </a></el-dropdown-item>
+                <el-dropdown-item><a @click="changeLocale('en')" style="cursor: pointer;">
+                        <span>Tiếng Anh</span><img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
+                    </a></el-dropdown-item>
 
-                </li>
-                <li class="nav-item padding-left-right">
-                    <router-link tag="a" class="font-size-title" :to="{ name: 'Blog'}">{{ $t('Home.blog') }}</router-link>
-                </li>
-
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-                <!-- <el-autocomplete class="form-control style-width" :fetch-suggestions="querySearchAsync" v-bind:placeholder="$t('Home.placeholdersearch')" @select="handleSelect"></el-autocomplete> -->
-
-                <button type="button"  class="btn">
-                   <router-link tag="a" :to="{ name: 'Search'}">  <img src="./../../assets/search.png" class="search" alt=""></router-link>
-                </button>
-                <p> <a @click="changeLocale('vi')" style="cursor: pointer;">
-                        <img src="./../../assets/vi.png" alt="Logo" style="width:35px; margin:5px">
-                    </a>
-
-                    <a @click="changeLocale('en')" style="cursor: pointer;">
-                        <img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
-                    </a></p>
-                <AlertDialog :active.sync="show" title="Hello world" content="Hello world" />
-            </form>
-        </div>
+            </el-dropdown-menu>
+        </el-dropdown>
     </nav>
 </div>
 </template>
 
 <script>
 import Vue from 'vue'
-import AlertDialog from "./AlertDialog.vue";
+// import AlertDialog from "./AlertDialog.vue";
 import i18n from './../../lang/i18n';
 export default {
     name: 'Header',
     components: {
-        AlertDialog
+        // AlertDialog
     },
     data() {
         return {
-            links: [],
-            state: '',
-            timeout: null,
-            show: false,
-            dialogFormVisible: false,
-            form: {
-                name: '',
-                region: '',
-                date1: '',
-                date2: '',
-                delivery: false,
-                type: [],
-                resource: '',
-                desc: ''
-            },
-            formLabelWidth: '120px',
-            dialogImageUrl: '',
-            dialogVisible: false,
-            disabled: false,
-
+            // links: [],
+            // state: '',
+            // timeout: null,
+            // show: false,
+            // dialogFormVisible: false,
+            // form: {
+            //     name: '',
+            //     region: '',
+            //     date1: '',
+            //     date2: '',
+            //     delivery: false,
+            //     type: [],
+            //     resource: '',
+            //     desc: ''
+            // },
+            // formLabelWidth: '120px',
+            // dialogImageUrl: '',
+            // dialogVisible: false,
+            // disabled: false,
+            activeIndex: '1',
+            activeIndex2: '1',
             languages: [{
                 flag: 'us',
                 language: 'en',
@@ -87,13 +91,15 @@ export default {
         }
     },
     methods: {
-       
+
         changeLocale(locale) {
             i18n.locale = locale;
         },
+        handleSelect(key, keyPath) {
+            console.log(key, keyPath);
+        }
 
     },
- 
 
 }
 </script>
@@ -108,6 +114,10 @@ h6 p,
 span,
 a {
     font-family: 'Quicksand', sans-serif;
+}
+
+.el-dropdown-link {
+    cursor: pointer;
 }
 
 .col-1,
@@ -187,6 +197,11 @@ p {
 
 .style-text-align-right {
     text-align: right;
+}
+
+.style-menu-header {
+    padding: 10px;
+    font-weight: bold;
 }
 
 .style-font-mar {
@@ -377,7 +392,7 @@ p {
 }
 
 .logo {
-    width: 60px;
+    width: 160px;
 }
 
 .search {
@@ -680,7 +695,6 @@ p {
         font-size: 16px;
     }
 
-
     .style-box-shadow {
         border-radius: 10px;
         background: #ffffff;
@@ -774,5 +788,4 @@ body {
         padding: 1rem
     }
 }
-
 </style>

@@ -199,7 +199,9 @@ p {
     height: auto;
     width: 100%;
 }
-
+#timeline .timeline-badge{
+    z-index: 98;
+}
 .padd-top-botton-10 {
     padding-bottom: 10px;
     padding-top: 10px;

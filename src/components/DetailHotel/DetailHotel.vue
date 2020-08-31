@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="container" v-loading.fullscreen.lock="fullscreenLoading">>
     <!-- <Header /> -->
     <SliderDetail />
     <InforHotel />
@@ -22,7 +22,9 @@ export default {
         InforHotel,
         FlashSaleRoom,
         ListRoom,
-    }
+    },
+    
+    
 };
 </script>
 
@@ -69,9 +71,11 @@ a {
     margin-bottom: 15px;
     margin-top: 15px;
 }
-.container{
+
+.container {
     background: #ffffff;
 }
+
 p,
 span,
 a:hover {
@@ -250,7 +254,8 @@ p {
     padding: 2px 10px 2px 10px;
     border-radius: 10px;
 }
-.style-back-cam:hover{
+
+.style-back-cam:hover {
     background-color: #ff6400;
     color: #ffffff;
     cursor: pointer;

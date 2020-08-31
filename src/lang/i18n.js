@@ -5,6 +5,7 @@ Vue.use(VueI18n);
 const messages = {
   en: {
     Home: {
+      chooselanguage: "CHOOSE LANGUAGE",
       chooseaddress: "CHOOSE LOCATION",
       hotdeal: "FLASHSALE",
       special: "SPECIAL OFFER",
@@ -15,6 +16,13 @@ const messages = {
       language: "Choose language",
       form: "FORM",
       about: "ABOUT",
+      tongquan: "OVERVIEW",
+      vision: "VISION",
+      mission: "MISSION",
+      milestones: "MILESTONES",
+      recruitment: "RECRUITMENT",
+      events: "EVENTS",
+      contact: "CONTACT",
       placeholdersearch: "Please input keyword...",
       blog: "BLOG DISCOVER",
       travelHotel: "Travel Hotels",
@@ -26,6 +34,7 @@ const messages = {
   },
   vi: {
     Home: {
+      chooselanguage: "CHỌN NGÔN NGỮ",
       chooseaddress: "CHỌN ĐỊA ĐIỂM",
       hotdeal: "GIẢM SỐC",
       special: "ƯU ĐÃI ĐẶT BIỆT",
@@ -36,6 +45,13 @@ const messages = {
       language: "Chọn ngôn ngữ",
       form: "FORM",
       about: "GIỚI THIỆU",
+      tongquan: "TỔNG QUAN",
+      vision: "TẦM NHÌN",
+      mission: "SỨ MỆNH",
+      milestones: "CỘT MỐC",
+      recruitment: "TUYỂN DỤNG",
+      events: "SỰ KIỆN",
+      contact: "LIÊN HỆ",
       placeholdersearch: "Nhập từ khóa...",
       blog: "BLOG KHÁM PHÁ",
       travelHotel: "Du Lịch",
