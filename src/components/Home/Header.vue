@@ -28,11 +28,11 @@
                 <button type="button"  class="btn">
                    <router-link tag="a" :to="{ name: 'Search'}">  <img src="./../../assets/search.png" class="search" alt=""></router-link>
                 </button>
-                <p> <a @click="changeLocale('vi')">
-                        <img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:5px">
+                <p> <a @click="changeLocale('vi')" style="cursor: pointer;">
+                        <img src="./../../assets/vi.png" alt="Logo" style="width:35px; margin:5px">
                     </a>
 
-                    <a @click="changeLocale('en')">
+                    <a @click="changeLocale('en')" style="cursor: pointer;">
                         <img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
                     </a></p>
                 <AlertDialog :active.sync="show" title="Hello world" content="Hello world" />

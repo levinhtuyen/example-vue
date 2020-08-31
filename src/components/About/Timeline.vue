@@ -49,7 +49,7 @@
                         <div class="row">
                             <div class="col-sm-offset-1 col-sm-11">
                                 <div class="timeline-panel debits">
-                                    <img src="http://appromobile.com/assets/images/about/nice-room-kenh14.jpg" alt="">
+                                    <img src="./../../assets/startup.png" alt="">
                                 </div>
 
                             </div>
@@ -70,7 +70,7 @@
                         <div class="row">
                             <div class="col-sm-offset-1 col-sm-11">
                                 <div class="timeline-panel debits">
-                                    <img src="http://appromobile.com/assets/images/about/penetrate-vnexpress.jpg" alt="">
+                                    <img src="./../../assets/startup.png" alt="">
                                 </div>
 
                             </div>
@@ -125,7 +125,7 @@
                         <div class="row">
                             <div class="col-sm-offset-1 col-sm-11">
                                 <div class="timeline-panel debits">
-                                    <img src="http://appromobile.com/assets/images/about/panel-discussion-ifc-2018.jpg" alt="">
+                                    <img src="./../../assets/startup.png" alt="">
                                 </div>
 
                             </div>
@@ -146,7 +146,7 @@
                         <div class="row">
                             <div class="col-sm-offset-1 col-sm-11">
                                 <div class="timeline-panel debits">
-                                    <img src="http://appromobile.com/assets/images/about/panel-pitching-ifc-2018.jpg" alt="">
+                                    <img src="htt./../../assets/startup.png" alt="">
                                 </div>
 
                             </div>
