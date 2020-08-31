@@ -1,5 +1,5 @@
 <template>
-<div id="navbar" class="container">
+<div id="navbar" class="container" style=" background-color:#545c64">
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-lg ">
@@ -9,38 +9,43 @@
         <button class="navbar-toggler" type="button" v-on:click="isHidden = !isHidden">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect"  background-color="#545c64" text-color="#fff">
             <el-submenu index="2">
-                <template class="style-menu-header" slot="title">{{ $t('Home.about') }}</template>
+                <template slot="title"><span  class=" style-font-family"> {{ $t('Home.about') }}</span></template>
                 <el-submenu index="2-4">
-                    <template class="style-menu-header" slot="title">{{ $t('Home.tongquan') }}</template>
-                    <el-menu-item index="2-4-1" class="style-menu-header">{{ $t('Home.vision') }}</el-menu-item>
-                    <el-menu-item index="2-4-2" class="style-menu-header">{{ $t('Home.milestones') }}</el-menu-item>
+                    <template  slot="title"><span  class="style-font-family">{{ $t('Home.tongquan') }}</span></template>
+                    <el-menu-item index="2-4-1" class=""><router-link class="color-trang" tag="a" :to="{ name: 'tongquan'}">{{ $t('Home.vision') }}</router-link></el-menu-item>
+                    <el-menu-item index="2-4-2" class=""><router-link class="color-trang" tag="a" :to="{ name: 'tongquan'}">{{ $t('Home.milestones') }} </router-link></el-menu-item>
                 </el-submenu>
-                <el-menu-item index="2-2" class="style-menu-header">{{ $t('Home.recruitment') }}</el-menu-item>
+                <el-menu-item index="2-2" class=""><router-link tag="a" class="color-trang" :to="{ name: 'tongquan'}">{{ $t('Home.recruitment') }}</router-link></el-menu-item>
             </el-submenu>
-            <el-menu-item index="3"><a target="_blank" class="style-menu-header" href="https://docs.google.com/forms/d/e/1FAIpQLScCtwnRHg0BcfpQ_I2fKWAMY5CDwFytHWhx1oI8YlOA99wu2Q/viewform"></a> {{ $t('Home.contact') }}</el-menu-item>
+            <el-menu-item index="3"  class="style-canh-giua"><a class="color-trang" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScCtwnRHg0BcfpQ_I2fKWAMY5CDwFytHWhx1oI8YlOA99wu2Q/viewform"> {{ $t('Home.contact') }}</a></el-menu-item>
 
-            <el-menu-item index="4"><a href="#" target="_blank" class="style-menu-header">{{ $t('Home.events') }}</a></el-menu-item>
+            <el-menu-item index="4"  class="style-canh-giua"><router-link class="color-trang" tag="a" :to="{ name: 'tongquan'}">{{ $t('Home.events') }}</router-link></el-menu-item>
         </el-menu>
         <div class="line"></div>
-        <button type="button" class="btn">
-            <router-link tag="a" :to="{ name: 'Search'}"> <img src="./../../assets/search.png" class="search" alt=""></router-link>
-        </button>
-        <el-dropdown>
-            <span class="el-dropdown-link style-menu-header">
-                {{ $t('Home.chooselanguage') }}<i class="el-icon-arrow-down el-icon--right"></i>
-            </span>
-            <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item> <a @click="changeLocale('vi')" style="cursor: pointer;">
-                        <span>Tiếng Việt</span><img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:5px">
-                    </a></el-dropdown-item>
-                <el-dropdown-item><a @click="changeLocale('en')" style="cursor: pointer;">
-                        <span>Tiếng Anh</span><img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
-                    </a></el-dropdown-item>
+        <form class="form-inline">
+            <div class="md-form my-0">
+                <button type="button" class="btn">
+                    <router-link tag="a" :to="{ name: 'Search'}"> <img src="./../../assets/search.png" class="search" alt=""></router-link>
+                </button>
+                <el-dropdown>
+                    <span class="el-dropdown-link style-menu-header">
+                        {{ $t('Home.chooselanguage') }}<i class="el-icon-arrow-down el-icon--right"></i>
+                    </span>
+                    <el-dropdown-menu slot="dropdown">
+                        <el-dropdown-item> <a @click="changeLocale('vi')" style="cursor: pointer;">
+                                <span>Tiếng Việt</span><img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:5px">
+                            </a></el-dropdown-item>
+                        <el-dropdown-item><a @click="changeLocale('en')" style="cursor: pointer;">
+                                <span>Tiếng Anh</span><img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
+                            </a></el-dropdown-item>
 
-            </el-dropdown-menu>
-        </el-dropdown>
+                    </el-dropdown-menu>
+                </el-dropdown>
+            </div>
+        </form>
+
     </nav>
 </div>
 </template>
@@ -110,12 +115,14 @@ h2,
 h3,
 h4,
 h5,
-h6 p,
+h6, p,
 span,
 a {
     font-family: 'Quicksand', sans-serif;
 }
-
+.style-font-family{
+    font-family: 'Quicksand', sans-serif;
+}
 .el-dropdown-link {
     cursor: pointer;
 }
@@ -133,7 +140,9 @@ a {
 .col-12 {
     float: left !important;
 }
-
+.color-trang{
+    color: #ffffff;
+}
 .VueCarousel-pagination {
     position: absolute;
     display: none !important;
@@ -194,7 +203,9 @@ p {
 .style-gia-giam {
     font-weight: 600;
 }
-
+.font-bold{
+    font-weight: bold;
+}
 .style-text-align-right {
     text-align: right;
 }
@@ -202,6 +213,7 @@ p {
 .style-menu-header {
     padding: 10px;
     font-weight: bold;
+    color: #FFFFFF;
 }
 
 .style-font-mar {
@@ -295,6 +307,13 @@ p {
     border-radius: 10px;
 }
 
+#navbar a:hover {
+    background: none;
+    border: none;
+    transform: scale(1.05);
+
+}
+
 .style-border-red {
     border: 1px solid red;
     border-radius: 10px;
@@ -306,7 +325,7 @@ p {
 
 .style-canh-giua {
     display: flex;
-    flex-direction: column;
+     justify-content: center;
     align-items: center;
 }
 

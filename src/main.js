@@ -31,6 +31,7 @@ Vue.use(i18n)
 // })
 /* eslint-disable no-new */
 new Vue({
+  mode: history, 
   el: '#app',
   i18n,
   router,
