@@ -1,6 +1,6 @@
 <template>
-<div >
-    <div class="block">
+<div class="container no-padd padd-top">
+    <div >
         <el-carousel :autoplay="true" :loop="true" :interval="3000" direction="horizontal">
             <el-carousel-item class="border-radius" v-for="(data1, index) in data" :key="index">
                 <div class="item style-slider">
@@ -74,5 +74,7 @@ export default {
 .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
 }
-
+.padd-top{
+    padding-top:30px
+}
 </style>

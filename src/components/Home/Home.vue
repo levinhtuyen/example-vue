@@ -1,7 +1,7 @@
 <template>
 <div>
     <Header />
-    <div class="container">
+    <div >
         <Slider />
         <Address />
         <HotDeal />
@@ -235,7 +235,10 @@ p {
     color: #ffffff;
     border-radius: 10px;
 }
-
+.container{
+    
+    padding-bottom: 30px;
+}
 .style-back-do {
     background-color: red;
     color: #fff;
@@ -460,6 +463,10 @@ p {
 .text-red{
     color:red;
 }
+.font-title-home{
+        font-weight: bold;
+        font-size: 16px;
+    }
 @media only screen and (max-width: 480px) {
     .hotel-item img {
         width: 205px;
@@ -592,7 +599,17 @@ p {
         height: 265px;
 
     }
-
+    .container{
+    
+    padding-bottom: 50px;
+}
+    .font-title-home{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .style-area{
+        font-size: 18px;
+    }
     .font-size-12 {
         font-size: 14px;
     }
@@ -743,15 +760,4 @@ body {
     margin: 0 auto 0px auto;
 }
 
-@media (max-width:991.98px) {
-    .padding {
-        padding: 1.5rem
-    }
-}
-
-@media (max-width:767.98px) {
-    .padding {
-        padding: 1rem
-    }
-}
 </style>

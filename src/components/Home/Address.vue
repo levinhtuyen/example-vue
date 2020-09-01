@@ -1,12 +1,12 @@
 <template>
-<div>
+<div class="container">
     <b-row>
-        <div class="col-5 style-can-giua padd-top-botton-10">
+        <div class="col-5 style-can-giua ">
 
-            <p class="style-address  style-can-giua">{{ $t('Home.chooseaddress') }}</p>
+            <p class="font-title-home">{{ $t('Home.chooseaddress') }}</p>
         </div>
         <div class="col-7 style-right padd-top-botton-10">
-            <button type="button"  class="btn style-mar-pad-0 " @click="show = !show" ><i style="color:#ff6400" class="fas fa-map-marker-alt"></i>
+            <button type="button" class="btn style-mar-pad-0 style-area " @click="show = !show"><i style="color:#ff6400" class="fas fa-map-marker-alt"></i>
                 Thành phố Hồ Chí Minh <i style="color:#000" class="fas fa-angle-down"></i>
             </button>
 
@@ -23,8 +23,8 @@
         <div class="col-4">
             <div class="hotel-item1">
                 <div class="style-giua-img">
-                  <router-link tag="a" :to="{ name: 'Category'}"> <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/NOVIA-HOTEL.jpg">
-                  </router-link>
+                    <router-link tag="a" :to="{ name: 'Category'}"> <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/NOVIA-HOTEL.jpg">
+                    </router-link>
                 </div>
                 <p class="style-p padd-top-botton-10">{{ $t('Home.riverside') }}</p>
             </div>
@@ -33,7 +33,7 @@
             <div class="hotel-item1">
                 <div class="style-giua-img">
                     <router-link tag="a" :to="{ name: 'Category'}">
-                    <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/A-IN-HOTEL-GLAMOUR-HOTEL.jpg">
+                        <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/A-IN-HOTEL-GLAMOUR-HOTEL.jpg">
                     </router-link>
                 </div>
                 <p class="style-p padd-top-botton-10">{{ $t('Home.travelHotel') }}</p>
@@ -43,7 +43,7 @@
             <div class="hotel-item1">
                 <div class="style-giua-img">
                     <router-link tag="a" :to="{ name: 'Category'}">
-                    <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/EVA-ADAM-HOTEL.jpg">
+                        <img class="img-lazy style-res" src="https://go2joy.vn/images/hotel/EVA-ADAM-HOTEL.jpg">
                     </router-link>
                 </div>
                 <p class="style-p padd-top-botton-10">{{ $t('Home.love') }}</p>
@@ -107,6 +107,10 @@ p {
 .style-res {
     height: auto;
     width: 100%;
+}
+
+.font-weight-900 {
+    font-weight: 900;
 }
 
 .padd-top-botton-10 {
@@ -183,7 +187,7 @@ p {
 }
 
 .style-p {
-    font-size: 14px;
+    font-size: 18px;
     width: 100%;
 }
 
@@ -227,6 +231,27 @@ p {
     .hotel-item1 img {
         width: 150px;
         height: 150px;
+    }
+}
+
+@media (max-width:2560px)and (min-width:1920px) {
+    .font-title-home {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .style-p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .style-area {
+        font-size: 18px;
+    }
+
+    .padd-top-botton-10 {
+        padding-bottom: 25px;
+        padding-top: 25px;
     }
 }
 </style>

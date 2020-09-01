@@ -11,7 +11,7 @@
         </button>
         <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect"  background-color="#545c64" text-color="#fff">
             <el-submenu index="2">
-                <template slot="title"><span  class=" style-font-family"> {{ $t('Home.about') }}</span></template>
+                <template slot="title" class="style-canh-giua"><span  class=" style-font-family"> {{ $t('Home.about') }}</span></template>
                 <el-submenu index="2-4">
                     <template  slot="title"><span  class="style-font-family">{{ $t('Home.tongquan') }}</span></template>
                     <el-menu-item index="2-4-1" class=""><router-link class="color-trang" tag="a" :to="{ name: 'tongquan'}">{{ $t('Home.vision') }}</router-link></el-menu-item>
@@ -22,6 +22,8 @@
             <el-menu-item index="3"  class="style-canh-giua"><a class="color-trang" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScCtwnRHg0BcfpQ_I2fKWAMY5CDwFytHWhx1oI8YlOA99wu2Q/viewform"> {{ $t('Home.contact') }}</a></el-menu-item>
 
             <el-menu-item index="4"  class="style-canh-giua"><router-link class="color-trang" tag="a" :to="{ name: 'tongquan'}">{{ $t('Home.events') }}</router-link></el-menu-item>
+             <el-menu-item index="5"  class="style-canh-giua"> <button type="button" class="btn "><img style="width:100px;height:auto" src="http://go2joy.vn/images/GooglePlay-white.png" alt=""></button></el-menu-item>
+              <el-menu-item index="6"  class="style-canh-giua"><button type="button" class="btn"><img style="width:100px;height:auto" src="http://go2joy.vn/images/appstore-white.png" alt=""></button></el-menu-item>
         </el-menu>
         <div class="line"></div>
         <form class="form-inline">

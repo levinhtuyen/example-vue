@@ -2,8 +2,8 @@
 <div class="container">
     <b-row>
         <div class="col-12 float-left padding-0-5-10">
-            <div class="col-6 style-color-xanh font-size-12">GO2JOY ĐỀ XUẤT</div>
-            <div class="col-6 style-text-align-right font-size-12">
+            <div class="col-6 style-color-xanh font-title-home">GO2JOY ĐỀ XUẤT</div>
+            <div class="col-6 style-text-align-right style-area">
                 <span style="cursor:  pointer;color: #007bff;" @click="chooseSpecitalHotel(dataHotel)">{{ $t('Home.seeall') }}</span>
             </div>
         </div>

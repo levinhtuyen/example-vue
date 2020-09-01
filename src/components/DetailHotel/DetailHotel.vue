@@ -1,5 +1,5 @@
 <template>
-<div class="container" v-loading.fullscreen.lock="fullscreenLoading">>
+<div class="container" >
     <!-- <Header /> -->
     <SliderDetail />
     <InforHotel />
