@@ -2,177 +2,142 @@
 <div>
     <b-row>
         <div class="container">
-            <div class="page-header">
-
+    <div class="page-header text-center">
+        <h1 id="timeline">Các cột mốc quan trọng</h1>
+    </div>
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
             </div>
-            <div id="timeline">
-                <div class="row timeline-movement timeline-movement-top">
-                    <div class="timeline-badge timeline-future-movement">
-                        <a href="#">
-                            <!-- <span class="glyphicon glyphicon-plus"></span> -->
-                             <img style="width:100%" src="https://go2joy.vn/images/logo.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="timeline-badge timeline-filter-movement">
-                        <a href="#">
-                            <span class="glyphicon glyphicon-time"></span>
-                           
-                        </a>
-                    </div>
-
-                </div>
-                <div class="row timeline-movement">
-
-                    <div class="timeline-badge">
-                        <span class="timeline-balloon-date-day">2019</span>
-                        <span class="timeline-balloon-date-month">Mar</span>
-                    </div>
-
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <div class="timeline-panel credits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">Enjoy Nice Rooms With Interesting Booking App</span></li>
-                                        <li><span class="causale">Hanoi and Saigon youngster are sharing to install an App specialized in hourly and overnight booking with many attractive offers and convenient payment methods.</span> </li>
-                                        <li>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Jun 29, 2018</small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-11">
-                                <div class="timeline-panel debits">
-                                    <img src="./../../assets/startup.png" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--due -->
-
-                <div class="row timeline-movement">
-
-                    <div class="timeline-badge">
-                        <span class="timeline-balloon-date-day">2018 </span>
-                        <span class="timeline-balloon-date-month">Apr</span>
-                    </div>
-
-                    <div class="col-sm-offset-6 col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-11">
-                                <div class="timeline-panel debits">
-                                    <img src="./../../assets/startup.png" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <div class="timeline-panel credits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">Hourly Booking App Penetrate Vietnamese Market</span></li>
-                                        <li><span class="causale">Go2Joy was introduced in Startup page as an app which helping users to make hotel reservations hourly or overnight with many benefits, 360-degree visualization technology, and a variety of payment options. </span> </li>
-                                        <li>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Apr 16, 2018 </small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!--due -->
-                <div class="row timeline-movement">
-
-                    <div class="timeline-badge">
-                        <span class="timeline-balloon-date-day">2018</span>
-                        <span class="timeline-balloon-date-month">Mar</span>
-                    </div>
-
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <div class="timeline-panel credits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">Panel Discussion At IFC 2018</span></li>
-                                        <li><span class="causale">Simon Byun (CEO & Founder of Appro Mobile) is having panel discussion at the 7th International Finance Conference on Mar 23, 2018 at Landmark 72 in Hanoi, Vietnam. We do provide Application Development Outsourcing service and also bring in the attractive solutions which can be the game changer. We always welcome your inquiry and promise that we will do our utmost best to meet at your requirement. We also welcome engineers with challenging mind and unwearying passion. Please feel free to knock on our door.</span> </li>
-                                        <li>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Mar 23, 2018</small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-11">
-                                <div class="timeline-panel debits">
-                                    <img src="./../../assets/startup.png" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--due -->
-
-                <div class="row timeline-movement">
-
-                    <div class="timeline-badge">
-                        <span class="timeline-balloon-date-day">2018 </span>
-                        <span class="timeline-balloon-date-month">Mar </span>
-                    </div>
-
-                    <div class="col-sm-offset-6 col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-11">
-                                <div class="timeline-panel debits">
-                                    <img src="htt./../../assets/startup.png" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6  timeline-item">
-                        <div class="row">
-                            <div class="col-sm-11">
-                                <div class="timeline-panel credits">
-                                    <ul class="timeline-panel-ul">
-                                        <li><span class="importo">Go2Joy Pitching At IFC 2018</span></li>
-                                        <li><span class="causale">Simon Byun (CEO & Founder of Appro Mobile) is pitching about Go2Joy at the 7th International Finance Conference on Mar 23, 2018 at Landmark 72 in Hanoi, Vietnam. </span> </li>
-                                        <li>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Mar 23, 2018 </small></p>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              
             </div>
-        </div>
+            
+            <div class="timeline-footer">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        
+        <li  class="timeline-inverted">
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+             
+            </div>
+            
+            <div class="timeline-footer">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              
+            </div>
+            
+            <div class="timeline-footer">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        
+        <li  class="timeline-inverted">
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              
+            </div>
+            
+            <div class="timeline-footer">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              
+            </div>
+            
+            <div class="timeline-footer">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        
+        <li  class="timeline-inverted">
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              
+            </div>
+            
+            <div class="timeline-footer primary">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-body">
+              <p><b>All the credits go to <a href="http://bootsnipp.com/rafamaciel">Rafamaciel</a></b></p>
+              <p>I only make it responsive and remove the empty spaces to be more like Facebook timeline!</p>
+            </div>
+            
+            <div class="timeline-footer primary">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        
+        <li class="clearfix" style="float: none;"></li>
+    </ul>
+</div>
 
     </b-row>
 </div>
@@ -185,278 +150,282 @@ export default {
 </script>
 
 <style scoped>
-p {
-    margin: 0;
-    padding: 0;
-}
-
-.style-giua-img {
-    display: flex;
-    justify-content: center;
-}
-
-.style-res {
-    height: auto;
+.img-responsive{
     width: 100%;
+    height:auto;
 }
-#timeline .timeline-badge{
-    z-index: 98;
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
 }
-.padd-top-botton-10 {
-    padding-bottom: 10px;
-    padding-top: 10px;
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
 }
-
-.style-img {
-    width: 200px;
-    height: auto;
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+  width: 50%;
+  float: left;
+  clear: left;
 }
-
-.style-right {
-    float: right;
-    text-align: right;
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
 }
-
-.style-address {
-    font-weight: 600;
-    text-align: left;
+.timeline > li:after {
+  clear: both;
 }
-
-.style-mar-pad-0 {
-    margin: 0;
-    padding: 0;
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
 }
-
-.style-can-giua {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.timeline > li:after {
+  clear: both;
 }
-
-.float-left {
-    float: left;
-}
-
-.btn:focus,
-.btn.focus {
-    box-shadow: none;
-}
-
-.hotel-item .img img {
-    height: 205px;
-}
-
-.hotel-item img {
-    display: block;
-    overflow: hidden;
-    border-radius: 50%;
-    height: 205px;
-    width: 205px;
+.timeline > li > .timeline-panel {
+  width: 95%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  /*border-radius: 2px;*/
+  /*padding: 20px;*/
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
 
-.hotel-item1 img {
-    display: block;
-    overflow: hidden;
-    border-radius: 50%;
-    height: 205px;
-    width: 205px;
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  right: -12px;
+  /*background-color: #999999;*/
+  z-index: 100;
+  /*
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  */
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge > a {
+  color: #C5C7C5 !important;
+}
+.timeline-badge a:hover {
+  color: #000 !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+    padding:20px;
+    margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+.timeline-footer{
+    padding:20px;
+    background-color:#f4f4f4;
+}
+.timeline-footer > a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.tooltip{
+
+    position:absolute;
+    z-index:1020;
+    display:block;
+    visibility:visible;
+    padding:5px;
+    font-size:11px;
+    opacity:0;
+    filter:alpha(opacity=0);
+    
+}
+.tooltip.in{
+    /*opacity:0;
+    filter:alpha(opacity=80);*/
+    
+}
+.tooltip.top{
+    margin-top:-2px;
+}
+.tooltip.right{
+    margin-left:2px;
+}
+.tooltip.bottom{
+    margin-top:2px;
+}
+.tooltip.left{
+    margin-left:-2px;
+}
+.tooltip.top .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip.left .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip.bottom .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip.right .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip-inner{
+    width:200px;
+    padding:3px 8px;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    background-color:#313131;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+}
+.tooltip-arrow{
+    position:absolute;
+    width:0;
+    height:0;
+}
+.timeline > li.timeline-inverted{
+  float: right; 
+  clear: right;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.timeline > li:nth-child(2){
+  margin-top: 60px;
+}
+.timeline > li.timeline-inverted > .timeline-badge{
+  left: -12px;
 }
 
-.style-mar-padd-0 {
-    margin: 0;
-    padding: 0;
-}
-
-.hotel-item p {
-    text-align: center;
-}
-
-.hotel-item1 p {
-    text-align: center;
-}
-
-.style-p {
-    font-size: 14px;
-    width: 100%;
-}
-
-#timeline {
-    list-style: none;
-    position: relative;
-}
-
-#timeline:before {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 2px;
-    background-color: #4997cd;
-    left: 50%;
-    margin-left: -1.5px;
-}
-
-#timeline .clearFix {
-    clear: both;
-    height: 0;
-}
-
-#timeline .timeline-badge {
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    font-size: 1.2em;
-    text-align: center;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    margin-left: -25px;
-    background-color: #4997cd;
-    z-index: 100;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-}
-
-#timeline .timeline-badge span.timeline-balloon-date-day {
-    font-size: 1.4em;
-}
-
-#timeline .timeline-badge span.timeline-balloon-date-month {
-    font-size: .7em;
-    position: relative;
-    top: -10px;
-}
-
-#timeline .timeline-badge.timeline-filter-movement {
-    background-color: #ffffff;
-    font-size: 1.7em;
-    height: 35px;
-    margin-left: -18px;
-    width: 35px;
-    top: 40px;
-}
-
-#timeline .timeline-badge.timeline-filter-movement a span {
-    color: #4997cd;
-    font-size: 1.3em;
-    top: -1px;
-}
-
-#timeline .timeline-badge.timeline-future-movement {
-    background-color: #ffffff;
-    height: 35px;
-    width: 35px;
-    font-size: 1.7em;
-    top: -16px;
-    margin-left: -18px;
-}
-
-#timeline .timeline-badge.timeline-future-movement a span {
-    color: #4997cd;
-    font-size: .9em;
-    top: 2px;
-    left: 1px;
-}
-
-#timeline .timeline-movement {
-    border-bottom: dashed 1px #4997cd;
-    position: relative;
-}
-
-#timeline .timeline-movement.timeline-movement-top {
-    height: 60px;
-}
-
-#timeline .timeline-movement .timeline-item {
-    padding: 20px 0;
-}
-
-#timeline .timeline-movement .timeline-item .timeline-panel {
-    border: 1px solid #d4d4d4;
-    border-radius: 3px;
-    background-color: #FFFFFF;
-    color: #666;
-    padding: 10px;
-    position: relative;
-    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
-
-#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul {
-    text-align: right;
-}
-
-#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li {
-    color: #666;
-}
-
-#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li span.importo {
-    color: #468c1f;
-    font-size: 1.3em;
-}
-
-#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul {
-    text-align: left;
-}
-
-#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul span.importo {
-    color: #e2001a;
-    font-size: 1.3em;
-}
-
-.timeline-panel img {
-    width: 100%;
-    height: auto;
-}
-
-@media (max-width:480px) {
-    .hotel-item img {
-        width: 50px;
-        height: 50px;
+@media (max-width: 767px) {
+    ul.timeline:before {
+        left: 40px;
     }
 
-    .hotel-item1 img {
-        width: 50px;
-        height: 50px;
+    ul.timeline > li {
+      margin-bottom: 20px;
+      position: relative;
+      width:100%;
+      float: left;
+      clear: left;
+    }
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
     }
 
-    .style-p {
-        font-size: 10px;
-        width: 100%;
-        text-align: center;
+    ul.timeline > li > .timeline-badge {
+        left: 28px;
+        margin-left: 0;
+        top: 16px;
     }
 
-    .hotel-item1 {
-        width: 100%;
-        height: 90px;
+    ul.timeline > li > .timeline-panel {
+        float: right;
     }
 
-    .style-address {
-        font-size: 12px;
-    }
+        ul.timeline > li > .timeline-panel:before {
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+        }
 
-    .btn {
-        font-size: 12px;
-    }
+        ul.timeline > li > .timeline-panel:after {
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -14px;
+            right: auto;
+        }
+    
+.timeline > li.timeline-inverted{
+  float: left; 
+  clear: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-@media (max-width:768px)and (min-width:767px) {
-    .hotel-item img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .hotel-item1 img {
-        width: 150px;
-        height: 150px;
-    }
+.timeline > li.timeline-inverted > .timeline-badge{
+  left: 28px;
+}
 }
 </style>

@@ -95,4 +95,60 @@ a {
     margin-bottom: 15px;
     margin-top: 15px;
 }
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus,
+.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+    background: #ff6400 !important;
+}
+
+.el-menu--horizontal>.el-submenu:focus .el-submenu__title,
+.el-menu--horizontal>.el-submenu:hover .el-submenu__title:hover {
+    background: #ff6400 !important;
+        color: #ffffff;
+}
+.el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
+    background: #ff6400 !important;
+        color: #ffffff;
+}
+.el-submenu__title:focus,
+.el-submenu__title:hover {
+    background: #ff6400 !important;
+        color: #ffffff;
+}
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus,
+.el-menu--horizontal .el-menu-item:not(.is-disabled):active {
+    background: #ff6400 !important;
+        color: #ffffff;
+}
+.el-menu--horizontal>.el-menu-item.is-active {
+       background: #ff6400 !important;
+        color: #ffffff;
+}
+.el-menu--horizontal>.el-submenu:focus .el-submenu__title,
+.el-menu--horizontal>.el-submenu:active .el-submenu__title:active {
+    background: #ff6400 !important;
+        color: #ffffff;
+}
+.el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):active, .el-menu--horizontal>.el-submenu .el-submenu__title:active{
+    background: #ff6400 !important;
+        color: #ffffff;
+}
+.el-submenu__title:focus,
+.el-submenu__title:hover {
+    background: #ff6400 !important;
+        color: #ffffff;
+}
+
+.el-submenu__title:hover {
+    background: #ff6400 !important;
+    color: #ffffff;
+}
+.el-submenu__title:active {
+    background: #ff6400 !important;
+      color: #ffffff;
+}
+
+.el-submenu__title:active {
+    background: #ff6400 !important;
+      color: #ffffff;
+}
 </style>

@@ -11,6 +11,8 @@ import ListPromotion from "@/components/Promotion/ListPromotion.vue";
 import PromotionDetail from "@/components/Promotion/PromotionDetail.vue";
 import Area from "@/components/Area/Area.vue";
 import Search from "@/components/Search/Search.vue";
+import Vision from "@/components/Vision/Vision.vue";
+import Events from "@/components/Events/Events.vue";
 Vue.use(ElementUI)
 Vue.use(Router);
 Vue.use(Vuex)
@@ -62,6 +64,21 @@ export default new Router({
       path: "/search",
       name: "Search",
       component: Search
+    },
+    {
+      path: "/vision",
+      name: "Vision",
+      component: Vision
+    },
+    {
+      path: "/vision",
+      name: "Vision",
+      component: Vision
+    },
+    {
+      path: "/events",
+      name: "Events",
+      component: Events
     }
   ]
 });

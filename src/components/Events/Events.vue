@@ -2,8 +2,8 @@
 <div>
     <Header />
     <div class="container">
-        <Address />
-        <Timeline />
+        <h1>Events</h1>
+       
     </div>
 </div>
 </template>
@@ -11,17 +11,16 @@
 import Vue from 'vue'
 // import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./../Home/Header.vue"
-import Timeline from "./Timeline"
+
 // import VueI18n from 'vue-i18n'
 // Vue.use(VueI18n)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {
-    path: '/about',
-    name: "About",
+    path: '/events',
+    name: "Events",
     components: {
-        Header,Timeline
-
+        Header
     },
     data() {
         return {

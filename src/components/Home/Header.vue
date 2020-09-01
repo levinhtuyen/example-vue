@@ -1,5 +1,5 @@
 <template>
-<div id="navbar" class="container" style=" background-color:#545c64">
+<div id="navbar" class="container no-padding-top-bottom" style=" background-color:#545c64">
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-lg ">
@@ -9,21 +9,29 @@
         <button class="navbar-toggler" type="button" v-on:click="isHidden = !isHidden">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect"  background-color="#545c64" text-color="#fff">
+        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" background-color="#545c64" text-color="#fff">
             <el-submenu index="2">
-                <template slot="title" class="style-canh-giua"><span  class=" style-font-family"> {{ $t('Home.about') }}</span></template>
+                <template slot="title" class="style-canh-giua"><span class=" style-font-family"> {{ $t('Home.about') }}</span></template>
                 <el-submenu index="2-4">
-                    <template  slot="title"><span  class="style-font-family">{{ $t('Home.tongquan') }}</span></template>
-                    <el-menu-item index="2-4-1" class=""><router-link class="color-trang" tag="a" :to="{ name: 'tongquan'}">{{ $t('Home.vision') }}</router-link></el-menu-item>
-                    <el-menu-item index="2-4-2" class=""><router-link class="color-trang" tag="a" :to="{ name: 'tongquan'}">{{ $t('Home.milestones') }} </router-link></el-menu-item>
+                    <template slot="title"><span class="style-font-family">{{ $t('Home.tongquan') }}</span></template>
+                    <el-menu-item index="2-4-1" class="">
+                        <router-link class="color-trang" tag="a" :to="{ name: 'Vision'}">{{ $t('Home.vision') }}</router-link>
+                    </el-menu-item>
+                    <el-menu-item index="2-4-2" class="">
+                        <router-link class="color-trang" tag="a" :to="{ name: 'About'}">{{ $t('Home.milestones') }} </router-link>
+                    </el-menu-item>
                 </el-submenu>
-                <el-menu-item index="2-2" class=""><router-link tag="a" class="color-trang" :to="{ name: 'tongquan'}">{{ $t('Home.recruitment') }}</router-link></el-menu-item>
+                <el-menu-item index="2-2" class="">
+                    <router-link tag="a" class="color-trang" :to="{ name: 'tongquan'}">{{ $t('Home.recruitment') }}</router-link>
+                </el-menu-item>
             </el-submenu>
-            <el-menu-item index="3"  class="style-canh-giua"><a class="color-trang" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScCtwnRHg0BcfpQ_I2fKWAMY5CDwFytHWhx1oI8YlOA99wu2Q/viewform"> {{ $t('Home.contact') }}</a></el-menu-item>
+            <el-menu-item index="3" class="style-canh-giua"><a class="color-trang" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScCtwnRHg0BcfpQ_I2fKWAMY5CDwFytHWhx1oI8YlOA99wu2Q/viewform"> {{ $t('Home.contact') }}</a></el-menu-item>
 
-            <el-menu-item index="4"  class="style-canh-giua"><router-link class="color-trang" tag="a" :to="{ name: 'tongquan'}">{{ $t('Home.events') }}</router-link></el-menu-item>
-             <el-menu-item index="5"  class="style-canh-giua"> <button type="button" class="btn "><img style="width:100px;height:auto" src="http://go2joy.vn/images/GooglePlay-white.png" alt=""></button></el-menu-item>
-              <el-menu-item index="6"  class="style-canh-giua"><button type="button" class="btn"><img style="width:100px;height:auto" src="http://go2joy.vn/images/appstore-white.png" alt=""></button></el-menu-item>
+            <el-menu-item index="4" class="style-canh-giua">
+                <router-link class="color-trang" tag="a" :to="{ name: 'tongquan'}">{{ $t('Home.events') }}</router-link>
+            </el-menu-item>
+            <el-menu-item index="5" class="style-canh-giua"> <button type="button" class="btn "><img class="style-down" src="http://go2joy.vn/images/GooglePlay-white.png" alt=""></button></el-menu-item>
+            <el-menu-item index="6" class="style-canh-giua"><button type="button" class="btn"><img class="style-down" src="http://go2joy.vn/images/appstore-white.png" alt=""></button></el-menu-item>
         </el-menu>
         <div class="line"></div>
         <form class="form-inline">
@@ -117,14 +125,17 @@ h2,
 h3,
 h4,
 h5,
-h6, p,
+h6,
+p,
 span,
 a {
     font-family: 'Quicksand', sans-serif;
 }
-.style-font-family{
+
+.style-font-family {
     font-family: 'Quicksand', sans-serif;
 }
+
 .el-dropdown-link {
     cursor: pointer;
 }
@@ -142,9 +153,11 @@ a {
 .col-12 {
     float: left !important;
 }
-.color-trang{
+
+.color-trang {
     color: #ffffff;
 }
+
 .VueCarousel-pagination {
     position: absolute;
     display: none !important;
@@ -179,6 +192,15 @@ a:hover {
     ;
 }
 
+
+
+.style-down {
+    width: 100px;
+    height: auto;
+}
+.style-down:hover{
+    transform: scale(1.05);
+}
 p {
     margin-bottom: 0.3rem;
 }
@@ -205,9 +227,11 @@ p {
 .style-gia-giam {
     font-weight: 600;
 }
-.font-bold{
+
+.font-bold {
     font-weight: bold;
 }
+
 .style-text-align-right {
     text-align: right;
 }
@@ -327,7 +351,7 @@ p {
 
 .style-canh-giua {
     display: flex;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -342,6 +366,12 @@ p {
     height: 245px;
     display: block;
     overflow: hidden;
+}
+
+.no-padding-top-bottom {
+    padding-top: 0;
+    ;
+    padding-bottom: 0;
 }
 
 .style-padd {
@@ -413,7 +443,7 @@ p {
 }
 
 .logo {
-    width: 160px;
+    width: 155px;
 }
 
 .search {
@@ -527,6 +557,10 @@ p {
 
 .padding-left-right {
     padding: 0 15px 0 15px
+}
+
+.logo {
+    width: 140px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -662,6 +696,10 @@ p {
 
     }
 
+    .logo {
+        width: 155px;
+    }
+
     .font-size-12 {
         font-size: 14px;
     }
@@ -732,6 +770,11 @@ p {
         border-radius: 40px;
     }
 
+    .style-down {
+        width: 100px;
+        height: auto;
+    }
+
 }
 
 .style-color-blue {
@@ -796,17 +839,5 @@ body {
     overflow: hidden;
     border-radius: 40px;
     margin: 0 auto 0px auto;
-}
-
-@media (max-width:991.98px) {
-    .padding {
-        padding: 1.5rem
-    }
-}
-
-@media (max-width:767.98px) {
-    .padding {
-        padding: 1rem
-    }
 }
 </style>
