@@ -13,7 +13,15 @@ import { store } from './store/store'
 import VueLazyload from 'vue-lazyload'
 export const eventBus = new Vue();
 import FlagIcon from 'vue-flag-icon';
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
+// import style
+// import 'swiper/css/swiper.css'
+// If you use Swiper 6.0.0 or higher
+import 'swiper/swiper-bundle.css'
+
+Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
+Vue.config.productionTip = false;
 Vue.use(FlagIcon);
 Vue.use(VueLazyload)
 Vue.use(VueCarousel);
