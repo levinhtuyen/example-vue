@@ -13,6 +13,7 @@ import Area from "@/components/Area/Area.vue";
 import Search from "@/components/Search/Search.vue";
 import Vision from "@/components/Vision/Vision.vue";
 import Events from "@/components/Events/Events.vue";
+import Recruitment from "@/components/Recruitment/Recruitment.vue";
 Vue.use(ElementUI)
 Vue.use(Router);
 Vue.use(Vuex)
@@ -79,6 +80,11 @@ export default new Router({
       path: "/events",
       name: "Events",
       component: Events
+    },
+    {
+      path: "/recruitment",
+      name: "Recruitment",
+      component: Recruitment
     }
   ]
 });

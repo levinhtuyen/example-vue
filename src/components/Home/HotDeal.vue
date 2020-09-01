@@ -18,7 +18,7 @@
                             <div class="hotel-item">
                                 <!-- <img class="img-lazy" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath"> -->
                                 <!-- <img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""> -->
-                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
+                                <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img class="img-lazy scale-hover" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath"></router-link>
                             </div>
                         </div>
                         <div class="col-8 style-padd">
@@ -108,6 +108,11 @@ export default {
     padding-right: 0;
 }
 
-
+.scale-hover:hover{
+    transform: scale(1.15);
+    -webkit-transition: transform 0.65s ease-in-out;
+    -moz-transition:transform 0.65s ease-in-out;
+    -ms-transition:transform 0.65s ease-in-out;
+}
    
 </style>

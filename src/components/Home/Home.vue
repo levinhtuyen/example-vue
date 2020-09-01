@@ -157,7 +157,12 @@ p {
     margin: 10px;
     font-weight: 500;
 }
-
+.scale-hover:hover{
+    transform: scale(1.15);
+    -webkit-transition: transform 0.65s ease-in-out;
+    -moz-transition:transform 0.65s ease-in-out;
+    -ms-transition:transform 0.65s ease-in-out;
+}
 .style-back-cam {
     background-color: #f2c1a2;
     color: #ff6400;

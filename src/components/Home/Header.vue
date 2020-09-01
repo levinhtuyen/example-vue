@@ -33,7 +33,7 @@
             <el-menu-item index="5" class="style-canh-giua"> <button type="button" class="btn "><img class="style-down" src="http://go2joy.vn/images/GooglePlay-white.png" alt=""></button></el-menu-item>
             <el-menu-item index="6" class="style-canh-giua"><button type="button" class="btn"><img class="style-down" src="http://go2joy.vn/images/appstore-white.png" alt=""></button></el-menu-item>
         </el-menu>
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
         <form class="form-inline">
             <div class="md-form my-0">
                 <button type="button" class="btn">
@@ -153,7 +153,9 @@ a {
 .col-12 {
     float: left !important;
 }
-
+.el-menu.el-menu--horizontal{
+    border:none
+}
 .color-trang {
     color: #ffffff;
 }
