@@ -572,8 +572,9 @@ strong {
 
 .navbar {
     width: 100%;
-    height: 400px;
+    height: 350px;
     overflow: hidden;
+    border-radius: 40px;
 }
 
 .navbar img {

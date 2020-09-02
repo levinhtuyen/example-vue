@@ -11,7 +11,7 @@
         <div v-swiper:mySwiper="swiperOption">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(data1, index) in data" :key="index">
-                    <img img class="img-lazy res-ponsive" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath" alt="image" />
+                    <img img class="img-lazy res-ponsive border-radius" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data1.imagePath" alt="image" />
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -80,16 +80,18 @@ export default {
 }
 
 .border-radius {
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 .res-ponsive {
     width: 100%;
     max-height: 400px;
+
 }
 
 .style-slider img {
     width: 100%;
+    
 }
 
 .padd-l-r-10 {
