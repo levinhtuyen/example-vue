@@ -2,153 +2,131 @@
 <div>
     <b-row>
         <div class="container">
-            <div class="page-header text-center">
-                <img src="https://go2joy.vn/images/small-logo.png" alt="">
-                <h1 id="timeline">Các cột mốc quan trọng</h1>
+            <div class=" bootdey">
+                <div class="row gutters">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Timeline start -->
+                                <div class="timeline">
+                                    <div class="timeline-row">
+                                        <div class="timeline-time">
+                                           Jun 30 <small> 2020</small>
+                                        </div>
+                                        <div class="timeline-dot fb-bg"></div>
+                                        <div class="timeline-content">
+                                            <i class="fa fa-map-marker"></i>
+                                            <a class="color-trang" href="#"><h4>Go2Joy - The Hi-tech solution for Travel Industry post Pandemic</h4></a>
+                                            <p>There are many enterprises are affected by COVID-19 (especially the travel industry) and find a way to comeback post-pandemic. Go2Joy - the Hi-tech solution for tourism and hotels. </p>
+                                            <div class="">
+                                                <span class="badge badge-light">dantri.com.vn</span>
+                                                <!-- <span class="badge badge-light">Admin</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-row">
+                                        <div class="timeline-time">
+                                            Apr 14<small>2020</small>
+                                        </div>
+                                        <div class="timeline-dot green-one-bg"></div>
+                                        <div class="timeline-content green-one">
+                                            <i class="fa fa-warning"></i>
+                                            <a class="color-xanh" href="#"> <h4>Shortened runways push Vietnamese startups towards opportunistic pivots</h4></a>
+                                            <p>
+                                               Go2Joy successfully called for 1 million USD from STIC Ventures, increase total capital called in Series A up to 2,5 million USD ( According to Deal Street Asia).
+                                            </p>
+                                            <div class="">
+                                                <span class="badge badge-light">dealstreetasia.com</span>
+                                                <!-- <span class="badge badge-light">Admin</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-row">
+                                        <div class="timeline-time">
+                                            Feb 28<small> 2020</small>
+                                        </div>
+                                        <div class="timeline-dot green-two-bg"></div>
+                                        <div class="timeline-content green-two">
+                                            <i class="fa fa-list"></i>
+                                            <a class="color-trang" href="#"> <h4>Startup with booking hotel hourly - Go2Joy Vietnam successfully called for $million USD</h4></a>
+                                            <p>Go2Joy successfully called for 1 million USD from STIC Ventures, increase total capital called in Series A up to 2,5 million USD ( According to Deal Street Asia).</p>
+                                            <div>
+                                                <span class="badge badge-light">cafebiz.vn</span>
+                                                <!-- <span class="badge badge-light">Graphs</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-row">
+                                        <div class="timeline-time">
+                                            Feb 27<small> 2020</small>
+                                        </div>
+                                        <div class="timeline-dot green-three-bg"></div>
+                                        <div class="timeline-content green-three">
+                                            <i class="icon-directions"></i>
+                                          <a class="color-xanh" href="#">   <h4>Go2Joy - Vietnamese Startup successfully called for 2.5 million USD</h4></a>
+                                            <p>
+                                               According to Deal Street Asia, Go2Joy - Vietnamese startup successfully called for 2.5 million USD from STIC VENTURES and other investors.
+                                            </p>
+                                            <div>
+                                                <span class="badge badge-light">vietnamnet.vn</span>
+                                                <!-- <span class="badge badge-light">Dashboard</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-row">
+                                        <div class="timeline-time">
+                                            Feb 13<small> 2020</small>
+                                        </div>
+                                        <div class="timeline-dot green-four-bg"></div>
+                                        <div class="timeline-content green-four">
+                                            <i class="fa fa-user"></i>
+                                             <a class="color-trang" href="#"><h4>Korea's STIC Ventures leads $2.5m Series A in hotel booking app Go2Joy Vietnam</h4></a>
+                                            <p class="no-margin">Go2Joy Vietnam (formerly Appro Mobile), which operates hotel booking app Go2Joy, has raised $2.5 million in a Series A funding round led by STIC Ventures. the venture investment division of South Korean private equity firm STIC Investments, Go2Joy CEO Simon Byun confirmed to DealStreetAsia.</p>
+                                            <div>
+                                                <span class="badge badge-light">dealstreetasia.com</span>
+                                                <!-- <span class="badge badge-light">Graphs</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-row">
+                                        <div class="timeline-time">
+                                            Nov 13<small> 2019</small>
+                                        </div>
+                                        <div class="timeline-dot teal-bg"></div>
+                                        <div class="timeline-content teal">
+                                            <i class="fa fa-coffee"></i>
+                                            <a class="color-xanh" href="#"> <h4>Go2Joy - Vietnamese Startup successfully called for 3 million USD</h4></a>
+                                            <p class="no-margin">Update the information from Deal Street Asia, Go2Joy successfully called for 3 million USD from 4 investments (included STIC Ventures and KB Investment). </p>
+                                            <div>
+                                                <span class="badge badge-light">cafef.vn</span>
+                                                <!-- <span class="badge badge-light">Filters</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-row">
+                                        <div class="timeline-time">
+                                            Nov 13<small>2019</small>
+                                        </div>
+                                        <div class="timeline-dot sea-green-bg"></div>
+                                        <div class="timeline-content sea-green">
+                                            <i class="fa fa-image"></i>
+                                             <a class="color-trang" href="#"><h4>South Korean entrerpreneurs flock to set up businesses in Vietnam</h4></a>
+                                            <p>Appro Mobile won Grand Prize among 8 start-ups pitched at 'K-Startup Investment Parade' hosted by Seoul CCEI, Idea Maru, Korea Angels on Sep 19, 2018 </p>
+                                            <div>
+                                                <span class="badge badge-light">dealstreetasia.com</span>
+                                                <!-- <span class="badge badge-light">Sass</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Timeline end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <img class="img-responsive" src="./../../assets/about/booking-payoo.jpg" />
-
-                        </div>
-                        <div class="timeline-body">
-                          
-                            <p>There are many enterprises are affected by COVID-19 (especially the travel industry) and find a way to comeback post-pandemic. Go2Joy - the Hi-tech solution for tourism and hotels. </p>
-
-                        </div>
-
-                        <div class="timeline-footer">
-                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                            <a><i class="glyphicon glyphicon-share"></i></a>
-                            <a class="pull-right" href="https://dantri.com.vn/kinh-doanh/go-2-joy-giai-phap-cong-nghe-pha-bang-hau-covid-19-20200629104524313.htm">Go2Joy - The Hi-tech solution for Travel Industry post Pandemic</a>
-                            <p>Jun 30, 2020 - dantri.com.vn</p>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="timeline-inverted">
-                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <img class="img-responsive" src="./../../assets/about/gold-prize-inno-festa.jpg" />
-
-                        </div>
-                        <div class="timeline-body">
-                            <p></p>
-
-                        </div>
-
-                        <div class="timeline-footer">
-                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                            <a><i class="glyphicon glyphicon-share"></i></a>
-                            <a class="pull-right" href="https://www.dealstreetasia.com/stories/vietnamese-startups-pivots-covid19-183874/">Shortened runways push Vietnamese startups towards opportunistic pivots</a>
-                            <p>Apr 14, 2020 - dealstreetasia.com</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <img class="img-responsive" src="./../../assets/about/panel-discussion-ifc-2018.jpg" />
-
-                        </div>
-                        <div class="timeline-body">
-                            <p>Go2Joy successfully called for 1 million USD from STIC Ventures, increase total capital called in Series A up to 2,5 million USD ( According to Deal Street Asia)...</p>
-
-                        </div>
-
-                        <div class="timeline-footer">
-                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                            <a><i class="glyphicon glyphicon-share"></i></a>
-                            <a class="pull-right">Startup with booking hotel hourly - Go2Joy Vietnam successfully called for $million USD</a>
-                            <p>Feb 28, 2020 - cafebiz.vn</p>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="timeline-inverted">
-                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-                    <div class="timeline-panel">
-                       <div class="timeline-heading">
-                            <img class="img-responsive" src="./../../assets/about/targeting-no1-vn.jpg" />
-
-                        </div>
-                        <div class="timeline-body">
-                            <p>According to Deal Street Asia, Go2Joy - Vietnamese startup successfully called for 2.5 million USD from STIC VENTURES and other investors.</p>
-
-                        </div>
-
-                        <div class="timeline-footer">
-                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                            <a><i class="glyphicon glyphicon-share"></i></a>
-                            <a class="pull-right">Go2Joy - Vietnamese Startup successfully called for 2.5 million USD</a>
-                            <p>Feb 27, 2020 - vietnamnet.vn</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-
-                        </div>
-                        <div class="timeline-body">
-                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-
-                        </div>
-
-                        <div class="timeline-footer">
-                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                            <a><i class="glyphicon glyphicon-share"></i></a>
-                            <a class="pull-right">Continuar Lendo</a>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="timeline-inverted">
-                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-
-                        </div>
-                        <div class="timeline-body">
-                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-
-                        </div>
-
-                        <div class="timeline-footer primary">
-                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                            <a><i class="glyphicon glyphicon-share"></i></a>
-                            <a class="pull-right">Continuar Lendo</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-body">
-                            <p><b>All the credits go to <a href="http://bootsnipp.com/rafamaciel">Rafamaciel</a></b></p>
-                            <p>I only make it responsive and remove the empty spaces to be more like Facebook timeline!</p>
-                        </div>
-
-                        <div class="timeline-footer primary">
-                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                            <a><i class="glyphicon glyphicon-share"></i></a>
-                            <a class="pull-right">Continuar Lendo</a>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="clearfix" style="float: none;"></li>
-            </ul>
         </div>
-
+    
     </b-row>
 </div>
 </template>
@@ -160,318 +138,260 @@ export default {
 </script>
 
 <style scoped>
-.img-responsive {
-    width: 100%;
-    height: auto;
+.color-trang{
+  color:#ffffff
 }
-
+.color-trang:hover{
+  font-weight: bold;
+  color: #ff5000;
+}
+.color-xanh{
+  color:#ffffff
+}
+.color-xanh:hover{
+  font-weight: bold;
+  color:#1379bb;
+}
 .timeline {
-    list-style: none;
-    padding: 20px 0 20px;
     position: relative;
+    padding: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #ffffff;
 }
 
-.timeline:before {
+.timeline:after {
+    content: "";
+    position: absolute;
     top: 0;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 3px;
-    background-color: #eeeeee;
     left: 50%;
-    margin-left: -1.5px;
-}
-
-.timeline>li {
-    margin-bottom: 20px;
-    position: relative;
-    width: 50%;
-    float: left;
-    clear: left;
-}
-
-.timeline>li:before,
-.timeline>li:after {
-    content: " ";
-    display: table;
-}
-
-.timeline>li:after {
-    clear: both;
-}
-
-.timeline>li:before,
-.timeline>li:after {
-    content: " ";
-    display: table;
-}
-
-.timeline>li:after {
-    clear: both;
-}
-
-.timeline>li>.timeline-panel {
-    width: 95%;
-    float: left;
-    border: 1px solid #d4d4d4;
-    /*border-radius: 2px;*/
-    /*padding: 20px;*/
-    position: relative;
-    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
-
-.timeline>li>.timeline-panel:before {
-    position: absolute;
-    top: 26px;
-    right: -15px;
-    display: inline-block;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
-    border-bottom: 15px solid transparent;
-    content: " ";
-}
-
-.timeline>li>.timeline-panel:after {
-    position: absolute;
-    top: 27px;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
-    border-bottom: 14px solid transparent;
-    content: " ";
-}
-
-.timeline>li>.timeline-badge {
-    color: #fff;
-    width: 24px;
-    height: 24px;
-    line-height: 50px;
-    font-size: 1.4em;
-    text-align: center;
-    position: absolute;
-    top: 16px;
-    right: -12px;
-    /*background-color: #999999;*/
-    z-index: 100;
-    /*
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  */
-}
-
-.timeline>li.timeline-inverted>.timeline-panel {
-    float: right;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-}
-
-.timeline-badge>a {
-    color: #C5C7C5 !important;
-}
-
-.timeline-badge a:hover {
-    color: #000 !important;
-}
-
-.timeline-title {
-    margin-top: 0;
-    color: inherit;
-}
-
-.timeline-body>p,
-.timeline-body>ul {
-    padding: 20px;
-    margin-bottom: 0;
-}
-
-.timeline-body>p+p {
-    margin-top: 5px;
-}
-
-.timeline-footer {
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-.timeline-footer>a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.tooltip {
-
-    position: absolute;
-    z-index: 1020;
+    margin-left: -1px;
+    border-right: 2px dashed #c4d2e2;
+    height: 100%;
     display: block;
-    visibility: visible;
-    padding: 5px;
-    font-size: 11px;
-    opacity: 0;
-    filter: alpha(opacity=0);
-
 }
 
-.tooltip.in {
-    /*opacity:0;
-    filter:alpha(opacity=80);*/
-
-}
-
-.tooltip.top {
-    margin-top: -2px;
-}
-
-.tooltip.right {
-    margin-left: 2px;
-}
-
-.tooltip.bottom {
-    margin-top: 2px;
-}
-
-.tooltip.left {
-    margin-left: -2px;
-}
-
-.tooltip.top .tooltip-arrow {
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
-    border-left: 0 solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 0 solid #000;
-}
-
-.tooltip.left .tooltip-arrow {
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
-    border-left: 0 solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 0 solid #000;
-}
-
-.tooltip.bottom .tooltip-arrow {
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
-    border-left: 0 solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 0 solid #000;
-}
-
-.tooltip.right .tooltip-arrow {
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
-    border-left: 0 solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 0 solid #000;
-}
-
-.tooltip-inner {
-    width: 200px;
-    padding: 3px 8px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    background-color: #313131;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-}
-
-.tooltip-arrow {
-    position: absolute;
-    width: 0;
-    height: 0;
-}
-
-.timeline>li.timeline-inverted {
-    float: right;
-    clear: right;
-    margin-top: 30px;
+.timeline-row {
+    padding-left: 50%;
+    position: relative;
     margin-bottom: 30px;
 }
 
-.timeline>li:nth-child(2) {
-    margin-top: 60px;
+.timeline-row .timeline-time {
+    position: absolute;
+    right: 50%;
+    top: 31px;
+    text-align: right;
+    margin-right: 20px;
+    color: #000000;
+    font-size: 1.5rem;
 }
 
-.timeline>li.timeline-inverted>.timeline-badge {
-    left: -12px;
+.timeline-row .timeline-time small {
+    display: block;
+    font-size: .8rem;
+    color: #8796af;
+}
+
+.timeline-row .timeline-content {
+    position: relative;
+    padding: 20px 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.timeline-row .timeline-content:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    height: 3px;
+    width: 40px;
+}
+
+.timeline-row .timeline-content:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    z-index: 10;
+    background: #ffffff;
+    border: 2px dashed #c4d2e2;
+}
+
+.timeline-row .timeline-content h4 {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 150%;
+}
+
+.timeline-row .timeline-content p {
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+
+.timeline-row .timeline-content i {
+    font-size: 2rem;
+    color: #ffffff;
+    line-height: 100%;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.timeline-row .timeline-content .thumbs {
+    margin-bottom: 20px;
+}
+
+.timeline-row .timeline-content .thumbs img {
+    margin-bottom: 10px;
+}
+
+.timeline-row:nth-child(even) .timeline-content {
+    background-color: #ff5000;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fc6d4c), to(#ff5000));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #fc6d4c, #ff5000);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, #fc6d4c, #ff5000);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(top, #fc6d4c, #ff5000);
+    /* IE10 */
+    background-image: -o-linear-gradient(top, #fc6d4c, #ff5000);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(top, #fc6d4c, #ff5000);
+    margin-left: 40px;
+    text-align: left;
+}
+
+.timeline-row:nth-child(even) .timeline-content:after {
+    left: -39px;
+    border-right: 18px solid #ff5000;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.timeline-row:nth-child(even) .timeline-content:before {
+    left: -50px;
+    right: initial;
+}
+
+.timeline-row:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 50%;
+}
+
+.timeline-row:nth-child(odd) .timeline-time {
+    right: auto;
+    left: 50%;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.timeline-row:nth-child(odd) .timeline-content {
+    background-color: #5a99ee;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1379bb), to(#5a99ee));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #1379bb, #5a99ee);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, #1379bb, #5a99ee);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(top, #1379bb, #5a99ee);
+    /* IE10 */
+    background-image: -o-linear-gradient(top, #1379bb, #5a99ee);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(top, #1379bb, #5a99ee);
+    margin-right: 40px;
+    margin-left: 0;
+    text-align: right;
+}
+
+.timeline-row:nth-child(odd) .timeline-content:after {
+    right: -39px;
+    border-left: 18px solid #1379bb;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
 }
 
 @media (max-width: 767px) {
-    ul.timeline:before {
-        left: 40px;
+    .timeline {
+        padding: 15px 10px;
     }
-
-    ul.timeline>li {
-        margin-bottom: 20px;
+    .timeline:after {
+        left: 28px;
+    }
+    .timeline .timeline-row {
+        padding-left: 0;
+        margin-bottom: 16px;
+    }
+    .timeline .timeline-row .timeline-time {
         position: relative;
-        width: 100%;
-        float: left;
-        clear: left;
+        right: auto;
+        top: 0;
+        text-align: left;
+        margin: 0 0 6px 56px;
     }
-
-    ul.timeline>li>.timeline-panel {
-        width: calc(100% - 90px);
-        width: -moz-calc(100% - 90px);
-        width: -webkit-calc(100% - 90px);
+    .timeline .timeline-row .timeline-time strong {
+        display: inline-block;
+        margin-right: 10px;
     }
-
-    ul.timeline>li>.timeline-badge {
-        left: 28px;
+    .timeline .timeline-row .timeline-icon {
+        top: 52px;
+        left: -2px;
         margin-left: 0;
-        top: 16px;
     }
-
-    ul.timeline>li>.timeline-panel {
-        float: right;
+    .timeline .timeline-row .timeline-content {
+        padding: 15px;
+        margin-left: 56px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        position: relative;
     }
-
-    ul.timeline>li>.timeline-panel:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
+    .timeline .timeline-row .timeline-content:after {
         right: auto;
+        left: -39px;
+        top: 32px;
     }
-
-    ul.timeline>li>.timeline-panel:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
+    .timeline .timeline-row:nth-child(odd) {
+        padding-right: 0;
+    }
+    .timeline .timeline-row:nth-child(odd) .timeline-time {
+        position: relative;
         right: auto;
+        left: auto;
+        top: 0;
+        text-align: left;
+        margin: 0 0 6px 56px;
     }
-
-    .timeline>li.timeline-inverted {
-        float: left;
-        clear: left;
-        margin-top: 30px;
-        margin-bottom: 30px;
+    .timeline .timeline-row:nth-child(odd) .timeline-content {
+        margin-right: 0;
+        margin-left: 55px;
     }
-
-    .timeline>li.timeline-inverted>.timeline-badge {
-        left: 28px;
+    .timeline .timeline-row:nth-child(odd) .timeline-content:after {
+        right: auto;
+        left: -39px;
+        top: 32px;
+        border-right: 18px solid #5a99ee;
+        border-left: inherit;
+    }
+    .timeline.animated .timeline-row:nth-child(odd) .timeline-content {
+        left: 20px;
+    }
+    .timeline.animated .timeline-row.active:nth-child(odd) .timeline-content {
+        left: 0;
     }
 }
 </style>
