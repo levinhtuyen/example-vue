@@ -8,13 +8,13 @@
                         <p>Lorem ipsum dolor sitamet,cons adipiscing elit, sed do eiusmod te incididunt ut labore et dolore Lorem ipsum dolor sitamet,cons adipiscing dolore Lorem ipsum dolor.</p>
                         <div class="social-area">
                             <ul>
-                                <li><a href="#" target="_blank">
+                                <li><a class="style-canh-giua" href="#" target="_blank">
                                         <i class="bx bxl-facebook"></i>
                                     </a></li>
-                                <li><a href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="bx bxl-youtube"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                                <li><a class="style-canh-giua" href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                                <li><a class="style-canh-giua" href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                                <li><a class="style-canh-giua" href="#" target="_blank"><i class="bx bxl-youtube"></i></a></li>
+                                <li><a class="style-canh-giua" href="#" target="_blank"><i class="bx bxl-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -65,10 +65,7 @@
 </template>
 
 <script>
-import {
-    PluginObject
-} from 'vue';
-import IconifyIcon from '@iconify/vue';
+import 'boxicons'
 export default {
     name: "Footer"
 }
@@ -147,11 +144,18 @@ export default {
     width: 30px;
     height: 30px;
     line-height: 32px;
-    background-color: #31abfc;
+    background-color: #ff6400;
     border-radius: 4px;
     text-align: center;
 }
-
+.single-widget .social-area ul li a:hover i {
+    color: #fff;
+}
+.single-widget .social-area ul li a i {
+    color: #eee;
+    transition: all .5s;
+    margin-right: 0;
+}
 .single-widget ul li a {
     color: #000;
     transition: all .5s;
@@ -160,7 +164,7 @@ export default {
 .single-widget ul li a i {
     display: inline-block;
     margin-right: 2px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .bx {

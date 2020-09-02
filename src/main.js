@@ -19,9 +19,9 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 // import 'swiper/css/swiper.css'
 // If you use Swiper 6.0.0 or higher
 import 'swiper/swiper-bundle.css'
-import IconifyIcon from '@iconify/vue';
- 
-Vue.use(IconifyIcon);
+// import IconifyIcon from '@iconify/vue';
+import 'boxicons'
+// Vue.use(IconifyIcon);
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 Vue.config.productionTip = false;
 Vue.use(FlagIcon);
