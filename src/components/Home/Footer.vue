@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="single-widget"><a href="/"><img style="width:150px;height:auto" src="./../../assets/logo_app_home.png" alt="Image"></a>
-                        <p>Lorem ipsum dolor sitamet,cons adipiscing elit, sed do eiusmod te incididunt ut labore et dolore Lorem ipsum dolor sitamet,cons adipiscing dolore Lorem ipsum dolor.</p>
+                        <p>Go2Joy là ứng dụng trên điện thoại di động giúp người dùng đặt phòng theo thời gian một cách nhanh chóng , thuận lợi , riêng tư , không cần mất nhiều thời gian tìm kiếm nữa, với Go2Joy, chỉ cần vài cú chạm trong vài giây, bạn có thể chọn cho mình một địa điểm trải nghiệm dịch vụ ưng ý. Hãy để công nghệ hiện đại phục vụ cho cuộc sống của bạn dễ dàng và thoải mái hơn!</p>
                         <div class="social-area">
                             <ul>
                                 <li><a class="style-canh-giua" href="#" target="_blank">
@@ -21,34 +21,36 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="single-widget contact">
-                        <h3>Contact Us</h3>
+                        <h3>Liên hệ</h3>
                         <ul>
-                            <li><i class="flaticon-call"></i><span>Hotline:</span><a href="tel:+822456974">Phone: </a></li>
-                            <li><i class="flaticon-email"></i><span>Email:</span><a href="mailto:hello@flexa.com">hello@flexa.com</a></li>
-                            <li><i class="flaticon-maps-and-flags"></i><span>Address:</span>123, Western Road, Melbourne Australia</li>
+                            <li><i class="flaticon-call"></i><span>Hotline:</span><a href="tel:+822456974">Phone: 0931 836 836 </a></li>
+                            <li><i class="flaticon-email"></i><span>Email:</span><a href="mailto:support@go2joy.vn">support@go2joy.vn</a></li>
+                            <li><i class="flaticon-maps-and-flags"></i><span>Address:</span>Tòa nhà Artfolio, 5A/2 Trần Phú, Quận 5</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
-                        <h3>Service Links</h3>
+                        <h3>TOP HOTEL YÊU THÍCH</h3>
                         <ul>
-                            <li><a href="/contact#">Insurance</a></li>
-                            <li><a href="/contact#">Car Insurance</a></li>
-                            <li><a href="/contact#">Home Insurance</a></li>
-                            <li><a href="/contact#">Investment</a></li>
-                            <li><a href="/contact#">Health Insurance</a></li>
-                            <li><a href="/contact#">Business</a></li>
+                            <li><a href="#">Hotel Hồ Chí Minh</a></li>
+                            <li><a href="#">Hotel Hà Nội</a></li>
+                            <li><a href="#">Hotel Đà Lạt</a></li>
+                            <li><a href="#">Hotel Hạ Long</a></li>
+                            <li><a href="#">Hotel Đà Nẵng</a></li>
+                            <li><a href="#">Hotel Phan Thiết</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="single-widget">
-                        <h3>Newsletter</h3>
-                        <p class="newsletter-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
-                        <div class="subscribe-wrap">
+                        <h3>TẢI ỨNG DỤNG GO2JOY</h3>
+                        <!-- <p class="newsletter-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p> -->
+                        <!-- <div class="subscribe-wrap">
                             <form class="newsletter-form"><input type="email" class="form-control" placeholder="Enter Your Email" name="email" required=""><button class="default-btn" type="submit">Subscribe</button></form>
-                        </div>
+                        </div> -->
+                        <button type="button" class="btn "><img class="style-down" src="http://go2joy.vn/images/GooglePlay-white.png" alt=""></button>
+                        <button type="button" class="btn"><img class="style-down" src="http://go2joy.vn/images/appstore-white.png" alt=""></button>
                     </div>
                 </div>
             </div>
@@ -72,14 +74,20 @@ export default {
 </script>
 
 <style scoped>
+.style-down{
+    Width:100%;
+    height: auto;
+}
 .style-canh-giua {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.color-trang{
+
+.color-trang {
     color: #ffffff;
 }
+
 .footer-top-area {
     background-color: #b1b2b3;
     background-position: 50%;
@@ -148,14 +156,17 @@ export default {
     border-radius: 4px;
     text-align: center;
 }
+
 .single-widget .social-area ul li a:hover i {
     color: #fff;
 }
+
 .single-widget .social-area ul li a i {
     color: #eee;
     transition: all .5s;
     margin-right: 0;
 }
+
 .single-widget ul li a {
     color: #000;
     transition: all .5s;
