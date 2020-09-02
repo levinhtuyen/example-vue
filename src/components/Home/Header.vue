@@ -22,13 +22,13 @@
                     </el-menu-item>
                 </el-submenu>
                 <el-menu-item index="2-2" class="">
-                    <router-link tag="a" class="color-trang" :to="{ name: 'tongquan'}">{{ $t('Home.recruitment') }}</router-link>
+                    <router-link tag="a" class="color-trang" :to="{ name: 'Recruitment'}">{{ $t('Home.recruitment') }}</router-link>
                 </el-menu-item>
             </el-submenu>
             <el-menu-item index="3" class="style-canh-giua"><a class="color-trang" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScCtwnRHg0BcfpQ_I2fKWAMY5CDwFytHWhx1oI8YlOA99wu2Q/viewform"> {{ $t('Home.contact') }}</a></el-menu-item>
 
             <el-menu-item index="4" class="style-canh-giua">
-                <router-link class="color-trang" tag="a" :to="{ name: 'tongquan'}">{{ $t('Home.events') }}</router-link>
+                <router-link class="color-trang" tag="a" :to="{ name: 'Events'}">{{ $t('Home.events') }}</router-link>
             </el-menu-item>
             <el-menu-item index="5" class="style-canh-giua"> <button type="button" class="btn "><img class="style-down" src="http://go2joy.vn/images/GooglePlay-white.png" alt=""></button></el-menu-item>
             <el-menu-item index="6" class="style-canh-giua"><button type="button" class="btn"><img class="style-down" src="http://go2joy.vn/images/appstore-white.png" alt=""></button></el-menu-item>

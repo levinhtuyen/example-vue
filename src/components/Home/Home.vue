@@ -10,6 +10,7 @@
         <HotelNew />
         <Promotion />
         <TopHotel />
+        <Footer />
     </div>
 </div>
 </template>
@@ -26,6 +27,7 @@ import Go2Joy from "./Go2Joy.vue"
 import HotelNew from "./HotelNew.vue"
 import Promotion from "./Promotion.vue"
 import TopHotel from "./TopHotel.vue"
+import Footer from "./Footer.vue"
 // import VueI18n from 'vue-i18n'
 // Vue.use(VueI18n)
 import 'bootstrap/dist/css/bootstrap.css'
@@ -42,7 +44,8 @@ export default {
         Go2Joy,
         HotelNew,
         Promotion,
-        TopHotel
+        TopHotel,
+        Footer
     },
     data() {
         return {

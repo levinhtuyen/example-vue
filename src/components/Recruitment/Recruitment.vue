@@ -2,7 +2,7 @@
 <div>
     <Header />
     <div class="container">
-        <h1>Events</h1>
+        <h1>Recruitment</h1>
        
     </div>
 </div>
