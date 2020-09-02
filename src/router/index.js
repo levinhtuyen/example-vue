@@ -85,6 +85,10 @@ export default new Router({
       path: "/recruitment",
       name: "Recruitment",
       component: Recruitment
+    },
+    
+  ],
+  scrollBehavior() {
+        return {x: 0, y: 0}
     }
-  ]
 });
