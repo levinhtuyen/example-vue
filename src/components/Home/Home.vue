@@ -17,6 +17,7 @@
 
 <script>
 import Vue from 'vue'
+import { Loading } from 'element-ui';
 // import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./Header.vue"
 import Slider from "./Slider.vue"
@@ -49,7 +50,8 @@ export default {
     },
     data() {
         return {
-            userSelectedFromChild: {}
+            userSelectedFromChild: {},
+             fullscreenLoading: false
         }
     },
     methods: {
@@ -57,7 +59,13 @@ export default {
         childrenSelectUser(dataHotel) {
             console.log(dataHotel)
             this.userSelectedFromChild = dataHotel
-        }
+        },
+        openFullScreen1() {
+        this.fullscreenLoading = true;
+        setTimeout(() => {
+          this.fullscreenLoading = false;
+        }, 2000);
+      },
     }
 
 };

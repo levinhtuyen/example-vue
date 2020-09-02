@@ -1,5 +1,5 @@
 <template>
-<div class="container" >
+<div class="container" loading.fullscreen="true">
     <!-- <Header /> -->
     <SliderDetail />
     <InforHotel />
@@ -14,6 +14,9 @@ import SliderDetail from "./SliderDetail.vue"
 import InforHotel from "./InforHotel.vue"
 import FlashSaleRoom from "./FlashSaleRoom.vue"
 import ListRoom from "./ListRoom.vue"
+import {
+    Loading
+} from 'element-ui';
 export default {
     name: 'DetailHotel',
     components: {
@@ -23,8 +26,30 @@ export default {
         FlashSaleRoom,
         ListRoom,
     },
-    
-    
+    data() {
+        return {
+            data: {
+
+            },
+            fullscreenLoading: false,
+            loading: true
+
+        }
+    },
+    mounted() {
+  let loading = this.$loading({ fullscreen: true })
+  setTimeout(() => { loading.close() }, 1000)
+},
+    methods: {
+
+        fullscreen() {
+            this.fullscreenLoading = true;
+            setTimeout(() => {
+                this.fullscreenLoading = false;
+            }, 2000);
+        },
+    }
+
 };
 </script>
 

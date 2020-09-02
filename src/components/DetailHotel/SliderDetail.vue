@@ -1,21 +1,20 @@
 <template>
-<div >
-    <carousel 
-    :navigationEnabled="false"
-     :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
+<div>
+    <carousel :navigationEnabled="false" :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
         <slide v-for="(data0, index) in data" :key="index">
             <div class="col-12">
                 <div class="item style-slider">
                     <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
                     <img src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg" alt="">
-                    <div class="whatever">
-                        <p class="style-count-image">1/23</p>
-                    </div>
+
                 </div>
             </div>
 
         </slide>
     </carousel>
+    <div class="whatever">
+        <p class="style-count-image">1/23</p>
+    </div>
 </div>
 </template>
 
@@ -82,7 +81,8 @@ export default {
     color: #ffffff;
     opacity: 0.9;
     margin: 20px;
-    border-radius: 0px;
+    font-size: 18px;
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -113,6 +113,7 @@ export default {
     .style-slider {
         max-height: 270px;
     }
+
     .style-count-image {
         width: 50px;
         margin: 5px;
@@ -130,6 +131,7 @@ export default {
     .style-slider {
         max-height: 310px;
     }
+
     .style-count-image {
         width: 50px;
         margin: 5px;
@@ -142,10 +144,12 @@ export default {
         top: -50px;
     }
 }
+
 @media only screen and (max-width: 2560) and (min-width: 1920px) {
     .style-slider {
         max-height: 310px;
     }
+
     .style-count-image {
         width: 50px;
         margin: 5px;
