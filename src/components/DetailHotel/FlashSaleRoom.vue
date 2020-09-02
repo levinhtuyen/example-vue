@@ -1,12 +1,9 @@
 <template>
-<div class="container">
+<div class="container padding-top">
 
     <!-- <p class="style-bold font-size-12">HÔM NAY BẠN CẦN GÌ ?</p> -->
 
-    <div class="col-12 float-left padding-0-5-10">
-        <!-- <div class="col-6 style-color-xanh font-size-12">GIẢM SỐC</div>
-        <div class="col-6 style-text-align-right font-size-12"><a href="#">Xem tất cả</a></div> -->
-    </div>
+
     <div class="col-12" style="margin-bottom:6px">
         <carousel 
         :centerMode="false" 
@@ -130,6 +127,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped>
+.padding-top{
+    padding-top: 40px;
+}
  .style-btn-dat-ngay {
         background: #ffffff;
         width: 100px;

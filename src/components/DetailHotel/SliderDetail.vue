@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container">
     <carousel :navigationEnabled="false" :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
         <slide v-for="(data0, index) in data" :key="index">
             <div class="col-12">

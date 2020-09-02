@@ -5,6 +5,7 @@
     <InforHotel />
     <FlashSaleRoom />
     <ListRoom />
+    <Footer />
 </div>
 </template>
 
@@ -14,6 +15,7 @@ import SliderDetail from "./SliderDetail.vue"
 import InforHotel from "./InforHotel.vue"
 import FlashSaleRoom from "./FlashSaleRoom.vue"
 import ListRoom from "./ListRoom.vue"
+import Footer from "./../Home/Footer.vue"
 import {
     Loading
 } from 'element-ui';
@@ -25,6 +27,7 @@ export default {
         InforHotel,
         FlashSaleRoom,
         ListRoom,
+        Footer
     },
     data() {
         return {
@@ -46,7 +49,7 @@ export default {
             this.fullscreenLoading = true;
             setTimeout(() => {
                 this.fullscreenLoading = false;
-            }, 2000);
+            }, 1000);
         },
     }
 
