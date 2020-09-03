@@ -1,30 +1,36 @@
 <template>
-<div class="container">
-    <carousel :navigationEnabled="false" :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
-        <slide v-for="(data0, index) in data" :key="index">
-            <div class="col-12">
-                <div class="item style-slider">
-                    <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                    <img src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg" alt="">
+<div>
+    <Header />
 
+    <div class="container">
+        <carousel :navigationEnabled="false" :perPageCustom="[[480, 1], [768, 1], [1024, 1]]">
+            <slide v-for="(data0, index) in data" :key="index">
+                <div class="col-12">
+                    <div class="item style-slider">
+                        <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
+                        <img src="https://go2joy.vn/images/hotel/HA-NOI-HOTEL.jpg" alt="">
+
+                    </div>
                 </div>
-            </div>
 
-        </slide>
-    </carousel>
-    <div class="whatever">
-        <p class="style-count-image">1/23</p>
+            </slide>
+        </carousel>
+        <div class="whatever">
+            <p class="style-count-image">1/23</p>
+        </div>
     </div>
 </div>
 </template>
 
 <script>
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios';
-
+import Header from './../Home/Header'
 export default {
     name: 'SliderDetail',
+    components: {
+        Header,
+
+    },
     data() {
         return {
             data: {
@@ -68,10 +74,10 @@ export default {
     background-image: -webkit-linear-gradient(bottom, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
     background-image: -ms-linear-gradient(bottom, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
     background-image: linear-gradient(to top, #ffffff 0%, rgba(0, 0, 0, 0) 100%);
-    height: 150px;
+    height: 45px;
     position: relative;
     width: 100%;
-    top: -150px;
+    top: -45px;
 }
 
 .style-count-image {
@@ -80,10 +86,16 @@ export default {
     float: right;
     color: #ffffff;
     opacity: 0.9;
-    margin: 20px;
+    margin-right: 30px;
     font-size: 18px;
     border-radius: 10px;
     text-align: center;
+}
+
+.style-box-shadow {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
 }
 
 .style-slider {

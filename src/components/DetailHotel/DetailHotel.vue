@@ -115,7 +115,9 @@ a:hover {
     padding: 0;
     ;
 }
-
+.border-bottom{
+    border-bottom:none !important
+}
 p {
     margin-bottom: 0.3rem;
 }

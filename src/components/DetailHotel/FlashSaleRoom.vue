@@ -14,7 +14,7 @@
         :autoplay="true" :interval="3000"
         :perPageCustom="[[480, 1], [768, 2], [1024, 2]]">
             <slide >
-                <div class="col-11 style-box-shadow">
+                <div class="col-11 style-box-shadow style-margin">
                     <div class="col-4" style="float:left">
                         <div class="hotel-item">
                             <router-link tag="a"  :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joylocal.s3-ap-southeast-1.amazonaws.com/hotel/806_1525842113614/2_806_66_1525842113795.jpg" alt=""></router-link>
@@ -127,6 +127,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped>
+.style-margin{
+    margin-bottom:3px
+}
 .padding-top{
     padding-top: 40px;
 }

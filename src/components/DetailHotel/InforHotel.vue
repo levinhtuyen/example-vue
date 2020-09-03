@@ -1,66 +1,68 @@
 <template>
-<div class="container padding-top1 ">
-    <div class="border-bottom ">
-        <p class="style-bold font-size-title ">LYN MINI HOTEL</p>
-        <div class="col-12">
-            <p class="padding-p padding-top-bottom">
-                <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.4 </span></a>
-                <el-button type="text" class="font-size-title margin-left-right-10" @click="show = !show">1121 Bình luận > </el-button>
-            </p>
-            <p class="padding-p padding-top-bottom">
-                <a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a>
-                <a> <span class="font-size-title margin-left-right-10">Xem chi tiết tem > </span></a>
-            </p>
-            <p class="padding-p padding-top-bottom">
-                <a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> 3,2 km </span></a>
-                <a><span class="font-size-title margin-left-right-10">Số 7 Đường 6B, Khu dân cư Trung Sơn, Bình Chánh, Hồ Chí Minh 760000, Việt Nam > </span></a>
-            </p>
-        </div>
-        <!-- Form -->
-
-        <transition name="dialog">
-            <div v-if="active" class="dialog-backdrop" @click="handleBackdropClick">
-                <div class="dialog-container" @click.stop>
-                    <BaseDialog v-bind="$attrs" v-on="$listeners">
-                        <div class="dialog-title title-color text-align-left">Tìm kiếm</div>
-                        <div class="dialog-body text-align-left">
-
-                            <!---->
-                            <el-form ref="form" :model="form" label-width="120px">
-
-                                <el-form-item label="Danh mục">
-                                    <el-select v-model="form.region" placeholder="Chọn danh mục">
-                                        <el-option label="Danh mục 1" value="danhmuc1"></el-option>
-                                        <el-option label="Danh mục 2" value="danhmuc2"></el-option>
-                                    </el-select>
-                                </el-form-item>
-                                <el-form-item label="Từ khóa HOT">
-                                    <el-button size="small" round>Ks cặp đôi</el-button>
-                                    <el-button size="small" round>Ks du lịch</el-button>
-                                    <el-button size="small" round>Ghế tình yêu</el-button>
-                                    <el-button size="small" round>Romatic</el-button>
-                                    <el-button size="small" round>KSTinhYeu</el-button>
-                                </el-form-item>
-
-                                <el-form-item label="Mức giá (VNĐ)">
-
-                                    <el-slider :max="3000000" label="VNĐ" :min="0" v-model="value1" :step="100000">
-                                    </el-slider>
-                                </el-form-item>
-                            </el-form>
-                        </div>
-
-                        <div class="dialog-footer">
-                            <button class="btn btn-color" type="button" @click="$emit('update:active', false)">
-                                <router-link tag="a" :to="{ name: 'Category', params: { Sn: 1 }}">Áp dụng</router-link>
-                            </button>
-                        </div>
-                    </BaseDialog>
-                </div>
+<div class="container padding-top1 row ">
+    
+        <div class="border-bottom ">
+            <p class="style-bold font-size-title ">LYN MINI HOTEL</p>
+            <div class="col-12">
+                <p class="padding-p padding-top-bottom">
+                    <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.4 </span></a>
+                    <el-button type="text" class="font-size-title margin-left-right-10" @click="show = !show">1121 Bình luận > </el-button>
+                </p>
+                <p class="padding-p padding-top-bottom">
+                    <a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a>
+                    <a> <span class="font-size-title margin-left-right-10">Xem chi tiết tem > </span></a>
+                </p>
+                <p class="padding-p padding-top-bottom">
+                    <a class="style-back-nau font-size-title"><i class="fas fa-map-marked"></i> <span> 3,2 km </span></a>
+                    <a><span class="font-size-title margin-left-right-10">Số 7 Đường 6B, Khu dân cư Trung Sơn, Bình Chánh, Hồ Chí Minh 760000, Việt Nam > </span></a>
+                </p>
             </div>
-        </transition>
+            <!-- Form -->
 
-    </div>
+            <transition name="dialog">
+                <div v-if="active" class="dialog-backdrop" @click="handleBackdropClick">
+                    <div class="dialog-container" @click.stop>
+                        <BaseDialog v-bind="$attrs" v-on="$listeners">
+                            <div class="dialog-title title-color text-align-left">Tìm kiếm</div>
+                            <div class="dialog-body text-align-left">
+
+                                <!---->
+                                <el-form ref="form" :model="form" label-width="120px">
+
+                                    <el-form-item label="Danh mục">
+                                        <el-select v-model="form.region" placeholder="Chọn danh mục">
+                                            <el-option label="Danh mục 1" value="danhmuc1"></el-option>
+                                            <el-option label="Danh mục 2" value="danhmuc2"></el-option>
+                                        </el-select>
+                                    </el-form-item>
+                                    <el-form-item label="Từ khóa HOT">
+                                        <el-button size="small" round>Ks cặp đôi</el-button>
+                                        <el-button size="small" round>Ks du lịch</el-button>
+                                        <el-button size="small" round>Ghế tình yêu</el-button>
+                                        <el-button size="small" round>Romatic</el-button>
+                                        <el-button size="small" round>KSTinhYeu</el-button>
+                                    </el-form-item>
+
+                                    <el-form-item label="Mức giá (VNĐ)">
+
+                                        <el-slider :max="3000000" label="VNĐ" :min="0" v-model="value1" :step="100000">
+                                        </el-slider>
+                                    </el-form-item>
+                                </el-form>
+                            </div>
+
+                            <div class="dialog-footer">
+                                <button class="btn btn-color" type="button" @click="$emit('update:active', false)">
+                                    <router-link tag="a" :to="{ name: 'Category', params: { Sn: 1 }}">Áp dụng</router-link>
+                                </button>
+                            </div>
+                        </BaseDialog>
+                    </div>
+                </div>
+            </transition>
+
+        </div>
+    
 </div>
 </template>
 
