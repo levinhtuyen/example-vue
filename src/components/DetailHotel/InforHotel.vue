@@ -1,6 +1,5 @@
 <template>
 <div class="container padding-top1 row ">
-    
         <div class="border-bottom ">
             <p class="style-bold font-size-title ">LYN MINI HOTEL</p>
             <div class="col-12">
@@ -62,7 +61,6 @@
             </transition>
 
         </div>
-    
 </div>
 </template>
 
