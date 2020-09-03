@@ -1,5 +1,5 @@
 <template>
-<div id="navbar" class="container no-padding-top-bottom" style=" background-color:#545c64">
+<div id="navbar" class="container no-padding-top-bottom" style=" background-color:#545c64;">
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-lg ">

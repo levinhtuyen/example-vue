@@ -85,7 +85,7 @@ export default {
 
 .res-ponsive {
     width: 100%;
-    max-height: 400px;
+   
 
 }
 

@@ -102,6 +102,7 @@ function showPosition(position) {
   function scrollFunction() {
     if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
       document.getElementById("navbar").style.position = "sticky";
+       document.getElementById("navbar").style.opacity = "0.9";
     } else {
       document.getElementById("navbar").style.position = "unset";
     }
