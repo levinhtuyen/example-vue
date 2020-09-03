@@ -72,11 +72,6 @@ export default new Router({
       component: Vision
     },
     {
-      path: "/vision",
-      name: "Vision",
-      component: Vision
-    },
-    {
       path: "/events",
       name: "Events",
       component: Events

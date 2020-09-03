@@ -14,22 +14,37 @@
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous"
   />
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-<!-- or -->
-<link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link
+    href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <!-- or -->
+  <link
+    href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
+    rel="stylesheet"
+  />
   <!-- import CSS -->
-  <script src="https://kit.fontawesome.com/986c6454d2.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/986c6454d2.js"
+    crossorigin="anonymous"
+  ></script>
   <link
     rel="stylesheet"
     href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
   />
   <script src="https://code.iconify.design/2/2.0.0-rc.1/iconify.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css" />
-  <link rel="stylesheet" href="https://vivaco.com/demo/ventcamp/assets/css/custom-animations.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css"
+  />
+
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSLNsJc2hhS0PbO39zD2LH92y0CktRKb4&libraries=places">
   
 </script> -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDSLNsJc2hhS0PbO39zD2LH92y0CktRKb4&ver=3.exp"></script>
+  <script
+    type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDSLNsJc2hhS0PbO39zD2LH92y0CktRKb4&ver=3.exp"
+  ></script>
 
   <style>
     .preloader {
@@ -43,7 +58,6 @@
         50% 50% no-repeat rgb(249, 249, 249);
       opacity: 1;
     }
-
   </style>
 
   <body>
@@ -61,7 +75,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-<!-- <script src="https://vivaco.com/demo/ventcamp/assets/js/jquery.countTo.js"></script> -->
+<script src="https://vivaco.com/demo/ventcamp/assets/js/jquery.countTo.js"></script>
 
 <!-- <script>
   
@@ -81,134 +95,68 @@ function showPosition(position) {
 </script> -->
 
 <script>
-
   // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
   window.onscroll = function() {
     scrollFunction();
   };
   function scrollFunction() {
-    if (
-      document.body.scrollTop > 1 ||
-      document.documentElement.scrollTop > 1
-    ) {
-      document.getElementById('navbar').style.position = 'sticky';
+    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+      document.getElementById("navbar").style.position = "sticky";
     } else {
-      document.getElementById('navbar').style.position = 'unset';
+      document.getElementById("navbar").style.position = "unset";
     }
   }
-  $(window).on('load', function() {
+  $(window).on("load", function() {
     $(".preloader").fadeOut("slow");
   });
 
-  $(document).ready(function(){
-	var my_posts = $("[rel=tooltip]");
+  $(document).ready(function() {
+    var my_posts = $("[rel=tooltip]");
 
-	var size = $(window).width();
-	for(i=0;i<my_posts.length;i++){
-		the_post = $(my_posts[i]);
+    var size = $(window).width();
+    for (i = 0; i < my_posts.length; i++) {
+      the_post = $(my_posts[i]);
 
-		if(the_post.hasClass('invert') && size >=767 ){
-			the_post.tooltip({ placement: 'left'});
-			the_post.css("cursor","pointer");
-		}else{
-			the_post.tooltip({ placement: 'rigth'});
-			the_post.css("cursor","pointer");
-		}
-	}
-});
-
-</script>
-<script type="text/javascript">
-(function ($) {
-    $.fn.countTo = function (options) {
-        options = options || {};
-
-        return $(this).each(function () {
-            // set options for current element
-            var settings = $.extend({}, $.fn.countTo.defaults, {
-                from:            $(this).data('from'),
-                to:              $(this).data('to'),
-                speed:           $(this).data('speed'),
-                refreshInterval: $(this).data('refresh-interval'),
-                decimals:        $(this).data('decimals')
-            }, options);
-
-            // how many times to update the value, and how much to increment the value on each update
-            var loops = Math.ceil(settings.speed / settings.refreshInterval),
-                increment = (settings.to - settings.from) / loops;
-
-            // references & variables that will change with each update
-            var self = this,
-                $self = $(this),
-                loopCount = 0,
-                value = settings.from,
-                data = $self.data('countTo') || {};
-
-            $self.data('countTo', data);
-
-            // if an existing interval can be found, clear it first
-            if (data.interval) {
-                clearInterval(data.interval);
-            }
-            data.interval = setInterval(updateTimer, settings.refreshInterval);
-
-            // initialize the element with the starting value
-            render(value);
-
-            function updateTimer() {
-                value += increment;
-                loopCount++;
-
-                render(value);
-
-                if (typeof(settings.onUpdate) == 'function') {
-                    settings.onUpdate.call(self, value);
-                }
-
-                if (loopCount >= loops) {
-                    // remove the interval
-                    $self.removeData('countTo');
-                    clearInterval(data.interval);
-                    value = settings.to;
-
-                  
-                }
-            }
-
-            function render(value) {
-                var formattedValue = settings.formatter.call(self, value, settings);
-                $self.text(formattedValue);
-            }
-        });
-    };
-
-    $.fn.countTo.defaults = {
-        from: 0,               // the number the element should start at
-        to: 0,                 // the number the element should end at
-        speed: 1000,           // how long it should take to count between the target numbers
-        refreshInterval: 100,  // how often the element should be updated
-        decimals: 0,           // the number of decimal places to show
-        formatter: formatter,  // handler for formatting the value before rendering
-        onUpdate: null,        // callback method for every time the element is updated
-        onComplete: null       // callback method for when the element finishes updating
-    };
-
-    function formatter(value, settings) {
-        return value.toFixed(settings.decimals);
-    }
-}(jQuery));
-
-  $('.count').countTo({
-    speed: 5000,
-    refreshInterval : 50,
-    formatter: function (value, options) {
-      return value.toFixed(options.decimals);
-    },
-    onUpdate: function (value) {
-      console.debug(this);
-    },
-    onComplete: function (value) {
-      console.debug(this);
+      if (the_post.hasClass("invert") && size >= 767) {
+        the_post.tooltip({ placement: "left" });
+        the_post.css("cursor", "pointer");
+      } else {
+        the_post.tooltip({ placement: "rigth" });
+        the_post.css("cursor", "pointer");
+      }
     }
   });
+
+  var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counters').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.count').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 3000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
 </script>

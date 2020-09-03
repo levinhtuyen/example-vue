@@ -4,6 +4,7 @@
     <div class="container">
         <img class="padding-top-bottom style-img" src="https://lh3.googleusercontent.com/Xvx4LyvdTpFCp8Pyk5Dqddj6lRqt_4e_xKMhOeqTvCeCGOYrIi27WsU3er1iZEf1hUk" />
         <section id="vision">
+             <h3>LÃNH ĐẠO CÔNG TY</h3>
             <el-tabs type="border-card">
                 <el-tab-pane>
                     <span class="style-title" slot="label"><i class="el-icon-guide"></i> Tầm nhìn</span>
@@ -61,15 +62,15 @@
                 <!-- <el-tab-pane label="Định hướng">Task</el-tab-pane> -->
             </el-tabs>
         </section>
-        <section id="counters" class="section align-center overlay bg-cover bg5 light-text">
+        <section id="counters" class="section align-center overlay bg-cover bg5 light-text style-padd style-box-shadow">
             <div class="container">
-
-                <div class="row counters-wrapper">
+                <h3>THỐNG KÊ</h3>
+                <div class="row counters-wrapper ">
                     <div class="col-sm-3">
                         <div class="counter-block counter-block-no-border">
                             <div class="counter-box">
                                 <div class="counter-content">
-                                    <span class="count" data-from="0" data-to="136">0</span>
+                                    <span class="count" data-count="1234">0</span>
 
                                     <p class="title">Nội dung 1</p>
                                 </div>
@@ -81,7 +82,7 @@
                         <div class="counter-block counter-block-no-border">
                             <div class="counter-box">
                                 <div class="counter-content">
-                                    <span class="count" data-from="0" data-to="5">0</span>
+                                    <span class="count" data-count="856">0</span>
 
                                     <p class="title">Nội dung 2</p>
                                 </div>
@@ -93,7 +94,7 @@
                         <div class="counter-block counter-block-no-border">
                             <div class="counter-box">
                                 <div class="counter-content">
-                                    <span class="count" data-from="0" data-to="25">0</span>
+                                    <span class="count" data-count="255">0</span>
 
                                     <p class="title">Nội dung 3</p>
                                 </div>
@@ -105,7 +106,7 @@
                         <div class="counter-block counter-block-no-border">
                             <div class="counter-box">
                                 <div class="counter-content">
-                                    <span class="count" data-from="0" data-to="200">0</span>
+                                    <span class="count" data-count="23">0</span>
 
                                     <p class="title">Nội dung 4</p>
                                 </div>
@@ -119,33 +120,77 @@
         <section id="sponsors" class="section align-center ">
             <div class="container">
                 <span class="icon section-icon icon-documents-bookmarks-12"></span>
-                <h3>Lãnh đạo công ty</h3>
-                <p class="text-alt">Thông tin <span class="highlight">liên hệ</span></p>
+                <h3>LÃNH ĐẠO CÔNG TY</h3>
+                <!-- <p class="text-alt">Thông tin <span class="highlight">liên hệ</span></p> -->
 
                 <div class="col-12 padding-top-bottom">
                     <div class="block col-3">
-
-                        <el-image class="style-img" src="https://go2joy.vn/images/Artboard_1.png"></el-image>
-                    </div>
-                    <div class="block col-3">
-
-                        <el-image class="style-img" src="https://go2joy.vn/images/Artboard_1.png">
-                            <div slot="placeholder" class="image-slot">
-                                Loading<span class="dot">...</span>
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="https://go2joy.vn/images/Artboard_1.png" alt="">
+                            <div class="overlay">
+                                <h2>Lãnh đạo 1</h2>
+                                <p class="icon-links">
+                                   
+                                    <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-instagram"></span>
+                                    </a>
+                                </p>
                             </div>
-                        </el-image>
+                        </div>
                     </div>
                     <div class="block col-3">
-
-                        <el-image class="style-img" src="https://go2joy.vn/images/Artboard_1.png"></el-image>
-                    </div>
-                    <div class="block col-3">
-
-                        <el-image class="style-img" src="https://go2joy.vn/images/Artboard_1.png">
-                            <div slot="placeholder" class="image-slot">
-                                Loading<span class="dot">...</span>
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="https://go2joy.vn/images/Artboard_1.png" alt="">
+                            <div class="overlay">
+                                <h2>Lãnh đạo 2</h2>
+                                <p class="icon-links">
+                                   
+                                    <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-instagram"></span>
+                                    </a>
+                                </p>
                             </div>
-                        </el-image>
+                        </div>
+                    </div>
+                    <div class="block col-3">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="https://go2joy.vn/images/Artboard_1.png" alt="">
+                            <div class="overlay">
+                                <h2>Lãnh đạo 3</h2>
+                                <p class="icon-links">
+                                   
+                                    <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-instagram"></span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block col-3">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="https://go2joy.vn/images/Artboard_1.png" alt="">
+                            <div class="overlay">
+                                <h2>Lãnh đạo 4</h2>
+                                <p class="icon-links">
+                                    
+                                    <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa fa-instagram"></span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -163,6 +208,7 @@ import Header from "./../Home/Header.vue"
 import Footer from "./../Home/Footer.vue"
 // import VueI18n from 'vue-i18n'
 // Vue.use(VueI18n)
+import $ from 'jquery'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {
@@ -177,12 +223,14 @@ export default {
 
         }
     },
+    created() {
+
+    },
     methods: {
 
     }
 
 };
-12
 </script>
 
 <style scoped>
@@ -192,6 +240,130 @@ export default {
 
 /* HTML5 display-role reset for older browsers */
 
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    height: 4.75em;
+    background: #79FAC4 !important;
+    color: #3c4a50;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: hidden;
+
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+.hovereffect:hover img {
+
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    float: left;
+    margin: 0px;
+    display: inline-block;
+}
+
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect p.icon-links a {
+    float: right;
+    color: #3c4a50;
+    font-size: 1.4em;
+}
+
+.hovereffect:hover p.icon-links a:hover,
+.hovereffect:hover p.icon-links a:focus {
+    color: #252d31;
+}
+
+.hovereffect h2,
+.hovereffect p.icon-links a {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+    visibility: visible;
+}
+
+.hovereffect p.icon-links a span:before {
+    display: inline-block;
+    padding: 8px 10px;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hovereffect:hover .overlay,
+.hovereffect:hover h2,
+.hovereffect:hover p.icon-links a {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect:hover h2 {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+.hovereffect:hover p.icon-links a:nth-child(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.hovereffect:hover p.icon-links a:nth-child(2) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.hovereffect:hover p.icon-links a:first-child {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+/* hover image */
 nav,
 section {
     display: block;
@@ -227,10 +399,18 @@ q:after {
     width: 100%;
     height: auto;
 }
-.style-title{
+
+.style-title {
     font-size: 20px;
     color: #ff6400;
 }
+
+.style-box-shadow {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(255 100 0)
+}
+
 section {
     padding: 40px 0 40px 0
 }
@@ -675,6 +855,10 @@ li {
     font-size: 50px;
 }
 
+.style-padd {
+    padding: 5px
+}
+
 .bg-cover {
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -697,7 +881,7 @@ li {
     left: 0;
     bottom: 0;
     content: "";
-    background-color: #ff6400;
+    /* background-color: #ff6400; */
     z-index: -1;
 }
 
