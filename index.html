@@ -25,6 +25,7 @@
   />
   <script src="https://code.iconify.design/2/2.0.0-rc.1/iconify.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css" />
+  <link rel="stylesheet" href="https://vivaco.com/demo/ventcamp/assets/css/custom-animations.css" />
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSLNsJc2hhS0PbO39zD2LH92y0CktRKb4&libraries=places">
   
 </script> -->
@@ -58,9 +59,9 @@
 
 <!-- import JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 
-<!-- <script async src="//jsfiddle.net/quinnssense/bojn4dz4/embed/js,result/"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<!-- <script src="https://vivaco.com/demo/ventcamp/assets/js/jquery.countTo.js"></script> -->
 
 <!-- <script>
   
@@ -116,4 +117,98 @@ function showPosition(position) {
 	}
 });
 
+</script>
+<script type="text/javascript">
+(function ($) {
+    $.fn.countTo = function (options) {
+        options = options || {};
+
+        return $(this).each(function () {
+            // set options for current element
+            var settings = $.extend({}, $.fn.countTo.defaults, {
+                from:            $(this).data('from'),
+                to:              $(this).data('to'),
+                speed:           $(this).data('speed'),
+                refreshInterval: $(this).data('refresh-interval'),
+                decimals:        $(this).data('decimals')
+            }, options);
+
+            // how many times to update the value, and how much to increment the value on each update
+            var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                increment = (settings.to - settings.from) / loops;
+
+            // references & variables that will change with each update
+            var self = this,
+                $self = $(this),
+                loopCount = 0,
+                value = settings.from,
+                data = $self.data('countTo') || {};
+
+            $self.data('countTo', data);
+
+            // if an existing interval can be found, clear it first
+            if (data.interval) {
+                clearInterval(data.interval);
+            }
+            data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+            // initialize the element with the starting value
+            render(value);
+
+            function updateTimer() {
+                value += increment;
+                loopCount++;
+
+                render(value);
+
+                if (typeof(settings.onUpdate) == 'function') {
+                    settings.onUpdate.call(self, value);
+                }
+
+                if (loopCount >= loops) {
+                    // remove the interval
+                    $self.removeData('countTo');
+                    clearInterval(data.interval);
+                    value = settings.to;
+
+                  
+                }
+            }
+
+            function render(value) {
+                var formattedValue = settings.formatter.call(self, value, settings);
+                $self.text(formattedValue);
+            }
+        });
+    };
+
+    $.fn.countTo.defaults = {
+        from: 0,               // the number the element should start at
+        to: 0,                 // the number the element should end at
+        speed: 1000,           // how long it should take to count between the target numbers
+        refreshInterval: 100,  // how often the element should be updated
+        decimals: 0,           // the number of decimal places to show
+        formatter: formatter,  // handler for formatting the value before rendering
+        onUpdate: null,        // callback method for every time the element is updated
+        onComplete: null       // callback method for when the element finishes updating
+    };
+
+    function formatter(value, settings) {
+        return value.toFixed(settings.decimals);
+    }
+}(jQuery));
+
+  $('.count').countTo({
+    speed: 5000,
+    refreshInterval : 50,
+    formatter: function (value, options) {
+      return value.toFixed(options.decimals);
+    },
+    onUpdate: function (value) {
+      console.debug(this);
+    },
+    onComplete: function (value) {
+      console.debug(this);
+    }
+  });
 </script>
