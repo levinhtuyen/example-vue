@@ -15,20 +15,20 @@
                 <el-submenu index="2-4">
                     <template slot="title"><span class="style-font-family">{{ $t('Home.tongquan') }}</span></template>
                     <el-menu-item index="2-4-1" class="">
-                        <router-link class="color-trang" tag="a" :to="{ name: 'Vision'}">{{ $t('Home.vision') }}</router-link>
+                        <a  class="color-trang"  href="/vision">{{ $t('Home.vision') }}</a>
                     </el-menu-item>
                     <el-menu-item index="2-4-2" class="">
-                        <router-link class="color-trang" tag="a" :to="{ name: 'About'}">{{ $t('Home.milestones') }} </router-link>
+                         <a  class="color-trang"  href="/about">{{ $t('Home.milestones') }} </a>
                     </el-menu-item>
                 </el-submenu>
                 <el-menu-item index="2-2" class="">
-                    <router-link tag="a" class="color-trang" :to="{ name: 'Recruitment'}">{{ $t('Home.recruitment') }}</router-link>
+                     <a  class="color-trang"  href="/recruitment">{{ $t('Home.recruitment') }}</a>
                 </el-menu-item>
             </el-submenu>
             <el-menu-item index="3" class="style-canh-giua"><a class="color-trang" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScCtwnRHg0BcfpQ_I2fKWAMY5CDwFytHWhx1oI8YlOA99wu2Q/viewform"> {{ $t('Home.contact') }}</a></el-menu-item>
 
             <el-menu-item index="4" class="style-canh-giua">
-                <router-link class="color-trang" tag="a" :to="{ name: 'Events'}">{{ $t('Home.events') }}</router-link>
+                <a  class="color-trang" target="_blank"  href="https://go2joy.vn/">{{ $t('Home.events') }}</a>
             </el-menu-item>
             <el-menu-item index="5" class="style-canh-giua"> <button type="button" class="btn "><img class="style-down" src="http://go2joy.vn/images/GooglePlay-white.png" alt=""></button></el-menu-item>
             <el-menu-item index="6" class="style-canh-giua"><button type="button" class="btn"><img class="style-down" src="http://go2joy.vn/images/appstore-white.png" alt=""></button></el-menu-item>
@@ -48,7 +48,7 @@
                                 <span>Tiếng Việt</span><img src="./../../assets/vi.png" alt="Logo" style="width:25px; margin:5px">
                             </a></el-dropdown-item>
                         <el-dropdown-item><a @click="changeLocale('en')" style="cursor: pointer;">
-                                <span>Tiếng Anh</span><img src="./../../assets/en.png" alt="Logo" style="margin:5px" class="images-countr">
+                                <span>Tiếng Anh</span><img src="./../../assets/en.png" alt="Logo" style="width:25px;margin:5px" class="images-countr">
                             </a></el-dropdown-item>
 
                     </el-dropdown-menu>

@@ -9,9 +9,9 @@
                         <div class="col-12 demo-image__error no-padd">
                             <div class="hotel-item-cate1">
                                 <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: dataHotel.sn }}">
-                                    <el-image class="hotel-item-cate" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath" lazy placeholder="Images loading...">
+                                    <el-image class="hotel-item-cate scale-hover" :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath" lazy placeholder="Images loading...">
                                         <div slot="error">
-                                            <img class="hotel-item-cate" src="./../../assets/loading_big.png" alt="">
+                                            <img class="hotel-item-cate scale-hover" src="./../../assets/loading_big.png" alt="">
                                         </div>
                                     </el-image>
                                     <!-- <img class="img-lazy" v-lazy="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath"> -->

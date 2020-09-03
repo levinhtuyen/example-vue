@@ -16,7 +16,7 @@
                     <div class="col-11">
                         <div class="item">
                             <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                            <img src="https://go2joy.vn/images/hotel/viendong.jpg" alt="">
+                            <img class="scale-hover" src="https://go2joy.vn/images/hotel/viendong.jpg" alt="">
                         </div>
                     </div>
                 </slide>
@@ -24,7 +24,7 @@
                     <div class="col-11">
                         <div class="item">
                             <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                            <img src="https://go2joy.vn/images/hotel/bonitagrand.jpg" alt="">
+                            <img class="scale-hover" src="https://go2joy.vn/images/hotel/bonitagrand.jpg" alt="">
                         </div>
                     </div>
                 </slide>
@@ -32,7 +32,7 @@
                     <div class="col-11">
                         <div class="item">
                             <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
-                            <img src="https://go2joy.vn/images/hotel/bonitatht.jpg" alt="">
+                            <img class="scale-hover" src="https://go2joy.vn/images/hotel/bonitatht.jpg" alt="">
                         </div>
                     </div>
                 </slide>

@@ -13,7 +13,7 @@
                 <div class=" ">
                     <div class="col-4" style="float:left">
                         <div class="hotel-item">
-                            <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/trungnam.jpg" alt=""></router-link>
+                            <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img class="scale-hover" src="https://go2joy.vn/images/hotel/trungnam.jpg" alt=""></router-link>
                         </div>
                     </div>
                     <div class="col-8 style-padd padding-0-5-10">
@@ -44,7 +44,7 @@
                 <div class=" ">
                     <div class="col-4" style="float:left">
                         <div class="hotel-item">
-                            <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/trungnam.jpg" alt=""></router-link>
+                            <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img class="scale-hover" src="https://go2joy.vn/images/hotel/trungnam.jpg" alt=""></router-link>
                         </div>
                     </div>
                     <div class="col-8 style-padd padding-0-5-10">
@@ -75,7 +75,7 @@
                 <div class=" ">
                     <div class="col-4" style="float:left">
                         <div class="hotel-item">
-                            <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/trungnam.jpg" alt=""></router-link>
+                            <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img class="scale-hover" src="https://go2joy.vn/images/hotel/trungnam.jpg" alt=""></router-link>
                         </div>
                     </div>
                     <div class="col-8 style-padd padding-0-5-10">
@@ -106,7 +106,7 @@
                 <div class=" ">
                     <div class="col-4" style="float:left">
                         <div class="hotel-item">
-                            <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img src="https://go2joy.vn/images/hotel/trungnam.jpg" alt=""></router-link>
+                            <router-link tag="a" :to="{ name: 'DetailHotel', params: { Sn: 1 }}"><img class="scale-hover" src="https://go2joy.vn/images/hotel/trungnam.jpg" alt=""></router-link>
                         </div>
                     </div>
                     <div class="col-8 style-padd padding-0-5-10">
@@ -173,6 +173,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped>
+
 .col-6 {
     width: 100%;
 

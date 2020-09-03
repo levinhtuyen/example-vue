@@ -72,6 +72,12 @@ export default {
 </script>
 
 <style>
+.scale-hover:hover {
+    transform: scale(1.15);
+    -webkit-transition: transform 0.65s ease-in-out;
+    -moz-transition: transform 0.65s ease-in-out;
+    -ms-transition: transform 0.65s ease-in-out;
+}
 h1,
 h2,
 h3,

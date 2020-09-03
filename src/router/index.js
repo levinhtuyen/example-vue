@@ -18,6 +18,7 @@ Vue.use(ElementUI)
 Vue.use(Router);
 Vue.use(Vuex)
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: "/",

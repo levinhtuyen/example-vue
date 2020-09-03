@@ -38,4 +38,10 @@ export default {
 body {
     background-color: #f9f9fa
 }
+.scale-hover:hover {
+    transform: scale(1.15);
+    -webkit-transition: transform 0.65s ease-in-out;
+    -moz-transition: transform 0.65s ease-in-out;
+    -ms-transition: transform 0.65s ease-in-out;
+}
 </style>

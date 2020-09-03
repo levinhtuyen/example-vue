@@ -17,9 +17,9 @@
                             <!-- <img :src="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+data0" alt="image" /> </div> -->
                             <!-- <img src="https://go2joy.vn/images/banner-stamp.jpg" alt=""> -->
                             <router-link tag="a" :to="{ name: 'PromotionDetail'}">
-                                <el-image  style="border-radius:20px"  class="hotel-item-cate" src="https://go2joy.vn/images/banner-stamp.jpg" lazy placeholder="Images loading...">
+                                <el-image  style="border-radius:20px"  class="hotel-item-cate scale-hover" src="https://go2joy.vn/images/banner-stamp.jpg" lazy placeholder="Images loading...">
                                     <div slot="error">
-                                        <img style="border-radius:20px" class="hotel-item-cate" src="./../../assets/loading_big.png" alt="">
+                                        <img style="border-radius:20px" class="hotel-item-cate scale-hover" src="./../../assets/loading_big.png" alt="">
                                     </div>
                                 </el-image>
                                 <!-- <img class="img-lazy" v-lazy="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath"> -->
@@ -32,9 +32,9 @@
                     <div class="col-11 padding-top-bottom">
                         <div class="item">
                             <router-link tag="a" :to="{ name: 'PromotionDetail'}">
-                                <el-image   style="border-radius:20px"  class="hotel-item-cate" src="https://go2joy.vn/images/DangKyTaiKhoanNgang.png" lazy placeholder="Images loading...">
+                                <el-image   style="border-radius:20px"  class="hotel-item-cate scale-hover" src="https://go2joy.vn/images/DangKyTaiKhoanNgang.png" lazy placeholder="Images loading...">
                                     <div slot="error">
-                                        <img style="border-radius:20px" class="hotel-item-cate" src="./../../assets/loading_big.png" alt="">
+                                        <img style="border-radius:20px" class="hotel-item-cate scale-hover" src="./../../assets/loading_big.png" alt="">
                                     </div>
                                 </el-image>
                                 <!-- <img class="img-lazy" v-lazy="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath"> -->
@@ -48,9 +48,9 @@
                     <div class="col-11 padding-top-bottom">
                         <div class="item">
                             <router-link tag="a" :to="{ name: 'DetailHotel'}">
-                                <el-image  style="border-radius:20px"  class="hotel-item-cate" src="https://go2joy.vn/images/InviteFriend.png" lazy placeholder="Images loading...">
+                                <el-image  style="border-radius:20px"  class="hotel-item-cate scale-hover" src="https://go2joy.vn/images/InviteFriend.png" lazy placeholder="Images loading...">
                                     <div slot="error">
-                                        <img style="border-radius:20px" class="hotel-item-cate" src="./../../assets/loading_big.png" alt="">
+                                        <img style="border-radius:20px" class="hotel-item-cate scale-hover" src="./../../assets/loading_big.png" alt="">
                                     </div>
                                 </el-image>
                                 <!-- <img class="img-lazy" v-lazy="'https://go2joylocal.s3-ap-southeast-1.amazonaws.com/'+dataHotel.imagePath"> -->

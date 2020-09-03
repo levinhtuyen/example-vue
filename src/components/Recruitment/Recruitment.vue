@@ -145,7 +145,7 @@
                         <input type="text" class="form-control" placeholder="Email">
                     </div>
                     <div class="col-md-3">
-                        <button style="width: 100%; background-color:#ff0000; color:#fff;" type="submit" class="btn ">NHẬN THÔNG TIN >></button>
+                        <button style="width: 100%; background-color:#ff6400; color:#fff;" type="submit" class="btn ">NHẬN THÔNG TIN >></button>
                     </div>
                     <div class="col-md-4 style-canh-giua">
                         <p style="color:#000; ">ĐĂNG KÝ ĐỂ NHẬN THÔNG TIN TUYỂN DỤNG MỚI NHẤT TỪ GO2JOY</p>
@@ -201,5 +201,15 @@ export default {
 }
 .col-1, .col-2 ,.col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-20, .col-11, .col-1{
     float:left
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p,
+span,
+a {
+    font-family: 'Quicksand', sans-serif;
 }
 </style>

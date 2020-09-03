@@ -3,8 +3,11 @@
     <Header />
     <div class="container">
         <img class="padding-top-bottom style-img" src="https://lh3.googleusercontent.com/Xvx4LyvdTpFCp8Pyk5Dqddj6lRqt_4e_xKMhOeqTvCeCGOYrIi27WsU3er1iZEf1hUk" />
+        
         <section id="vision">
-             <h3>LÃNH ĐẠO CÔNG TY</h3>
+             <div class="contaner">
+                 <div class="text-align"> <h3>Tầm nhìn</h3></div>
+            
             <el-tabs type="border-card">
                 <el-tab-pane>
                     <span class="style-title" slot="label"><i class="el-icon-guide"></i> Tầm nhìn</span>
@@ -61,6 +64,7 @@
                 </el-tab-pane>
                 <!-- <el-tab-pane label="Định hướng">Task</el-tab-pane> -->
             </el-tabs>
+             </div>
         </section>
         <section id="counters" class="section align-center overlay bg-cover bg5 light-text style-padd style-box-shadow">
             <div class="container">
@@ -72,7 +76,7 @@
                                 <div class="counter-content">
                                     <span class="count" data-count="1234">0</span>
 
-                                    <p class="title">Nội dung 1</p>
+                                    <p class="title">Tỉnh thành</p>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +88,7 @@
                                 <div class="counter-content">
                                     <span class="count" data-count="856">0</span>
 
-                                    <p class="title">Nội dung 2</p>
+                                    <p class="title">Đối tác</p>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +100,7 @@
                                 <div class="counter-content">
                                     <span class="count" data-count="255">0</span>
 
-                                    <p class="title">Nội dung 3</p>
+                                    <p class="title">Nhân viên</p>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +112,7 @@
                                 <div class="counter-content">
                                     <span class="count" data-count="23">0</span>
 
-                                    <p class="title">Nội dung 4</p>
+                                    <p class="title">Lượt tải app</p>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +130,7 @@
                 <div class="col-12 padding-top-bottom">
                     <div class="block col-3">
                         <div class="hovereffect">
-                            <img class="img-responsive" src="https://go2joy.vn/images/Artboard_1.png" alt="">
+                            <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS4HbGB8A_j2c-jJ0Jjd3sReX7JA1kYNc0M_Q&usqp=CAU" alt="">
                             <div class="overlay">
                                 <h2>Lãnh đạo 1</h2>
                                 <p class="icon-links">
@@ -143,7 +147,7 @@
                     </div>
                     <div class="block col-3">
                         <div class="hovereffect">
-                            <img class="img-responsive" src="https://go2joy.vn/images/Artboard_1.png" alt="">
+                            <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS4HbGB8A_j2c-jJ0Jjd3sReX7JA1kYNc0M_Q&usqp=CAU" alt="">
                             <div class="overlay">
                                 <h2>Lãnh đạo 2</h2>
                                 <p class="icon-links">
@@ -160,7 +164,7 @@
                     </div>
                     <div class="block col-3">
                         <div class="hovereffect">
-                            <img class="img-responsive" src="https://go2joy.vn/images/Artboard_1.png" alt="">
+                            <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS4HbGB8A_j2c-jJ0Jjd3sReX7JA1kYNc0M_Q&usqp=CAU" alt="">
                             <div class="overlay">
                                 <h2>Lãnh đạo 3</h2>
                                 <p class="icon-links">
@@ -177,7 +181,7 @@
                     </div>
                     <div class="block col-3">
                         <div class="hovereffect">
-                            <img class="img-responsive" src="https://go2joy.vn/images/Artboard_1.png" alt="">
+                            <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS4HbGB8A_j2c-jJ0Jjd3sReX7JA1kYNc0M_Q&usqp=CAU" alt="">
                             <div class="overlay">
                                 <h2>Lãnh đạo 4</h2>
                                 <p class="icon-links">
@@ -231,6 +235,7 @@ export default {
     }
 
 };
+
 </script>
 
 <style scoped>
@@ -390,7 +395,9 @@ q:after {
     content: '';
     content: none;
 }
-
+.text-align{
+    text-align: center;
+}
 .padding-top-bottom {
     padding: 40px 0 40px 0
 }
