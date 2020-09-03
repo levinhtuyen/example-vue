@@ -152,7 +152,7 @@ p {
 .style-box-shadow {
     background: #ffffff;
     border-radius: 20px;
-        box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
 }
 
 .style-gia-giam {
