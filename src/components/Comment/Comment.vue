@@ -10,7 +10,7 @@
                 <div class="col-4 style-canh-giua">
                     <div>
                         <p><i style="position:relative" class="fas fa-star style-start"><span class="style-number">4.6</span></i></p>
-                        <p style="text-align:center"> 2 Bình luận</p>
+                        <p class="style-content-comment" style="text-align:center"> 2 Bình luận</p>
                     </div>
                 </div>
                 <div class="col-4">
