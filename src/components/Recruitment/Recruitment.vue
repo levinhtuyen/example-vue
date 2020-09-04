@@ -5,7 +5,7 @@
         <section>
             <div class="container">
                 <div class="col-12">
-                    <img class="style-image" src="https://lh3.googleusercontent.com/proxy/zIkOZ1M-VwSKIMErE0KpKr4m6FtkEznAq8oMDrE0hiJFB1l27v-LQtdv1Q1gl8LjqFTrss0f3IN4k3nE7EtSkHRbSzzbRfu9YBo9Vl3lN3c-4rvjIQ" alt="">
+                    <img class="style-image" src="https://go2joy.vn/images/InviteFriend.png" alt="">
                 </div>
             </div>
         </section>
@@ -13,7 +13,7 @@
 
             <div class="col-12">
                 <div class="col-4">
-                     <h3 class="title tilte3"><span>Câu hỏi thường gặp</span></h3>
+                    <h3 class="title tilte3"><span>Câu hỏi thường gặp</span></h3>
                     <el-collapse v-model="activeNames" @change="handleChange">
                         <el-collapse-item title="Câu hỏi 1" name="1">
                             <div>Consistent with real life: in line with the process and logic of real life, and comply with languages and habits that the users are used to;</div>
@@ -199,9 +199,22 @@ export default {
     justify-content: center;
     align-items: center;
 }
-.col-1, .col-2 ,.col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-20, .col-11, .col-1{
-    float:left
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-20,
+.col-11,
+.col-1 {
+    float: left
 }
+
 h1,
 h2,
 h3,
