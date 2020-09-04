@@ -564,7 +564,10 @@ p {
 .logo {
     width: 140px;
 }
-
+.style-padd-mar-0{
+        padding:0;
+        margin: 0;
+    }
 @media only screen and (max-width: 480px) {
     .hotel-item img {
         width: 205px;

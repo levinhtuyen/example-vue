@@ -20,7 +20,7 @@
         </div>
         <div class="col-3">
             <div class="single-widget contact">
-                <h3>Liên hệ</h3>
+                <h3>LIÊN HỆ</h3>
                 <ul>
                     <li><i class="flaticon-call"></i><span>Hotline:</span><a href="tel:+822456974">Phone: 0931 836 836 </a></li>
                     <li><i class="flaticon-email"></i><span>Email:</span><a href="mailto:support@go2joy.vn">support@go2joy.vn</a></li>

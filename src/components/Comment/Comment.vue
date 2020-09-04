@@ -68,11 +68,11 @@
                     <p class="style-font-size-start font-size-char-d">5.0</p>
                 </div>
             </div>
-            <div class="col-12 padding-top" v-for="(dataComment, index) in list" :key="index">
+            <div class="col-12  style-border-bottom" v-for="(dataComment, index) in list" :key="index">
                 <div class="col-12 ">
                     <h4>{{ dataComment.userNickName }}</h4>
                 </div>
-                <div class="col-12 ">
+                <div class="col-12 padding-top">
                     <p class="style-kind-of-room float-left">{{ dataComment.roomTypeName }} </p>
                     <div class="float-left style-padding-left">
                         <p class="float-left style-bo-tron style-canh-giua-chu">
@@ -84,12 +84,12 @@
                         <p class="float-left style-bo-tron-t style-canh-giua-chu mar-padd-0"><span class="font-size-char-t">T</span></p>
                         <span class="style-margin-text">Xuất sắc</span>
                     </div>
-                    <div class="float-left">
+                    <div class="float-left ">
                         <p class="float-left style-bo-tron-d style-canh-giua-chu mar-padd-0"><span class="font-size-char-d">D</span></p>
                        <span class="style-margin-text">Xuất sắc</span>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 padding-top">
                     <div>
                         <p class="style-content-comment">{{ dataComment.comment }}</p>
                     </div>
@@ -102,7 +102,7 @@
                         
                     </div>
                 </div>
-
+                <div class="col-12 padding-top"></div>
             </div>
         </b-row>
 
@@ -220,13 +220,17 @@ export default {
 
     top: 41%;
 }
-
+.style-content-comment{
+    font-size: 18px;
+}
 .style-canh-giua {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.style-border-bottom{
+    border-bottom: 1px solid;
+}
 .style-canh-giua-so {
     display: flex;
     flex-direction: column;
