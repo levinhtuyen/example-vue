@@ -28,7 +28,7 @@
             <el-menu-item index="3" class="style-canh-giua"><a class="color-trang" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScCtwnRHg0BcfpQ_I2fKWAMY5CDwFytHWhx1oI8YlOA99wu2Q/viewform"> {{ $t('Home.contact') }}</a></el-menu-item>
 
             <el-menu-item index="4" class="style-canh-giua">
-                <a  class="color-trang" target="_blank"  href="https://go2joy.vn/">{{ $t('Home.events') }}</a>
+                <a  class="color-trang" target="_blank"  href="http://go2joy.vn/landingpage/">{{ $t('Home.events') }}</a>
             </el-menu-item>
             <el-menu-item index="5" class="style-canh-giua"> <button type="button" class="btn "><img class="style-down" src="http://go2joy.vn/images/GooglePlay-white.png" alt=""></button></el-menu-item>
             <el-menu-item index="6" class="style-canh-giua"><button type="button" class="btn"><img class="style-down" src="http://go2joy.vn/images/appstore-white.png" alt=""></button></el-menu-item>

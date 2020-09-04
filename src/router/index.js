@@ -14,6 +14,7 @@ import Search from "@/components/Search/Search.vue";
 import Vision from "@/components/Vision/Vision.vue";
 import Events from "@/components/Events/Events.vue";
 import Recruitment from "@/components/Recruitment/Recruitment.vue";
+import Comment from "@/components/Comment/Comment.vue";
 Vue.use(ElementUI)
 Vue.use(Router);
 Vue.use(Vuex)
@@ -81,6 +82,11 @@ export default new Router({
       path: "/recruitment",
       name: "Recruitment",
       component: Recruitment
+    },
+    {
+      path: "/comment",
+      name: "Comment",
+      component: Comment
     },
     
   ],
