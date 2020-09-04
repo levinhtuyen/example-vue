@@ -87,7 +87,7 @@ export default new Router({
       path: "/comment",
       name: "Comment",
       component: Comment
-    },
+    }
     
   ],
   scrollBehavior() {

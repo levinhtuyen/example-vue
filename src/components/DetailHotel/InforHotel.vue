@@ -6,7 +6,7 @@
                 <p class="padding-p padding-top-bottom">
                     <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.4 </span></a>
                 
-                     <a  class="font-size-title margin-left-right-10"  href="/comment">1121 Bình luận ></a>
+                     <router-link  :to="{ name: 'Comment', params: { Sn: 1 }}"> <a  class="font-size-title margin-left-right-10">1121 Bình luận ></a></router-link>
                 </p>
                 <p class="padding-p padding-top-bottom">
                     <a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a>
@@ -70,6 +70,7 @@ import {
     eventBus
 } from './../../main.js'
 const cityOptions = ['Giảm giá đặc biệt', 'Khuyến mãi', 'Khách sạn mới', 'Khách sạn nổi bật', 'Ảnh 360'];
+
 export default {
     name: 'InforHotel',
     data() {
