@@ -20,7 +20,7 @@
                         <div class="col-6">
                             <p class="style-bold font-size-title-name">LUXURY ROOM</p>
                         </div>
-                        <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
+                        <div class="col-6"><button class="style-btn-dat-ngay" @click="show = !show"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
                         <div class="col-12 padding-top-60">
 
                             <div class="float-right style-border-cam">
@@ -51,7 +51,7 @@
                         <div class="col-6">
                             <p class="style-bold font-size-title-name">LUXURY ROOM</p>
                         </div>
-                        <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
+                        <div class="col-6"><button class="style-btn-dat-ngay" @click="show = !show"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
                         <div class="col-12 padding-top-60">
 
                             <div class="float-right style-border-cam">
@@ -82,7 +82,7 @@
                         <div class="col-6">
                             <p class="style-bold font-size-title-name">LUXURY ROOM</p>
                         </div>
-                        <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
+                        <div class="col-6"><button class="style-btn-dat-ngay" @click="show = !show"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
                         <div class="col-12 padding-top-60">
 
                             <div class="float-right style-border-cam">
@@ -113,7 +113,7 @@
                         <div class="col-6">
                             <p class="style-bold font-size-title-name">LUXURY ROOM</p>
                         </div>
-                        <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
+                        <div class="col-6"><button class="style-btn-dat-ngay" @click="show = !show"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
                         <div class="col-12 padding-top-60">
 
                             <div class="float-right style-border-cam">
@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-
+    <AlertDialogDownApp :active.sync="show" title="Hello world" content="Hello world" />
 </div>
 </template>
 
@@ -142,18 +142,20 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Vue from 'vue';
 import VueCarousel from 'vue-carousel';
-
+import AlertDialogDownApp from "./AlertDialogDownApp.vue";
 Vue.use(VueCarousel);
 import axios from 'axios';
 export default {
     name: 'ListRoom',
-
+    components: {
+        AlertDialogDownApp
+    },
     data() {
         return {
             data: {
 
             },
-
+            show: false,
         }
     },
     async created() {
@@ -173,7 +175,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped>
-
 .col-6 {
     width: 100%;
 

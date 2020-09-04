@@ -30,8 +30,8 @@
             <el-menu-item index="4" class="style-canh-giua">
                 <a  class="color-trang" target="_blank"  href="http://go2joy.vn/landingpage/">{{ $t('Home.events') }}</a>
             </el-menu-item>
-            <el-menu-item index="5" class="style-canh-giua"> <button type="button" class="btn "><img class="style-down" src="http://go2joy.vn/images/GooglePlay-white.png" alt=""></button></el-menu-item>
-            <el-menu-item index="6" class="style-canh-giua"><button type="button" class="btn"><img class="style-down" src="http://go2joy.vn/images/appstore-white.png" alt=""></button></el-menu-item>
+            <el-menu-item index="5" class="style-canh-giua style-padd-mar-0"> <button type="button" class="btn style-padd-mar-0"><img class="style-down" src="http://go2joy.vn/images/GooglePlay-white.png" alt=""></button></el-menu-item>
+            <el-menu-item index="6" class="style-canh-giua style-padd-mar-0"><button type="button" class="btn style-padd-mar-0"><img class="style-down" src="http://go2joy.vn/images/appstore-white.png" alt=""></button></el-menu-item>
         </el-menu>
         <!-- <div class="line"></div> -->
         <form class="form-inline">
@@ -773,8 +773,12 @@ p {
     }
 
     .style-down {
-        width: 100px;
+        width: 110px;
         height: auto;
+    }
+    .style-padd-mar-0{
+        padding:0;
+        margin: 0;
     }
 
 }
