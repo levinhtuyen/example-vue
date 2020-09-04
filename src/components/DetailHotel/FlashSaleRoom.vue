@@ -22,10 +22,10 @@
                     </div>
                     <div class="col-7 style-padd">
                         <div class="col-6"><p class="style-bold font-size-title-name">FlashSale - Standard Room</p></div>
-                        <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
+                        <div class="col-6"><button class="style-btn-dat-ngay" @click="show = !show"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
                         <div class="col-12">
                         
-                        <div class="float-right style-border-red">
+                        <div class="float-right style-border-cam">
                             <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
                         </div>
                         <br>
@@ -46,10 +46,10 @@
                     </div>
                     <div class="col-7 style-padd">
                         <div class="col-6"><p class="style-bold font-size-title-name">FlashSale - LUXURY Room</p></div>
-                        <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
+                        <div class="col-6"><button class="style-btn-dat-ngay"  @click="show = !show"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
                         <div class="col-12">
                         
-                        <div class="float-right style-border-red">
+                        <div class="float-right style-border-cam">
                             <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
                         </div>
                         <br>
@@ -70,10 +70,10 @@
                     </div>
                     <div class="col-7 style-padd">
                         <div class="col-6"><p class="style-bold font-size-title-name">FlashSale - VIP Room</p></div>
-                        <div class="col-6"><button class="style-btn-dat-ngay"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
+                        <div class="col-6"><button class="style-btn-dat-ngay" @click="show = !show"><i class="fas fa-calendar-check"></i> Đặt ngay</button></div>
                         <div class="col-12">
                         
-                        <div class="float-right style-border-red">
+                        <div class="float-right style-border-cam">
                             <p class="style-margin-1 font-size-title"><a class="style-back-do"><i class="fas fa-bolt"></i> <span> Giảm sốc </span></a><a></a><span class="style-font-mar font-size-title"> Còn lại 1 phòng</span></p>
                         </div>
                         <br>
@@ -86,6 +86,7 @@
                 </div>
             </slide>
         </carousel>
+         <AlertDialogDownApp :active.sync="show" title="Hello world" content="Hello world" />
     </div>
 
 </div>
@@ -96,18 +97,20 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Vue from 'vue';
 import VueCarousel from 'vue-carousel';
-
+import AlertDialogDownApp from "./AlertDialogDownApp.vue";
 Vue.use(VueCarousel);
 import axios from 'axios';
 export default {
     name: 'FlashSaleRoom',
-
+    components: {
+        AlertDialogDownApp
+    },
     data() {
         return {
             data: {
 
             },
-           
+             show: false,
         }
     },
     async created() {

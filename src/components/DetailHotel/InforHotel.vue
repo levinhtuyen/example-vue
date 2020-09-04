@@ -5,7 +5,8 @@
             <div class="col-12">
                 <p class="padding-p padding-top-bottom">
                     <a class="style-back-do font-size-title"><i class="fas fa-star"></i> <span> 4.4 </span></a>
-                    <el-button type="text" class="font-size-title margin-left-right-10" @click="show = !show">1121 Bình luận > </el-button>
+                
+                     <a  class="font-size-title margin-left-right-10"  href="/comment">1121 Bình luận ></a>
                 </p>
                 <p class="padding-p padding-top-bottom">
                     <a class="style-back-xanh font-size-title"><i class="fas fa-clock"></i> <span> 0/5 </span></a>
