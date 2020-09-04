@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="https://go2joy.vn/images/logo.jpg" />
     <title>Go2Joy - website demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Go2Joy là ứng dụng đặt phòng trên di động giúp người dùng đặt phòng khách sạn nghỉ theo giờ, qua đêm, ngắn ngày một cách nhanh chóng, thuận tiện, riêng tư. Không cần phải mất nhiều thời gian tìm kiếm nữa, với Go2Joy, chỉ cần vài cú chạm trong vài giây, bạn đã có thể chọn cho mình một địa điểm trải nghiệm dịch vụ ưng ý. Hãy để công nghệ hiện đại phục vụ cho cuộc sống của bạn dễ dàng và thoải mái hơn!" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Go2Joy" />
+
+        <meta property="og:title" content="Go2Joy - Đặt giờ, Đặt đêm, Đặt thêm ưu đãi" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Go2Joy" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title"
+        content="Go2Joy là ứng dụng điện thoại giúp người dùng đặt phòng khách sạn nghỉ theo giờ, qua đêm, ngắn ngày một cách nhanh chóng, thuận tiện, riêng tư. Không cần phải mất nhiều thời gian tìm kiếm nữa, với Go2Joy, chỉ cần vài cú chạm trong vài giây, bạn đã có thể chọn cho mình một địa điểm trải nghiệm dịch vụ ưng ý. Hãy để công nghệ hiện đại phục vụ cho cuộc sống của bạn dễ dàng và thoải mái hơn!" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
   </head>
   <!-- import font -->
   <link
@@ -41,11 +57,44 @@
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSLNsJc2hhS0PbO39zD2LH92y0CktRKb4&libraries=places">
   
 </script> -->
+
+<!-- facebook -->
+ <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1904233049807479');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1904233049807479&ev=PageView&noscript=1" />
+    </noscript>
   <script
     type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDSLNsJc2hhS0PbO39zD2LH92y0CktRKb4&ver=3.exp"
   ></script>
+<!-- START FACEBOOK CHAT -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="363221287378130" theme_color="#ff7e29">
   <style>
     .preloader {
       position: fixed;

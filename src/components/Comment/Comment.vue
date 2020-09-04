@@ -206,7 +206,10 @@ export default {
 .col-12 {
     float: left
 }
-
+.row {
+    margin-right: 0;
+     margin-left: 0px;
+}
 .style-start {
     font-size: 150px;
     color: #ff6400
