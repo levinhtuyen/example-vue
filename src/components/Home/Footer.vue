@@ -109,7 +109,9 @@ export default {
 .padding-top{
     padding-top: 50px;
 }
-
+.col-3{
+    padding: 0 15px 0 15px
+}
 .footer-top-area:before {
     content: "";
     position: absolute;
