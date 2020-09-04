@@ -230,6 +230,7 @@ export default {
 }
 .style-border-bottom{
     border-bottom: 1px solid;
+    padding-top: 15px;
 }
 .style-canh-giua-so {
     display: flex;
