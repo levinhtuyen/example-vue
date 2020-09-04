@@ -15,14 +15,14 @@
                 <el-submenu index="2-4">
                     <template slot="title"><span class="style-font-family">{{ $t('Home.tongquan') }}</span></template>
                     <el-menu-item index="2-4-1" class="">
-                        <a  class="color-trang"  href="/vision">{{ $t('Home.vision') }}</a>
+                        <a  class="color-trang"  href="/#/vision">{{ $t('Home.vision') }}</a>
                     </el-menu-item>
                     <el-menu-item index="2-4-2" class="">
-                         <a  class="color-trang"  href="/about">{{ $t('Home.milestones') }} </a>
+                         <a  class="color-trang"  href="/#/about">{{ $t('Home.milestones') }} </a>
                     </el-menu-item>
                 </el-submenu>
                 <el-menu-item index="2-2" class="">
-                     <a  class="color-trang"  href="/recruitment">{{ $t('Home.recruitment') }}</a>
+                     <a  class="color-trang"  href="/#/recruitment">{{ $t('Home.recruitment') }}</a>
                 </el-menu-item>
             </el-submenu>
             <el-menu-item index="3" class="style-canh-giua"><a class="color-trang" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScCtwnRHg0BcfpQ_I2fKWAMY5CDwFytHWhx1oI8YlOA99wu2Q/viewform"> {{ $t('Home.contact') }}</a></el-menu-item>
